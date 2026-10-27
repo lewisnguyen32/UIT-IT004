@@ -1,0 +1,504 @@
+[PDF PAGE 1]
+NGÔN NGỮ SQLThS. DươngPhi Long –Email: longdp@uit.edu.vn
+Chương4:
+TRƯỜNG ÐẠI HỌC CÔNG NGHỆ THÔNG TINKHOA HỆ THỐNG THÔNG TINTài liệu bài giảng:
+MÔN CƠ SỞ DỮ LIỆU
+
+[PDF PAGE 2]
+010203
+04
+2
+NỘI DUNG BÀI HỌCGiới thiệuNgôn ngữ định nghĩa dữ liệuNgôn ngữ thao tác dữ liệuNgôn ngữ truy vấn dữ liệu
+
+[PDF PAGE 3]
+3
+Giới thiệuNgôn ngữ SQL1.Ngôn ngữ SQL2.Phân loại ngôn ngữ SQL
+
+[PDF PAGE 4]
+4
+1. Ngôn ngữ SQL (Structured Query Language)-Ngônngữcấpcao-Ngườisửdụngchỉcầnđưaranộidungcầntruyvấn-ĐượcpháttriểnbởiIBM(1970s),khởinguồncủaSQLlàSEQUEL-StructuredEnglishQueryLanguage(1974)-ĐượcANSIcôngnhậnvàpháttriểnthànhchuẩnSQL.ChuẩnSQLlàcácđặctảđượcxâydựngnhằmquyđịnhcúpháp,cấutrúcvàcáchthứchoạtđộngchungcủangônngữSQL,giúpSQLcótínhthốngnhấtvàkhảnăngtươngthíchgiữacáchệquảntrịcơsởdữliệu.
+
+[PDF PAGE 5]
+5
+1. Ngôn ngữ SQL (Structured Query Language)-CácDBMSnhưOracle,MySQL,SQLServer,PostgreSQLđềuhỗtrợSQLnhưngkhônghoàntoàngiốngnhau.MỗiDBMScóthể:•TuântheomộtphầncủachuẩnSQL.•Cócúphápmởrộngriêng.•Cócáckiểudữliệu,hàmvàtínhnăngđặcthù
+ChuẩnNămĐặc điểm chínhSQL-861986Chuẩn SQL đầu tiên được ANSI công nhậnSQL-891989Bổ sung và hoàn thiện SQL-86SQL-92 (SQL2)1992Chuẩn quan trọng, mở rộng mạnh cú pháp và khả năng truy vấnSQL:1999 (SQL3)1999Bổ sung trigger, stored procedure, kiểu dữ liệu mới, hướng đối tượngSQL:20032003Bổ sung XML, window functions và nhiều tính năng khácSQL:20082008Bổ sung các cải tiến về truy vấn và quản lý dữ liệuSQL:20112011Bổ sung hỗ trợ temporal data –dữ liệu theo thời gianSQL:20162016Bổ sung JSON và nhiều khả năng xử lý dữ liệu mớiSQL:20192019Tiếp tục mở rộng khả năng xử lý và tích hợp dữ liệuSQL:20232023Chuẩn SQL hiện đại, bổ sung/cập nhật nhiều tính năng mới
+
+[PDF PAGE 6]
+6
+1. Ngôn ngữ SQL (Structured Query Language)-Sửdụngcácthuậtngữ:•Bảng(Table)~quanhệ•Cột(Column)~thuộctính•Dòng(Row)~bộ TABLE
+RowsColumns
+
+[PDF PAGE 7]
+7
+2. Phân loại Ngôn ngữ SQL-Ngônngữđịnhnghĩadữliệu(DataDefinitionLanguage-DDL):khaibáocấutrúcbảng,cácmốiquanhệvàcácràngbuộc.-Ngônngữthaotácdữliệu(DataManipulationLanguage-DML):thêm,xóa,sửadữliệu.-Ngônngữtruyvấndữliệu(DataQueryLanguage–DQL):truyvấndữliệu.-Ngônngữđiềukhiểndữliệu(DataControlLanguage–DCL):khaibáobảomậtthôngtin,cấpvàthuhồiquyềnkhaitháctrêncơsởdữliệu.-Ngônngữđiềukhiểngiaodịch(TransactionControlLanguage–TCL):khaibáo,điềukhiểncácgiaodịch.
+
+[PDF PAGE 8]
+8
+Ngôn ngữ định nghïa dữ liệu1.Một số kiểu dữ liệu2.Tạo bảng3.Sửa cấu trúc bảng4.Xóa bảng
+
+[PDF PAGE 9]
+9
+Ngôn ngữ định nghïa dữ liệu-Làngônngữmôtả•Lượcđồchomỗiquanhệ•Miềngiátrịtươngứngcủatừngthuộctính•Ràngbuộctoànvẹn•Chỉmụctrênmỗiquanhệ-Baogồm:Tạo,sửavàxóabảng
+
+[PDF PAGE 10]
+10
+1. Một số kiểu dữ liệu trên MS SQL Server
+Tham khảo thêm: https://www.w3schools.com/sql/sql_datatypes.asp
+LoạiKiểudữliệuChuỗikýtựvarchar(n),char(n),nvarchar(n), nchar(n)SốSốnguyên: tinyint, smallint, int, bigintSốthực: numeric(p,s), decimal(p,s), float, real, Tiềntệ: smallmoney, moneyNgàygiờdate, time, smalldatetime,datetime, datetime2LogicBit (1,0, null)Nhị phânbinary, varbinary
+
+[PDF PAGE 11]
+11
+2. Tạo bảng-Đểđịnhnghĩamộtbảng•Tênbảng•Cácthuộctính§Tênthuộctính§Kiểudữliệu§CácRBTVtrênthuộctính-Từkhóa: CREATE
+
+[PDF PAGE 12]
+12
+2. Tạo bảng-Cúpháp:CREATE TABLE<Tên_bảng> (<Tên_cột1> <Kiểu_dữ_liệu> [<RBTV>],<Tên_cột2><Kiểu_dữ_liệu> [<RBTV>],…[<RBTV>])
+Not null, unique, khóachính…
+Khóachính, khóangoại, …
+
+[PDF PAGE 13]
+13
+2. Tạo bảng-RBTV:•Null,Notnull•Unique•Default•Check•Primarykey•Foreignkey
+-KhaibáoRBTVCONSTRAINT<Ten RBTV> <RBTV>VD1:constraintPK_SP primary key(MaSP)constraintFK_CTHD_HD foreign key(SoHD) referencesHOADON (SoHD)
+
+[PDF PAGE 14]
+14
+2. Tạo bảngChoLượcđồCSDLQuảnlýbánhànggồmnhữngquanhệsau:KHACHHANG(MaKH,HoTen,DChi,SoDT,NgSinh,DoanhSo,NgDK,CMND)NHANVIEN(MaNV,HoTen,NgVL,SoDT)SANPHAM(MaSP,TenSP,DVT,NuocSX,Gia)HOADON(SoHD,NgHD,MaKH,MaNV,TriGia)CTHD(SoHD,MaSP,SoLuong)
+
+[PDF PAGE 15]
+15
+2. Tạo bảngVD2:TạoKHACHHANG(MaKH,HoTen,DChi,SoDT,NgSinh,DoanhSo,NgDK,CMND)CREATE TABLE KHACHHANG(MaKHchar(4),HoTennvarchar(30),DChinvarchar(50),SoDTvarchar(15),NgSinhsmalldatetime,DoanhSoint,NgDKsmalldatetime,CMND varchar(9))
+primary keynot null
+
+[PDF PAGE 16]
+16
+Primary Key,Primary Key,
+2. Tạo bảngVD3:TạoCTHD(SoHD,MaSP,SoLuong)
+CREATE TABLE CTHD(SOHD intMASP char(4) SLint)
+
+[PDF PAGE 17]
+17
+2. Tạo bảngVD3:TạoCTHD(SoHD,MaSP,SoLuong)
+CREATE TABLE CTHD(SOHD intMASP char(4) SLint,)
+Foreign Key ReferencesHOADON(SOHD),Foreign Key ReferencesSANPHAM(MASP),constraintPK_CTHDPrimary Key(SOHD, MASP)
+
+[PDF PAGE 18]
+18
+2. Sửa cấu trúc bảng-Phânloại:•Thêmthuộctínhvàobảng•Sửakiểudữliệucủathuộctính•Xóathuộctính•ThêmRBTV•XóaRBTV-Từkhóa:ALTER
+
+[PDF PAGE 19]
+19
+2.1. Thêm thuộc tính-Cúpháp:ALTER  TABLE<Tênbảng>ADD<Têncột><KiểuDL>
+-VD4:ThêmcộtGhi_chuvàobảngKHACHHANGALTER TABLEKHACHHANGADDGHI_CHU varchar(20)
+
+[PDF PAGE 20]
+20
+2.2. Sửa kiểu dữ liệu thuộc tính-Cúpháp:ALTER  TABLE<Tênbảng>ALTER COLUMN<Têncột><KiểuDL mới>-VD5:SửaKiểuDLcộtGhi_chucủabảngKHACHHANGthànhnvarchar(50)ALTER TABLEKHACHHANGALTER COLUMNGHI_CHU nvarchar(50)-Lưuý:Khôngphảisửathànhkiểudữliệunàocũngđược(Độdàidữliệu,dữliệukýtựchuỗithànhkýtựsố,…)
+
+[PDF PAGE 21]
+21
+2.3. Xóa thuộc tính-Cúpháp:ALTER  TABLE<Tênbảng>DROP COLUMN <Têncột>-VD6:XóacộtGhi_chutrongbảngKHACHHANGALTER TABLEKHACHHANGDROP COLUMNGHI_CHU
+
+[PDF PAGE 22]
+22
+2.4. Thêm Ràng buộc Toàn vẹn-Cúpháp:
+ALTER TABLE<tênbảng> ADD CONSTRAINT<tênRBTV>
+UNIQUE (<têncột>)PRIMARY KEY (<têncột>)FOREIGN KEY <têncột>REFERENCES<tênbảng>(<têncộtkhóachính>)CHECK  (<điềukiện>)
+
+[PDF PAGE 23]
+23
+2.4. Thêm Ràng buộc Toàn vẹn-VD7:ThêmRBKhóachínhchoNHANVIENALTERTABLENHANVIENADDCONSTRAINTPK_NVPRIMARYKEY(MaNV)-VD8:ThêmRBKhóangoạigiữaSANPHAMvàCTHDALTERTABLECTHDADDCONSTRAINTFK_CTHD_SPFOREIGNKEY(MaSP)REFERENCESSANPHAM(MaSP)
+
+[PDF PAGE 24]
+24
+2.4. Thêm Ràng buộc Toàn vẹn-VD9:ThêmRBGiátrongSANPHAMtừ500trởlênALTERTABLESANPHAMADDCONSTRAINTCheck_GiaCHECK(Gia>=500)-VD10:ThêmRBCMNDcủacáckháchhànglàkhácnhauALTERTABLEKHACHHANGADDCONSTRAINTUnique_CMNDUNIQUE(CMND)
+
+[PDF PAGE 25]
+25
+2.5. Xóa Ràng buộc Toàn vẹn-Cúpháp:ALTER  TABLE<Tênbảng>DROP CONSTRAINT<TênRBTV>-VD11:XóaRBCheck_GiaALTER TABLESANPHAMDROP CONSTRAINTCheck_Gia-Lưuý:KhixóaRBKhóachínhphảixóahếtcácRBKhóangoạithamchiếutớinó
+
+[PDF PAGE 26]
+26
+3. Xóa bảng-Từkhóa:DROP-Cúpháp:DROP  TABLE<Tênbảng>-VD12:XóabảngSANPHAMDROP TABLESANPHAM-Lưuý:KhixóamộtbảngphảixóahếtcácRBKhóangoạithamchiếutớibảngđó
+
+[PDF PAGE 27]
+27
+Ngôn ngữ thao tác dữ liệu1.Thêmdữliệu2.Sửadữliệu3.Xóadữliệu
+
+[PDF PAGE 28]
+28
+Ngôn ngữ thao tác dữ liệu-Làngônngữchophépthaotáctrêndữliệucủabảng-Baogồm:•Thêmdữliệuvàobảng•Cậpnhật,sửadữliệucủabảng•Xóadữliệutrongbảng
+
+[PDF PAGE 29]
+29
+1. Thêm dữ liệu-Thêm1haynhiềudòngdữliệuvàobảng-Cầnxácđịnh•Tênbảngcầnchèndữliệu•Danhsáchcácthuộctínhcầnthêmdữliệu•Danhsáchcácgiátrịtươngứng-Từkhóa: INSERT
+
+[PDF PAGE 30]
+30
+1.1. Thêm 01 dòng dữ liệu-Cúpháp:INSERT INTO <Tênbảng>[ (<danhsáchcácthuộctính>) ]VALUES(<danhsáchcácgiátrị>)-VD13:INSERTINTOSANPHAM(MaSP,TenSP,DVT,NuocSX,Gia)VALUES('BC01','Butchi','cay','Singapore',3000)INSERTINTOSANPHAMVALUES('BC01','Butchi','cay','Singapore',3000)
+
+[PDF PAGE 31]
+31
+1.2. Thêm nhiều dòng dữ liệu-Cúpháp:(SQLServer2008+)INSERT INTO <Tênbảng>[ (<danhsáchcácthuộctính>) ]VALUES{(<danhsáchcácgiátrị>) }-VD14:INSERTINTOSANPHAM(MaSP,TenSP,DVT,NuocSX,Gia)VALUES('BC01','Butchi','cay','Singapore',3000),(‘BB01','Butbi','cay',‘ThaiLan’,3500),(‘BC02','Butchi','cay',‘ThaiLan’,2500)
+
+[PDF PAGE 32]
+32
+1.2. Thêm nhiều dòng dữ liệu-Cúpháp:INSERT INTO <Tênbảng><Câutruyvấn> -VD15:INSERTINTOSANPHAM_SingSelect*fromSANPHAMwhereNuocSX=‘Singapore’Lưuý:BảngSANPHAM_Singphảiđượctạotrướckhithựcthicâulệnhtrên.
+
+[PDF PAGE 33]
+33
+1.2. Thêm nhiều dòng dữ liệu-Cúpháp:SELECT * INTO <Tênbảngmới>FROM <Tênbảngcósẵn> -VD16:SELECT*INTOSANPHAM_SingFROMSANPHAMWHERENuocSX=‘Singapore’Lưuý:BảngSANPHAM_SinglàmộtbảngcopytừSANPHAM,khôngtạotrướckhithựcthicâulệnhtrên.
+
+[PDF PAGE 34]
+34
+1. Thêm dữ liệu-Mộtsốlưuý:•Thứtựcáccộtphảitươngứngvớithứtựcácgiátrị•CóthểthêmgiátrịNULLởnhữngthuộctínhkhônglàkhóachínhvàkhônglàNOTNULL•CâulệnhINSERTsẽgặplỗikhiviphạmRBTV:§Khóachính§Khóangoại§NOTNULL-cácthuộctínhcóràngbuộcNOTNULLbắtbuộcphảicógiátrị
+
+[PDF PAGE 35]
+35
+2. Sửa dữ liệu-Đểcậpnhật01haynhiềudòngdữliệutrongbảng-Từkhóa:UPDATE-Cúpháp:UPDATE <Tênbảng>SET  {<thuộctính> = <giátrịmới> }[WHERE <Điềukiện> ]
+
+[PDF PAGE 36]
+36
+2. Sửa dữ liệu-VD17:Tăng5%giátấtcảcácsảnphẩmUPDATESANPHAMSETGia=Gia*1.05-VD18:Giảm10%giácủacácsảnphẩmcủaTrungQuốcUPDATESANPHAMSETGia=Gia*0.9WHERENuocSX=‘TrungQuoc’
+
+[PDF PAGE 37]
+37
+2. Sửa dữ liệu-Mộtsốlưuý:•NếucóWHERE,nhữngdòngthỏađiềukiệnWHEREsẽđượccậpnhậtgiátrịmới•NếukhôngcóWHERE,cậpnhậttấtcảcácdòngtrongbảng•KhithựcthicóthểviphạmcácRBTVkhóangoại§Khôngchocậpnhậtdữliệu§CậpnhậttựđộngcácdòngcógiátrịthamchiếuđếnCASCADE
+
+[PDF PAGE 38]
+38
+3. Xóa dữ liệu-Đểxóa01haynhiềudòngdữliệutrongbảng-Từkhóa:DELETE-Cúpháp:DELETE FROM <Tênbảng>[WHERE <Điềukiện> ]
+
+[PDF PAGE 39]
+39
+3. Xóa dữ liệu-VD19:XóatấtcảcáckháchhàngDELETEFROMKHACHHANG
+-VD20:XóacácsảnphẩmcủaTrungQuốcvàcógiádưới5000DELETEFROMSANPHAMWHERENuocSX=‘TrungQuoc’ANDGia<5000
+
+[PDF PAGE 40]
+40
+3. Xóa dữ liệu-Mộtsốlưuý:•NếucóWHERE,nhữngdòngthỏađiềukiệnWHEREsẽbịxóa•NếukhôngcóWHERE,xóatấtcảcácdòngtrongbảng•KhithựcthicóthểviphạmcácRBTVkhóangoại§Khôngchoxóa§XóacácdòngcógiátrịthamchiếuđếnCASCADE§CậpnhậtgiátrịNullchogiátrịthamchiếu
+
+[PDF PAGE 41]
+41
+Ngôn ngữ truy vấn dữ liệu1.Cáctoántử, cáchàm2.Truyvấnđơngiản3.Truyvấnsửdụngtoántửtậphợp4.Truyvấnlồng5.Truyvấnsửdụngcáchàmtínhtoántrênnhóm6.Truyvấnsửdụngkếtngoài
+
+[PDF PAGE 42]
+42
+Ngôn ngữ truy vấn dữ liệu-Làngônngữchuẩn,cócấutrúcdùngđểtruyvấnvàthaotáctrênCSDLquanhệ.-Cúpháptổngquát:SELECT[DISTINCT] <Danhsáchcácthuộctính/ hàm>FROM <Danhsáchcácbảng>[WHERE <Điềukiện>][GROUP BY <Danhsáchthuộctínhgomnhóm>][HAVING <Điềukiệntrênnhóm>][ORDER BY {<Thuộctínhsắpxếp> ASC / DESC}]
+
+[PDF PAGE 43]
+43
+Ngôn ngữ truy vấn dữ liệu-<Danhsáchcácthuộctính/hàm>•Têncácthuộctính/ hàmcầnđượchiểnthịởkếtquả. •Cácthuộctính/ hàmcáchnhaubởidấu‘,’-<Danhsáchcácbảng>:•Têncácbảng•Cácbảngcáchnhaubởidấu‘,’-<Điềukiện>:•Sửdụngtoántửso sánh•LàbiểuthứcBoolean đểxácđịnhdòngnàosẽđượcchọn•Sửdung toántửlogic đểnốicácđiềukiện
+
+[PDF PAGE 44]
+44
+Ngôn ngữ truy vấn dữ liệu-Cáctoántử:•Cácphéptoáncơbản•Cáctoántửso sánh•Cáctoántửlogic-Cácbiểuthức,hàm:•Cáchàmxửlýchuỗi•Cáchàmxửlýsố•Cáchàmxửlýngày•Cáchàmtínhtoántrênnhóm
+
+[PDF PAGE 45]
+45
+Ngôn ngữ truy vấn dữ liệu-Cácdạngtruyvấn:•Truyvấncơbản, đơngiản•Truyvấnsửdụngphéptoántậphợp•Truyvấnlồng•Truyvấnsửdụngcáchàmtínhtoántrênnhóm•Truyvấnsửdụngcáchàmtínhtoántrênnhómvàcóđiềukiện
+
+[PDF PAGE 46]
+46
+1. Các toán tử, các hàm-Cácphéptoáncơbản:+,−,×,÷-Cáctoántửsosánh:•=, >, <, >=, <=, <>•BETWEEN•IS NULL, IS NOT NULL•LIKE % hoặc_: % đạidiệnnhiềukýtự, _ đạidiện01 kýtự•IN, NOT IN•EXISTS, NOT EXISTS•SOME, ALL, ANY-Toántửlogic:AND,OR
+
+[PDF PAGE 47]
+47
+1. Các toán tử, các hàm-Mộtsốhàmxửlýchuỗi:•LEFT ( )•RIGHT ( )•UPPER ( )•LOWER ( )•REPLACE ( )•…•SUBSTRING ( )•CONCAT ( )
+•DAY ( )•MONTH ( )•YEAR ( )
+•SQRT ( )•POWER ( )•ROUND ( )•….•ABS ( )•SIGN ( )
+•MIN ( )•MAX ( )•AVG ( )•SUM ( )•COUNT ( )
+-Cáchàmxửlýsố:
+-Cáchàmxửlýngày:-Cáchàmtínhtoántrênnhóm:
+
+[PDF PAGE 48]
+48
+2. Truy vấn cơ bản
+VD21:Liệtkêmã,họtêncủatấtcảcácnhânviênSELECTMaNV,HoTenFROMNHANVIENVD22:Liệtkêmã,họtêncácnhânviênthuộcphòngcómã‘PB01’SELECTMaNV,HoTenFROMNHANVIENWHEREPhong=‘PB01’
+SELECT[DISTINCT] <Danhsáchcácthuộctính/ hàm>FROM <Danhsáchcácbảng>[WHERE <Điềukiện>][ORDER BY {<Thuộctínhsắpxếp> ASC / DESC}]
+
+[PDF PAGE 49]
+49
+2. Truy vấn cơ bản-Sửdụng*:LấytấtcảcácthuộctínhVD23:LiệtkêthôngtincủatấtcảcácnhânviênSELECT*FROMNHANVIEN-SửdụngAS:ĐặtbídanhVD24:Liệtkêmã,họtêncácnhânviênnamSELECTMaNVAS’MaNV’,HoTenAS’HovaTenNV’FROMNHANVIENWHEREGT=‘Nam’
+
+[PDF PAGE 50]
+50
+2. Truy vấn cơ bản-SửdụngHàm,biểuthứctínhtoánVD25:Liệtkêmã,họtêncácnhânviênthuộcphòngcómã‘PB01’vàlươngtạmtínhsaukhităng20%SELECTMaNV,HoTen,Luong*1.2‘Luongtamtinh’FROMNHANVIENWHEREPhong=‘PB01’
+
+[PDF PAGE 51]
+51
+2. Truy vấn cơ bản-SửdụngHàm,biểuthứctínhtoánVD26:Liệtkêmã,họtênvànămsinhcủacácnhânviênnamSELECTMaNV,HoTen,Year(NgSinh)‘NamSinh’FROMNHANVIENWHEREGT=‘Nam’
+
+[PDF PAGE 52]
+52
+2. Truy vấn cơ bản-SửdụngDISTINCT:loạibỏcácdòngtrùngnhautrongkếtquảVD27:Liệtkêcácmứclươngcủanhânviên.SắpxếpgiảmdầnSELECTDISTINCTLuong‘MucLuong’FROMNHANVIENORDERBYLuongDESCLuong5000450062004500900055006400
+Muc Luong900064006200550050004500
+
+[PDF PAGE 53]
+53
+2. Truy vấn cơ bản-SửdụngToántửsosánhvàToántửlogic:VD28:Liệtkêcácnhânviênnamcólươngtrên5.000.000SELECTMaNV,HoTenFROMNHANVIENWHEREGT=‘Nam’ANDLuong>5000000
+
+[PDF PAGE 54]
+54
+2. Truy vấn cơ bản-SửdụngToántửsosánhvàToántửlogic:VD29:TìmcácnhânviêncóhọlàNguyen,tênlàAnSELECTMaNV,HoTenFROMNHANVIENWHEREHoTenLIKE‘Nguyen%An’
+
+[PDF PAGE 55]
+55
+2. Truy vấn cơ bảnVD30:Liệtkêcácnhânviênthuộcphòngcómãlà‘PB01’hoặc‘PB02’SELECTMaNV,HoTenFROMNHANVIENWHEREPhong=‘PB01’ORPhong=‘PB02’SELECTMaNV,HoTenFROMNHANVIENWHEREPhongIN(‘PB01’,‘PB02’)
+Cách1:
+Cách2:
+
+[PDF PAGE 56]
+56
+2. Truy vấn cơ bản-SửdụngPhépkếtbằng:Đểkết02haynhiềubảng•Cách1: Sửdụnginner join on<điềukiệnkết> ởFROM•Cách2: Đưa<điềukiệnkết> xuốngWHERE
+VD31:LiệtkêcácnhânviênvàtênphòngbancủanhânviênSELECTMaNV,HoTen,TenPHFROMNHANVIENinnerjoinPHONGBANonNHANVIEN.Phong=PHONGBAN.MaPHCách1:
+
+[PDF PAGE 57]
+57
+2. Truy vấn cơ bản-SửdụngPhépkếtbằng:VD31:LiệtkêcácnhânviênvàtênphòngbancủanhânviênSELECTMaNV,HoTen,TenPHFROMNHANVIEN,PHONGBANWHERENHANVIEN.Phong=PHONGBAN.MaPHHoặc:SELECTMaNV,HoTen,TenPHFROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPH
+Cách2:
+
+[PDF PAGE 58]
+58
+2. Truy vấn cơ bảnVD32:LiệtkêcácnhânviênđanglàmviệctạiphòngKếtoánSELECTMaNV,HoTen,TenPHFROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHANDTenPH=‘Ketoan’SELECTMaNV,HoTen,TenPHFROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHANDTenPH=n‘Kếtoán’
+ Nhận xét
+
+[PDF PAGE 59]
+59
+2. Truy vấn cơ bảnVD33:Liệtkêcácnhânviêncólươngtừ5.000.000đến8.000.000SELECTMaNV,HoTen,LuongFROMNHANVIENWHERELuong>=5000000ANDLuong<=8000000SELECTMaNV,HoTen,LuongFROMNHANVIENWHERELuongBetween5000000and8000000
+Cách1:
+Cách2:
+
+[PDF PAGE 60]
+60
+2. Truy vấn cơ bảnVD34:Liệtkêcácnhânviêncóngườiquảnlýtrựctiếp
+SELECTMaNV,HoTenFROMNHANVIENWHEREMaNQLISNOTNULL
+
+[PDF PAGE 61]
+61
+2. Truy vấn cơ bảnVD35:Liệtkêcácnhânviênsinhnăm1990SELECTMaNV,HoTenFROMNHANVIENWHEREYEAR(NgSinh)=1990VD36:Liệtkêcácnhânviêncóngàysinhtrongtháng10SELECTMaNV,HoTenFROMNHANVIENWHEREMONTH(NgSinh)=10
+
+[PDF PAGE 62]
+62
+2. Truy vấn cơ bảnVD37:Liệtkêcácnhânviênnữvàsắpxếptheolươnggiảmdần,Mãnhânviêntăngdần
+SELECTMaNV,HoTen,LuongFROMNHANVIENWHEREGT=‘Nu’ORDERBYLuongDESC,MaNVASC
+
+[PDF PAGE 63]
+63
+3. Truy vấn sử dụng phép toán tập hợp-Sửdụngphéptoántậphợpđểkếthợpkếtquảcủa02câutruyvấn(Câutruyvấn1)<PHÉPTOÁNTẬPHỢP>(Câutruyvấn2)-Cácphéptoántậphợp:•Hội:UNION•Giao:INTERSECT•Trừ:EXCEPT
+
+[PDF PAGE 64]
+64
+3. Truy vấn sử dụng phép toán tập hợpVD38:LiệtkêcácmãnhânviênthựchiệnđềánDA01hoặcDA02(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’)UNION(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA02’)
+
+[PDF PAGE 65]
+65
+3. Truy vấn sử dụng phép toán tập hợpVD39:Liệtkêcácmãnhânviênthựchiệncả2đềánDA01vàDA02(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’)INTERSECT(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA02’)
+Cách1:
+
+[PDF PAGE 66]
+66
+3. Truy vấn sử dụng phép toán tập hợpVD40:LiệtkêcácmãnhânviênthựchiệnđềánDA01nhưngkhôngthựchiệnđềánDA02(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’)EXCEPT(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA02’)
+Cách1:
+
+[PDF PAGE 67]
+67
+3. Truy vấn sử dụng phép toán tập hợpVD41:Chobiếtnhữngnhânviênkhôngthamgiađềánnào(SELECTMaNV,HoTenFROMNHANVIEN)EXCEPT(SELECTNV.MaNV,HoTenFROMNHANVIENNV,PHANCONGPCWHERENV.MaNV=PC.MaNV)
+Cách1:
+
+[PDF PAGE 68]
+68
+4. Truy vấn lồng-Gồm2haynhiềucâutruyvấnlồngvàonhauSELECT[DISTINCT] <Danhsáchcácthuộctính/ hàm>FROM <Danhsáchcácbảng>WHERE<Điềukiện> (Câutruyvấncon)
+
+[PDF PAGE 69]
+69
+4. Truy vấn lồng-<Điềukiện>:Truyvấncontrảvềgiátrịtậphợp•<biểuthức>[NOT]IN(<truyvấncon>)•<biểuthức><phéptoánsosánh>ANY(<truyvấncon>)•<biểuthức><phéptoánsosánh>ALL(<truyvấncon>)-<Điềukiện>:Kiểmtrasựtồntạitrongkếtquảcủatruyvấncon•[NOT]EXISTS(<truyvấncon>):§TrảvềTruenếucóítnhấtmộtbộtrongtruyvấncon§TrảvềFalsenếungượclại.
+
+[PDF PAGE 70]
+70
+4. Truy vấn lồngVD39:Liệtkêcácmãnhânviênthựchiệncả2đềánDA01vàDA02SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’ANDMaNVIN
+Cách2:
+(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA02’)
+
+[PDF PAGE 71]
+71
+4. Truy vấn lồngVD39:Liệtkêcácmãnhânviênthựchiệncả2đềánDA01vàDA02SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’ANDEXISTS
+Cách3:
+(SELECT*FROMPHANCONGWHEREMaDA=‘DA02’ANDPC_DA2.MaNV=PC_DA1.MaNV)
+PC_DA1
+PC_DA2
+
+[PDF PAGE 72]
+72
+4. Truy vấn lồngVD39:Liệtkêcácmãnhânviênthựchiệncả2đềánDA01vàDA02SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’ANDEXISTS(SELECT*FROMPHANCONGWHEREMaDA=‘DA02’ANDPC_DA2.MaNV=PC_DA1.MaNV)
+PC_DA1
+PC_DA2
+PC_DA1MaNVMaDANV01DA01NV03DA01
+PC_DA2MaNVMaDANV01DA02NV04DA02
+‘NV01’‘NV03’
+TRUE‘NV01’FALSE
+
+[PDF PAGE 73]
+73
+4. Truy vấn lồngVD40:LiệtkêcácmãnhânviênthựchiệnđềánDA01nhưngkhôngthựchiệnđềánDA02SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’ANDMaNVNOTIN
+Cách2:
+(SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA02’)
+
+[PDF PAGE 74]
+74
+4. Truy vấn lồngVD40:LiệtkêcácmãnhânviênthựchiệnđềánDA01nhưngkhôngthựchiệnđềánDA02SELECTMaNVFROMPHANCONGWHEREMaDA=‘DA01’ANDNOTEXISTSCách3:
+(SELECT*FROMPHANCONGWHEREMaDA=‘DA02’ANDPC_DA2.MaNV=PC_DA1.MaNV)
+PC_DA1
+PC_DA2
+
+[PDF PAGE 75]
+75
+4. Truy vấn lồngVD41:ChobiếtnhữngnhânviênkhôngthamgiađềánnàoSELECTMaNV,HoTenFROMNHANVIENWHEREMaNVNOTIN
+Cách2:
+(SELECTMaNVFROMPHANCONG)
+
+[PDF PAGE 76]
+76
+4. Truy vấn lồngVD41:ChobiếtnhữngnhânviênkhôngthamgiađềánnàoSELECTMaNV,HoTenFROMNHANVIENNVWHERENOTEXISTS
+Cách3:
+(SELECT*FROMPHANCONGPCWHERENV.MaNV=PC.MaNV)
+
+[PDF PAGE 77]
+77
+4. Truy vấn lồngVD42:TìmnhânviêncólươngcaohơnlươngcủamộtnhânviênbấtkỳthuộcphòngKếtoán(SELECTMaNV,HoTenFROMNHANVIENWHERELuong>ANY(SELECTLuongFROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHANDTenPH=‘KeToan’)
+
+[PDF PAGE 78]
+78
+4. Truy vấn lồngVD43:TìmnhânviêncólươngcaohơnlươngcủatấtcảnhânviênthuộcphòngKếtoán(SELECTMaNV,HoTenFROMNHANVIENWHERELuong>ALL(SELECTLuongFROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHANDTenPH=‘KeToan’)
+
+[PDF PAGE 79]
+79
+4. Truy vấn lồngVD44:TìmnhânviênthamgiatấtcảcácđềáncủacôngtyNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng
+PHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120
+DEANMaDATenDADA01Hệ thống quản lý sinh viênDA02Hệ thống quản lý tín dụng ngân hàng
+
+[PDF PAGE 80]
+80
+4. Truy vấn lồngVD44:Tìmnhânviênthamgiatấtcảcácđềáncủacôngty
+SELECTMaNV,HoTenFROMNHANVIENWHERENOTEXISTS
+Cách1:
+(SELECT*FROMDEANWHERENOTEXISTS(SELECT*FROMPHANCONGWHEREPC.MaDA=DA.MaDAANDPC.MaNV=))
+NVDA PC‘NV01’NV.MaNV
+Tìm những đề án mà NV01 không thực hiện?
+Tìm nhân viên khôngthuộc danh sách những nhân viên khôngthực hiệnít nhất 1 đề án?
+
+[PDF PAGE 81]
+81
+4. Truy vấn lồngVD44:Tìmnhânviênthamgiatấtcảcácđềáncủacôngty
+SELECTFROMWHERENOTEXISTS
+Cách1:
+(SELECTFROMWHERENOTEXISTS(SELECTFROMWHERE))
+NHANVIEN  NVDEAN DAPHANCONG  PC
+MaNV,HoTen*
+PC.MaDA=DA.MaDAANDPC.MaNV=NV.MaNV
+*
+
+[PDF PAGE 82]
+82
+5. Truy vấn sử dụng hàm tính toán trên nhóm-Sửdụngcáchàmtínhtoán,cóthểcógomnhómdữliệuvàtínhtoántrênnhóm-Cáchàmcóđầuvàolàmộttậpgiátrịvàtrảvềmộtgiátrịđơn:Min(),Max(),Avg(),Sum(),Count()SELECT[DISTINCT] <Danhsáchcácthuộctính/ hàm>FROM <Danhsáchcácbảng>[WHERE <Điềukiện>][GROUP BY <Danhsáchthuộctínhgomnhóm>][HAVING <Điềukiệntrênnhóm>][ORDER BY {<Thuộctínhsắpxếp> ASC / DESC}]
+
+[PDF PAGE 83]
+83
+5. Truy vấn sử dụng hàm tính toán trên nhómVD45:Tìmlươngcaonhất,thấpnhất,trungbìnhcủacôngty
+PhongLuongPH015000PH014500PH016200PH024500PH039000PH035500PH036400
+Max(Luong)Min(Luong)Avg(Luong)900045005781.4
+SELECTMax(Luong),Min(Luong),Avg(Luong)FROMNHANVIEN
+
+[PDF PAGE 84]
+84
+5. Truy vấn sử dụng hàm tính toán trên nhómVD46:Tìmlươngcaonhất,thấpnhất,trungbìnhcủaphòngcómãlàPH01
+PhongLuongPH015000PH014500PH016200PH024500PH039000PH035500PH036400
+PhongMax(Luong)Min(Luong)Avg(Luong)PH01500045005233
+SELECTPhong,Max(Luong),Min(Luong),Avg(Luong)FROMNHANVIENWHEREPhong=‘PB01’
+
+[PDF PAGE 85]
+85
+5. Truy vấn sử dụng hàm tính toán trên nhómVD47:Tìmmứclươngcaonhất,thấpnhất,trungbìnhcủamỗiphòngbantrongcôngty
+PhongLuongPH015000PH014500PH016200PH024500PH039000PH035500PH036400
+SELECTPhong,Max(Luong),Min(Luong),Avg(Luong)FROMNHANVIENGROUPBYPhongPhongMax(Luong)Min(Luong)Avg(Luong)PH01500045005233PH02450045004500PH03900055006966
+
+[PDF PAGE 86]
+86
+5. Truy vấn sử dụng hàm tính toán trên nhómVD48:Thốngkêsốlượngnhânviêncủamỗiphòng.Lấyrathôngtinmãphòng,tênphòng,sốlượngnhânviên
+MaPHTenPHSLNVPB01NhanSu20PB02KeToan12PB03CNTT20PB04Truyenthong9PB05Hanh Chinh14
+SELECTPB.MaPH,TenPH,Count(MaNV)‘SLNV’FROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHGROUPBYMaPH,TenPH
+
+[PDF PAGE 87]
+87
+5. Truy vấn sử dụng hàm tính toán trên nhómVD49:Tìmphòngbancósốlượngnhânviênlớnhơn10.Lấyrathôngtinmãphòng,tênphòng,sốlượngnhânviên.Sắpxếptheosốlượngnhânviêngiảmdần.
+MaPHTenPHSLNVPB01NhanSu20PB03CNTT20PB05Hanh Chinh14PB02KeToan12PB04Truyenthong9
+SELECTPB.MaPH,TenPH,Count(MaNV)‘SLNV’FROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHGROUPBYMaPH,TenPHHAVINGCount(MaNV)>10ORDERBYCount(MaNV)DESC
+
+[PDF PAGE 88]
+88
+5. Truy vấn sử dụng hàm tính toán trên nhómVD50:Tìm3phòngbancósốlượngnhânviênnhiềunhất.Lấyrathôngtinmãphòng,tênphòng,sốlượngnhânviên.SELECTPB.MaPH,TenPH,Count(MaNV)‘SLNV’FROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHGROUPBYMaPH,TenPHORDERBYCount(MaNV)DESC
+MaPHTenPHSLNVPB01NhanSu20PB03CNTT20PB05Hanh Chinh14PB02KeToan12PB04Truyenthong9
+TOP 3
+
+[PDF PAGE 89]
+89
+5. Truy vấn sử dụng hàm tính toán trên nhómVD51:Tìmcácphòngbancósốlượngnhânviênnhiềunhất.Lấyrathôngtinmãphòng,tênphòng,sốlượngnhânviên.Cách1:SELECTPB.MaPH,TenPH,Count(MaNV)‘SLNV’FROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHGROUPBYMaPH,TenPHHAVINGCount(MaNV)>=ALL(SELECTCount(MaNV)FROMNHANVIENGROUPBYPhong)
+MaPHTenPHSLNVPB01NhanSu20PB03CNTT20PB05Hanh Chinh14PB02KeToan12PB04Truyenthong9
+
+[PDF PAGE 90]
+90
+5. Truy vấn sử dụng hàm tính toán trên nhómVD51:Tìmcácphòngbancósốlượngnhânviênnhiềunhất.Lấyrathôngtinmãphòng,tênphòng,sốlượngnhânviên.
+SELECTTOP1WITHTIESPB.MaPH,TenPH,Count(MaNV)‘SLNV’FROMNHANVIENNV,PHONGBANPBWHERENV.Phong=PB.MaPHGROUPBYMaPH,TenPHORDERBYCount(MaNV)DESC
+Cách2:
+MaPHTenPHSLNVPB01NhanSu20PB03CNTT20PB05Hanh Chinh14PB02KeToan12PB04Truyenthong9
+
+[PDF PAGE 91]
+91
+5. Truy vấn sử dụng hàm tính toán trên nhómVD52:ThốngkêsốlượngđềánmàtừngnhânviênđãthamgiaNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng
+PHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120SELECTMaNV,HoTen,Count(MaDA)‘SLDATG’FROMNHANVIENNV,PHANCONGPCWHERENV.MaNV=PC.MaNVGROUPBYMaNV,HoTen
+KẾT QUẢMaNVHoTenSLDATGNV01Nguyễn Tuyết An2NV03Phạm Tiến Dũng1
+NV.
+NV.
+
+[PDF PAGE 92]
+92
+5. Truy vấn sử dụng hàm tính toán trên nhómVD44:TìmnhânviênthamgiatấtcảcácđềáncủacôngtyNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng
+PHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120
+DEANMaDATenDADA01Hệ thống quản lý sinh viênDA02Hệ thống quản lý tín dụng ngân hàng
+SELECTNV.MaNV,HoTen,Count(MaDA)‘SLDATG’FROMNHANVIENNV,PHANCONGPCWHERENV.MaNV=PC.MaNVGROUPBYNV.MaNV,HoTenHAVINGCount(MaDA)=
+KẾT QUẢMaNVHoTenSLDATGNV01Nguyễn Tuyết An2NV03Phạm Tiến Dũng1(SELECTCount(MaDA)FROMDEAN)
+Cách2:
+
+[PDF PAGE 93]
+93
+6. Truy vấn sử dụng phép kết ngoài-Sửdụngkếtngoàitrongmộtsốtrườnghợpđểhạnchếviệcbỏsótdữliệu-Cáchthứcsửdụngtươngtựinnerjointrongkếtbằng.•Phépkếttrái:Table1left outer joinTable2on<điềukiệnkết>•Phépkếtphải:Table1right outer joinTable2on<điềukiệnkết>•Phépkếtđầyđủ:Table1full outer join Table2on<điềukiệnkết>
+
+[PDF PAGE 94]
+94
+MaNVHoTenNgaySinhGTPhongMaNVMaDAThoiGianNV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0120NV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0230NV03Phạm Tiến Dũng12/12/1882NamPB02NV03DA0120NV02Trần Ngọc Minh25/01/1987NữPB01NULLNULLNULL
+6. Truy vấn sử dụng phép kết ngoàiVD41:ChobiếtnhữngnhânviênkhôngthamgiađềánnàoNHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1882NamPB02
+PHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120
+𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑀𝑎𝑁𝑉Cách4:
+
+[PDF PAGE 95]
+95
+6. Truy vấn sử dụng phép kết ngoàiVD41:Chobiếtnhữngmãnhânviênkhôngthamgiađềánnào
+SELECTNV.MaNV,HoTenFROMNHANVIENNVleftouterjoinPHANCONGPConNV.MaNV=PC.MaNVWHEREMaDAISNULL
+Cách4:
+KẾT QUẢMaNVHoTenSLDATGNV01Nguyễn Tuyết An2NV02Trần Ngọc Minh0NV03Phạm Tiến Dũng1
+
+[PDF PAGE 96]
+96
+Tổng kết chương
+1.NgônngữSQL2.PhânloạingônngữSQL
+Giới thiệuNgôn ngữ định nghĩa dữ liệu1.Mộtsốkiểudữliệu2.Tạo bảng3.Sửa cấu trúc bảng4.Xóa bảng
+
+[PDF PAGE 97]
+97
+Tổng kết chương
+1.Thêmdữliệu2.Sửadữliệu3.Xóadữliệu
+Ngôn ngữthao tác dữ liệuNgôn ngữ Truyvấndữ liệu1.Cáctoántử, cáchàm2.Truyvấncơbản3.Truyvấnsửdụngtoántửtậphợp4.Truyvấnlồng5.Truyvấnsửdụnghàmtínhtoántrênnhóm6.Truyvấnsửdụngkếtngoài
+
+[PDF PAGE 98]
+98
+THANKS!Any questions?

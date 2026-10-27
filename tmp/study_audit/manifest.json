@@ -1,0 +1,91 @@
+{
+  "sources": [
+    {
+      "id": "T1",
+      "source": "Lý thuyết/DPL_Chuong 1 - Tong quan.pdf",
+      "sha256": "9a463386d20a487a488cc59ccc2b286ea6cbe47fefe4177067ac5280aa9ff06a",
+      "page_count": 64,
+      "text": "T1.txt",
+      "pages_json": "T1.json",
+      "text_sha256": "40af19cf48689e57e6c58ec55beaeed2d49b10a67b0fd3bf51d18eff9e620fe9",
+      "pages_sha256": "8182fab74ae6744f157dd731c432fb812fb8ce975d9fa47ec23b83798067ec1f",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "T2",
+      "source": "Lý thuyết/DPL_Chuong 2 - Mo hinh Du lieu Quan he.pdf",
+      "sha256": "0639b0be51b9d8603138ee385cdb3705f80ef821f65ab76602f4647809da53a1",
+      "page_count": 59,
+      "text": "T2.txt",
+      "pages_json": "T2.json",
+      "text_sha256": "26c1ff8cbead304047c6a15c210a4a9ba0c4ea8016afcaa3e3df3ee9cd908fe7",
+      "pages_sha256": "c5c65fe60e772f5e46b27680502374704dfdbecb9a8f7ad2a8efe6d3d2a44962",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "T3",
+      "source": "Lý thuyết/DPL_Chuong 3 - Dai so Quan he.pdf",
+      "sha256": "3172ba3e3fd8e5f02c281af0a3faa8d73226005d2ddf26232202bccc3bbd3a41",
+      "page_count": 63,
+      "text": "T3.txt",
+      "pages_json": "T3.json",
+      "text_sha256": "e09ebb93be8d32b582ed6cc4b7bfbb788fba0a6360a212c13196e28ad09213eb",
+      "pages_sha256": "fd04b13bc4c71ec3ecd9922a0e2522b747fe003c079af24b684bd0082a764963",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "T4",
+      "source": "Lý thuyết/DPL_Chuong 4 - SQL.pdf",
+      "sha256": "07497097ce886438c8b47eee51c77f14dbc27463284b3df463f5eb8099cf902c",
+      "page_count": 98,
+      "text": "T4.txt",
+      "pages_json": "T4.json",
+      "text_sha256": "74b53b0ad140b5bed9708f493f043fe8d105bafb2e79fe3c335873fe7b9ae7ce",
+      "pages_sha256": "5b69980787657dd42584010c40b2b59487deb3c5dfc47b18d5a1295e56b6824e",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "E23",
+      "source": "Giữa kỳ/2023_2024_HK1_DE THI GIUA KY_CSDL.pdf",
+      "sha256": "ecf54ab50f64f5faf75cbe0ed7ab0a9f5b1c1916320b35c2e0676cf11e8eb076",
+      "page_count": 4,
+      "text": "E23.txt",
+      "pages_json": "E23.json",
+      "text_sha256": "1f8d3f1b1cbf619de5916eeaf7536e0ad2f54f5a0d27006b9f1e55dae5b1e240",
+      "pages_sha256": "03324fc929f448144c135ef868b31d166765327ea472fa720082b9c77d4580dd",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "E24",
+      "source": "Giữa kỳ/2024_2025_HK1_DE THI GIUA KY_CSDL.pdf",
+      "sha256": "3928293e0df3acbc3c531182d42bc81216abe051388c16cbeacf7e5b4b57d3df",
+      "page_count": 4,
+      "text": "E24.txt",
+      "pages_json": "E24.json",
+      "text_sha256": "5a994b643860b16105936e2c983805439a2d67d8494ada353ae7e8948f6a31cf",
+      "pages_sha256": "f6d6ced5b44d9e62a88489b3bbb217ce01f5ee52dd766b43a790ec27dfe5d59d",
+      "extractor": "pypdf",
+      "cache_version": 1
+    },
+    {
+      "id": "E25",
+      "source": "Giữa kỳ/2025_2026_HK1_DE THI GIUA KY_CSDL.pdf",
+      "sha256": "9890d9757f02800e1953afcc18ad3e655c8742b6e46b7385c7a60e3ed5374a9e",
+      "page_count": 4,
+      "text": "E25.txt",
+      "pages_json": "E25.json",
+      "text_sha256": "7c8322a201a6f288c8de4197a936b06de01113a45ac0786bc49738decde649af",
+      "pages_sha256": "de6ad9328cb33fd8d9853284fc849860eed63ffd9206bdef159810d08cbcd07b",
+      "extractor": "pypdf",
+      "cache_version": 1
+    }
+  ],
+  "page_numbering": "physical PDF pages, 1-based",
+  "source_root": ".",
+  "cache_version": 1
+}

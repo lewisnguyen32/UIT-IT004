@@ -1,0 +1,317 @@
+[
+  {
+    "page": 1,
+    "text": "ĐẠI SỐ QUAN HỆThS. DươngPhi Long –Email: longdp@uit.edu.vn\nChương3:\nTRƯỜNG ÐẠI HỌC CÔNG NGHỆ THÔNG TINKHOA HỆ THỐNG THÔNG TINTài liệu bài giảng:\nMÔN CƠ SỞ DỮ LIỆU",
+    "chars": 162
+  },
+  {
+    "page": 2,
+    "text": "0102\n2\nNỘI DUNG BÀI HỌCGiới thiệu\nCác phép toán Đại số Quan hệ",
+    "chars": 62
+  },
+  {
+    "page": 3,
+    "text": "3\nGiới thiệuĐại số Quan hệ(Relational Algebra)",
+    "chars": 46
+  },
+  {
+    "page": 4,
+    "text": "4\nGiới thiệu-Môhìnhtoánhọcdựatrênlýthuyếttậphợp-ĐốitượngxửlýlàcácquanhệtrongCSDL Quan hệ-Cho phépsửdụngcácphéptoánrúttríchdữliệutừcácquanhệ-Tốiưuhóaquátrìnhrúttríchdữliệu-Bao gồm02 thànhphần:•Cácphéptoánđạisốquanhệ•Biểuthứcđạisốquanhệ",
+    "chars": 234
+  },
+  {
+    "page": 5,
+    "text": "5\nGiới thiệu-Cácphéptoánđạisốquanhệ:•Phéptrừ•Phéphội•Phépgiao•Phépchia•Cáchàmkếthợpvàgomnhóm\n•Phépchọn•Phépchiếu•Phépgán•Phépđổitên•PhéptíchDecartes•Phépkết",
+    "chars": 156
+  },
+  {
+    "page": 6,
+    "text": "6\nGiới thiệu-Biểuthứcđạisốquanhệ:•LàmộtbiểuthứcgồmcácphéptoánĐSQH•BiểuthứcĐSQHđượcxemnhưmộtquanhệ(khôngcótên)•KếtquảthựchiệncácphéptoánĐSQHcũnglàcácquanhệ,dođócóthểkếthợpgiữacácphéptoánnàyđểtạonêncácquanhệmới",
+    "chars": 208
+  },
+  {
+    "page": 7,
+    "text": "7\nCác phép toán Đại số quan hệ\n1.Phépchön2.Phépchiếu3.Phépgán4.Phépđổitên5.PhéptíchDecartes6.Phépkết7.Phéphội, Phépgiao, Phéptrừ8.Phépchia9.Cáchàmtínhtoántrênnhóm",
+    "chars": 162
+  },
+  {
+    "page": 8,
+    "text": "8\nLược đồ CSDL minh höaLượcđồCSDLQuảnlýnhânviênNHANVIEN(MaNV, HoTen, NgaySinh, DiaChi, GT, Luong, MaNQL, Phong)Tântừ:MỗinhânviêncóMãnhânviên(MaNV)duynhấtđểphânbiệtvớicácnhânviênkhác,cóhọtên(HoTen),ngàysinh(NgaySinh),địachỉ(DiaChi),giớitínhNamhoặcNữ(GT),mứclương(Luong),ngườiquảnlýtrựctiếp(MaNQL)vàthuộcvềmộtphòngban(Phong)PHONGBAN(MaPH, TenPH, TruongPhong, NgayNhanChuc)Tântừ:Mỗimộtphòngbancómộtmãphòngduynhất(MaPH)đểphânbiệtvớicácphòngbankhác,cótênphòng(TenPH),ngườitrưởngphòng(TruongPhong),vàngàynhậnchứccủatrưởngphòng(NgayNhanChuc)",
+    "chars": 534
+  },
+  {
+    "page": 9,
+    "text": "9\nLược đồ CSDL minh höaLượcđồCSDLQuảnlýnhânviên(tt)DIADIEMPHONG(MaPH,DiaDiem)Tântừ:Mỗimộtphòngban(MaPH)cóthểcónhiềuđịađiểmlàmviệckhácnhau(DiaDiem)DEAN(MaDA, TenDA, DdiemDA, Phong)Tântừ:Mỗimộtđềáncómộtmãđềánduynhất(MaDA)đểphânbiệtvớicácđềánkhác,cótênđềán(TenDA),địađiểmthựchiện(DdiemDA),vàdomộtphòngbanchủtrìđềánđó(Phong)PHANCONG(MaNV, MaDA, ThoiGian)Tântừ:Mỗimộtnhânviên(MaNV)đượcphâncôngthamgiađềán(MaDA),vàghinhậnsốgiờlàmviệcchođềánđótrên1tuần(ThoiGian)",
+    "chars": 455
+  },
+  {
+    "page": 10,
+    "text": "10\nLược đồ CSDL minh höaLượcđồCSDLQuảnlýnhânviên(tt)THANNHAN (MaTN, HoTN, TenTN, GT, NgaySinh)Tântừ:MỗithânnhâncóMãthânnhân(MaTN)duynhấtđểphânbiệtvớicácthânnhânkhác,cóhọtên(HoTen),giớitính(GT)ngàysinh(NgaySinh)NVIEN_TNHAN (MaNV, MaTN, QuanHe)Tântừ:Mỗinhânviên(MaNV)cóthểcónhiềuthânnhân(MaTN),đượcdiễngiảibởiquanhệ(QuanHe)nhưvợ,chồng,con,anhem…",
+    "chars": 343
+  },
+  {
+    "page": 11,
+    "text": "11\nLược đồ CSDL minh höaYêucầu:XácđịnhKhóachính,khóangoạicủaLượcđồtrênNHANVIEN(MaNV, HoTen, NgaySinh, DiaChi, GT, Luong, MaNQL, Phong)PHONGBAN(MaPH, TenPH, TruongPhong, NgayNhanChuc)DIADIEMPHONG(MaPH, DiaDiem)DEAN(MaDA, TenDA, DdiemDA, Phong)PHANCONG(MaNV, MaDA, ThoiGian)THANNHAN (MaTN, HoTen, GT, NgaySinh)NVIEN_TNHAN (MaNV, MaTN, QuanHe)",
+    "chars": 340
+  },
+  {
+    "page": 12,
+    "text": "12\nLược đồ CSDL minh höaLượcđồCSDLQuảnlýnhânviênNHANVIEN(MaNV, HoTen, NgaySinh, DiaChi, GT, Luong, MaNQL, Phong)PHONGBAN(MaPH, TenPH, TruongPhong, NgayNhanChuc)DIADIEMPHONG(MaPH, DiaDiem)DEAN(MaDA, TenDA, DdiemDA, Phong)PHANCONG(MaNV, MaDA, ThoiGian)THANNHAN (MaTN, HoTen, GT, NgaySinh)NVIEN_TNHAN (MaNV, MaTN, QuanHe)\nPhongMaNQLTruongPhong\nMaDAMaNV\nMaTN\nMaPH\nMaNV\nPhong",
+    "chars": 370
+  },
+  {
+    "page": 13,
+    "text": "13\n1. Phép chön (Selection)-Chọnracácdòng(bộ)trongquanhệthỏađiềukiện:𝜎!𝑅=𝑡|𝑡∈𝑅∧𝑃(𝑡)•𝑅:quanhệ•𝑃:điềukiệnchọn§Cácphéptoánsosánh>,<,=,≤,≥,….§Cácphéptoánlogic∧,∨,¬-Kếtquảtrảvềlàmộtquanhệ•CócùngdanhsáchthuộctínhvớiR•CósốbộluôníthơnhoặcbằngsốbộcủaR•Khôngcókếtquảtrùng-Phépchọncótínhgiaohoán:𝜎!!𝜎!\"(𝑅)=𝜎!\"𝜎!!(𝑅)",
+    "chars": 304
+  },
+  {
+    "page": 14,
+    "text": "14\n1. Phép chön (Selection)VD1:NHANVIEN(MaNV,HoTen,NgaySinh,DiaChi,GT,Luong,MaNQL,Phong)MaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV01Nguyễn Tuyết An01/10/1978TPHCMNữ10.000.000PB01NV02Trần Ngọc Minh25/01/1987TPHCMNữ4.500.000NV01PB01NV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02\nMaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV01Nguyễn Văn An01/10/1978TPHCMNam10.000.000PB01NV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02\nChọnnhữngnhânviêncólươnghơn5triệu𝜎\"#$%&'())))))𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁\n10.000.0004.500.0007.200.000",
+    "chars": 515
+  },
+  {
+    "page": 15,
+    "text": "15\n1. Phép chön (Selection)VD2:NHANVIEN(MaNV,HoTen,NgaySinh,DiaChi,GT,Luong,MaNQL,Phong)MaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV01Nguyễn Tuyết An01/10/1978TPHCMNữ10.000.000PB01NV02Trần Ngọc Minh25/01/1987TPHCMNữ4.500.000NV01PB01NV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02\nMaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02\nChọnnhữngnhânviênnamcólươnghơn5triệu𝜎*+,`./0`∧(\"#$%&'()))))))𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁\nNữ10.000.000Nữ4.500.000Nam7.200.000",
+    "chars": 487
+  },
+  {
+    "page": 16,
+    "text": "16\n1. Phép chön (Selection)VD3:NHANVIEN(MaNV,HoTen,NgaySinh,DiaChi,GT,Luong,MaNQL,Phong)MaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV01Nguyễn Tuyết An01/10/1978TPHCMNữ10.000.000PB01NV02Trần Ngọc Minh25/01/1987TPHCMNữ4.500.000NV01PB01NV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02\nMaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhong(khôngcódòngnàothỏa)\nChọnnhữngnhânviênnamsinhtừnăm1990trởvềsau𝜎*+,`./0`∧(45/6(.&789:%;)<=>>))𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁\nNữNữNam",
+    "chars": 435
+  },
+  {
+    "page": 17,
+    "text": "17\n2. Phép chiếu (Project)-Chiếuracáccột(thuộctính)trongquanhệ:𝜋?\",?#,…,?$𝑅=𝑡𝑎=,𝑎B,…,𝑎C𝑡∈𝑅•𝑅:quanhệ•𝐴!,𝐴\",…,𝐴#:danhsáchcácthuộctínhcầnchiếu-Kếtquảtrảvềlàmộtquanhệ•Cókthuộctính•CósốthuộctínhluôníthơnhoặcbằngsốthuộctínhcủaR•Cácdòngtrùngnhauchỉlấymột-Phépchiếukhôngcótínhgiaohoán𝜋$!,$\",…,$#𝜋$!,$\",…,$$𝑅≠𝜋$!,$\",…,$$𝜋$!,$\",…,$#𝑅",
+    "chars": 323
+  },
+  {
+    "page": 18,
+    "text": "18\n2. Phép chiếu (Project)VD4:NHANVIEN(MaNV,HoTen,NgaySinh,DiaChi,GT,Luong,MaNQL,Phong)MaNVHoTenNgaySinhDiaChiGTLuongMaNQLPhongNV01Nguyễn Tuyết An01/10/1978TPHCMNữ10.000.000PB01NV02Trần Ngọc Minh25/01/1987TPHCMNữ4.500.000NV01PB01NV03Phạm Tiến Dũng12/12/1982Long AnNam7.200.000NV04PB02Tìmmãnhânviên,họtênvàgiớitínhcủatấtcảnhânviên𝜋D/.E,F$+5%,*+𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁\nNữNữNam\nMaNVHoTenGTNV01Nguyễn Tuyết AnNữNV02Trần Ngọc MinhNữNV03Phạm Tiến DũngNam\nNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng",
+    "chars": 489
+  },
+  {
+    "page": 19,
+    "text": "19\n2. Phép chiếu (Project)VD5:DEAN(MaDA, TenDA, DdiemDA, Phong)\nChobiếtcácmã,tênvàmãphòngphụtráchcácđềánthựchiệntạiTP.HCM𝜋D/G?,+5%G?,!;$%&𝜎(GH:50G?,%+I.FKD%)𝐷𝐸𝐴𝑁\nMaDATenDADdiemDAPhongDA01Hệ thống quản lý sinh viênTP.HCMPB01DA02Hệ thống quản lý tín dụng ngân hàngBình DươngPB02DA03Hệ thống quản lý bệnh việnTP.HCMPB01\nMaDATenDAPhongDA01Hệ thống quản lý sinh viênPB01DA03Hệ thống quản lý bệnh việnPB01\nDA01Hệ thống quản lý sinh viênTP.HCMPB01DA02Hệ thống quản lý tín dụng ngân hàngBình DươngPB02DA03Hệ thống quản lý bệnh việnTP.HCMPB01",
+    "chars": 533
+  },
+  {
+    "page": 20,
+    "text": "20\n3. Phép gán (Assignment)-Đượcsửdụngđểnhậnlấykếtquảtrảvềcủamộtphéptoán𝑇𝑒𝑛𝑄𝐻←𝐵𝑖𝑒𝑢𝑇ℎ𝑢𝑐𝐷𝑆𝑄𝐻VD5:Chobiếtcácmã,tênvàmãphòngphụtráchcácđềánthựchiệntạiTP.HCM•Cách1:𝜋D/G?,+5%G?,!;$%&𝜎GH:50G?,`+!.FKD`𝐷𝐸𝐴𝑁•Cách2:𝐷𝐸𝐴𝑁_𝑇𝑃𝐻𝐶𝑀←𝜎GH:50G?,`+!.FKD`𝐷𝐸𝐴𝑁𝜋D/G?,+5%G?,!;$%&(𝐷𝐸𝐴𝑁_𝑇𝑃𝐻𝐶𝑀)",
+    "chars": 264
+  },
+  {
+    "page": 21,
+    "text": "21\n4. Phép đổi tên (Rename)-Được dùngđểđổitênquanhệ, thuộctính-Đổi tênquanhệ𝑅(𝐴,𝐵,𝐶)thànhquanhệ𝑆: rD(𝑅)-Đổitênthuộctính𝐴củaquanhệ𝑅thành𝑋:rF,G,H(𝑅)-Đổitênquan hệ𝑅(𝐴,𝐵,𝐶)thànhquanhệ𝑆và thuộc tính𝐴củaquanhệ𝑅thành𝑋:rD(F,G,H)(𝑅)",
+    "chars": 223
+  },
+  {
+    "page": 22,
+    "text": "22\n4. Phép đổi tên (Rename)VD6:Cho biếthọtên, giớitínhcủanhânviênlàmviệcởphòngcómãlà‘PB01’. ĐổitênthuộctínhthànhHoTenNV, GioiTinh𝐾𝑄(𝐻𝑜𝑇𝑒𝑛𝑁𝑉,𝐺𝑖𝑜𝑖𝑇𝑖𝑛ℎ)¬p𝐻𝑜𝑇𝑒𝑛,𝐺𝑇s𝑃ℎ𝑜𝑛𝑔=‘𝑃𝐵01’(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁)Cách1:\nrLM(F$+5%.E,*:$:+:%;)(p𝐻𝑜𝑇𝑒𝑛,𝐺𝑇s𝑃ℎ𝑜𝑛𝑔=‘𝑃𝐵01’(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁))Cách2:",
+    "chars": 250
+  },
+  {
+    "page": 23,
+    "text": "23\n5. Phép tích Decartes-Đượcdùngđểkếthợpcácbộcủacácquanhệvớinhau-Cho𝑅𝐴=,𝐴B,…,𝐴%vàS𝐵=,𝐵B,…,𝐵0.𝑅có𝑢bộ,𝑆có𝑣bộ𝑅×𝑆=𝑡N𝑡9|𝑡N∈𝑅∧𝑡9∈𝑆-𝑄←𝑅×𝑆:𝑄làmộtquanhệ•Có(𝑛+𝑚)ngôivới𝑛thuộctínhđầucủa𝑅,𝑚thuộctínhcủa𝑆•Có𝑢∗𝑣bộ,vớimỗibộlàmộttổhợpgiữa1bộcủa𝑅và1bộcủa𝑆",
+    "chars": 238
+  },
+  {
+    "page": 24,
+    "text": "24\n5. Phép tích DecartesVD7:𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁×𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁NHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02\nPHONGBANMaPHTenPHTruongPhongPB01NghiêncứuNV01PB02ĐiềuhànhNV03\nNHANVIEN ×PHONGBANMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV01Nguyễn Tuyết An01/10/1978NữPB01PB02ĐiềuhànhNV03NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB02ĐiềuhànhNV03NV03Phạm Tiến Dũng12/12/1982NamPB02PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03",
+    "chars": 613
+  },
+  {
+    "page": 25,
+    "text": "25\n5. Phép tích DecartesVD8:Chobiếtmã,họtênnhânviênvàtênphòngbanmànhânviênđólàmviệcNHANVIEN ×PHONGBANMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV01Nguyễn Tuyết An01/10/1978NữPB01PB02ĐiềuhànhNV03NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB02ĐiềuhànhNV03NV03Phạm Tiến Dũng12/12/1982NamPB02PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03\n𝜋D/.E,F$+5%,+5%!F𝜎(!;$%&,D/!F)(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁×𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)Cách1:\nPB01PB01PB01PB02PB01PB01PB01PB02PB02PB01PB02PB02",
+    "chars": 557
+  },
+  {
+    "page": 26,
+    "text": "26\n6. Phép kết Theta-join-PhépkếtTheta-join-PhépkếtbằngEqui-join-PhépkếttựnhiênNatural-join-PhépkếtngoàiOuter-join•PhépkếttráiLeft-Outer-join•PhépkếtphảiRight-Outer-join•PhépkếtđầyđủFull-Outer-join",
+    "chars": 197
+  },
+  {
+    "page": 27,
+    "text": "27\n6.1. Phép kết Theta-join-Với 𝑅𝐴=,𝐴B,…,𝐴%vàS𝐵=,𝐵B,…,𝐵0-Phépkếtthựchiện2 bước:•TíchDecartes𝑅×𝑆•Chọncácbộthỏađiềukiện𝐴𝜃𝐵Với𝜃làphéptoánsosánh>,<,=,≠,≤,≥𝑹𝑺=(𝑡,𝑞)|𝑡∈𝑅∧𝑞∈𝑆∧𝑡.𝐴𝜃𝑞.𝐵𝐴𝜃𝐵",
+    "chars": 178
+  },
+  {
+    "page": 28,
+    "text": "28\n6.1. Phép kết Theta-joinVD9:Với𝑅𝐴,𝐵,𝐶vàS𝐸,𝐹RABC𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\nSEF𝛼1𝛼4𝛽12\nABCEF𝛼𝛼1𝛼4𝛽𝛼5𝛽12\n𝑹𝑺𝐴=𝐸∧𝐶<𝐹𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\n𝛼1𝛼4𝛽12",
+    "chars": 122
+  },
+  {
+    "page": 29,
+    "text": "29\n6.2. Phép kết bằng Equi-join-Làphépkếtcóđiềukiệnkết𝜃làphépso sánh=-VD10:Với𝑅𝐴,𝐵,𝐶vàS𝐸,𝐹RABC𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\nSEF𝛼1𝛼4𝛽12\nABCEF𝛼𝛼1𝛼1𝛽𝛽12𝛽12\n𝑹𝑺𝐴=𝐸∧𝐶=𝐹𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\n𝛼1𝛼4𝛽12",
+    "chars": 167
+  },
+  {
+    "page": 30,
+    "text": "30\nMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03\n6.2. Phép kết bằng Equi-joinVD8:Cho biếtmã, họtênnhânviênvàtênphòngban mànhânviênđólàmviệc\n(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻\nNHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02\nPHONGBANMaPHTenPHTruongPhongPB01NghiêncứuNV01PB02ĐiềuhànhNV03",
+    "chars": 520
+  },
+  {
+    "page": 31,
+    "text": "31\n6.2. Phép kết bằng Equi-joinVD8:Cho biếtmã, họtênnhânviênvàtênphòngban mànhânviênđólàmviệc\n𝜋D/.E,F$+5%,+5%!F(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻Cách2:\n(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻MaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03",
+    "chars": 372
+  },
+  {
+    "page": 32,
+    "text": "32\n6.2. Phép kết bằng Equi-join-Trongkếtbằng,nếutênthuộctínhsosánhAcủahaiquanhệgiốngnhau,phépkếtđượcviếtlạilà\n-GiảsửtrongNHANVIENcộtPhongđượcđổitênthànhMaPH(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑀𝑎𝑃𝐻\n(𝑅𝑆)𝐴",
+    "chars": 184
+  },
+  {
+    "page": 33,
+    "text": "33\n6.2. Phép kết bằng Equi-join-CầnquantâmýnghĩacủadữliệukhithựchiệnphépkếtNHANVIEN(MaNV,HoTen,NgaySinh,DiaChi,GT,Luong,MaNQL,Phong)PHONGBAN(MaPH,TenPH,TruongPhong,NgayNhanChuc)\n𝜋D/.E,F$+5%,+5%!F(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻\n𝜋D/.E,F$+5%,+5%!F(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑀𝑎𝑁𝑉=𝑇𝑟𝑢𝑜𝑛𝑔𝑃ℎ𝑜𝑛𝑔",
+    "chars": 275
+  },
+  {
+    "page": 34,
+    "text": "34\n6.3. Phép kết tự nhiên Natural-join-Làphépkếtbằngvàcáccặpthuộctínhsosánhphảicùngtênvàcùngmiềngiátrị-Nếukhôngcùngtên,thựchiệnphépđổitêntrướckhikết-Kýhiệu:𝑹∗𝑺hoặc𝑹𝑺",
+    "chars": 165
+  },
+  {
+    "page": 35,
+    "text": "35\n6.3. Phép kết tự nhiên Natural-joinVD11:Với𝑅𝐴,𝐵,𝐶vàS𝐴,𝐶,𝐷RABC𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\nSACD𝛼1𝛽𝛼4𝛽𝛽12𝛽\nABCD𝛼𝛼1𝛽𝛽𝛽12𝛽\n𝑹𝑺𝛼𝛼1𝛼𝛽5𝛽𝛼5𝛽𝛽12\n𝛼1𝛽𝛼4𝛽𝛽12𝛽",
+    "chars": 133
+  },
+  {
+    "page": 36,
+    "text": "36\n6.4. Phép kết ngoài Outer-join-Cònđượcgọilàphépkếtmởrộng.Mởrộngphépkếtđểtránhmấtthôngtin.-Phânloại:•PhépkếttráiLeft-Outer-join•PhépkếtphảiRight-Outer-join•PhépkếtđầyđủFull-Outer-join",
+    "chars": 185
+  },
+  {
+    "page": 37,
+    "text": "37\n6.4.1. Phép kết trái Left-Outer-join-Kýhiệu:-Giữlạicácbộcủaquanhệbêntrái,cácthuộctínhcủaquanhệbênphảikhôngcógiátrịsẽmanggiátrịNULL\n𝑹𝑺𝐴𝜃𝐵",
+    "chars": 139
+  },
+  {
+    "page": 38,
+    "text": "38\nMaNVHoTenNgaySinhGTPhongMaNVMaDAThoiGianNV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0120NV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0230NV03Phạm Tiến Dũng12/12/1982NamPB02NV03DA0120NV02Trần Ngọc Minh25/01/1987NữPB01NULLNULLNULL\n6.4.1. Phép kết trái Left-Outer-joinVD12:ChobiếtnhữngmãnhânviênkhôngthamgiađềánnàoNHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02\nPHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120\n𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑀𝑎𝑁𝑉",
+    "chars": 519
+  },
+  {
+    "page": 39,
+    "text": "39\n6.4.1. Phép kết trái Left-Outer-joinVD12:Chobiếtnhữngmãnhânviênkhôngthamgiađềánnào\nMaNVHoTenNgaySinhGTPhongMaNVMaDAThoiGianNV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0120NV01Nguyễn Tuyết An01/10/1978NữPB01NV01DA0230NV03Phạm Tiến Dũng12/12/1982NamPB02NV03DA0120NV02Trần Ngọc Minh25/01/1987NữPB01NULLNULLNULL\n𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑀𝑎𝑁𝑉\nCách1:𝜋!\"#$𝜎!\"%&'#())(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺)𝑀𝑎𝑁𝑉",
+    "chars": 372
+  },
+  {
+    "page": 40,
+    "text": "40\n6.4.2. Phép kết phải Right-Outer-join-Kýhiệu:-Giữlạicácbộcủaquanhệbênphải,cácthuộctínhcủaquanhệbêntráikhôngcógiátrịsẽmanggiátrịNULL\n𝑹𝑺𝐴𝜃𝐵",
+    "chars": 140
+  },
+  {
+    "page": 41,
+    "text": "41\nMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03NULLNULLNULLNULLNULLPB03TổchứcNULL\n6.4.2. Phép kết phải Right-Outer-joinVD13:Cho biếtmãvàtênphòngban khôngcónhânviênNHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02\nPHONGBANMaPHTenPHTruongPhongPB01NghiêncứuNV01PB02ĐiềuhànhNV03PB03TổchứcNULL\n(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻",
+    "chars": 558
+  },
+  {
+    "page": 42,
+    "text": "42\nMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03NULLNULLNULLNULLNULLPB03TổchứcNULL\n6.4.2. Phép kết phải Right-Outer-joinVD13:Cho biếtmãvàtênphòngban khôngcónhânviên(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻\n𝜋!\"*+,-./*+𝜎!\"#$'#())(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻",
+    "chars": 395
+  },
+  {
+    "page": 43,
+    "text": "43\n6.4.3. Phép kết đầy đủ Full-Outer-join-Kýhiệu:-Giữlạicácbộthuộcquanhệbênphảivàtrái,cácthuộctínhởquanhệbêntráivàphảimàkhôngcódữliệusẽmanggiátrịNULL-Còngọilàphépkếttráiphải.\n𝑹𝑺𝐴𝜃𝐵",
+    "chars": 180
+  },
+  {
+    "page": 44,
+    "text": "44\nMaNVHoTenNgaySinhGTPhongMaPHTenPHTruongPhongNV01Nguyễn Tuyết An01/10/1978NữPB01PB01NghiêncứuNV01NV02Trần Ngọc Minh25/01/1987NữPB01PB01NghiêncứuNV01NV03Phạm Tiến Dũng12/12/1982NamPB02PB02ĐiềuhànhNV03NV04Phan Thị Hoa10/11/1989NữNULLNULLNULLNULLNULLNULLNULLNULLNULLPB03TổchứcNULL\n6.4.3. Phép kết đầy đủ Full-Outer-joinVD14:NHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02NV04Phan Thị Hoa10/11/1989NữNULL\nPHONGBANMaPHTenPHTruongPhongPB01NghiêncứuNV01PB02ĐiềuhànhNV03PB03TổchứcNULL\n(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝑂𝑁𝐺𝐵𝐴𝑁)𝑃ℎ𝑜𝑛𝑔=𝑀𝑎𝑃𝐻",
+    "chars": 596
+  },
+  {
+    "page": 45,
+    "text": "45\n7. Phép hội -Phép giao -Phép trừ(Union –Intersect –Except)-Cácphéptoánhội(union),giao(intersect),trừ(except)phảithỏađiềukiệntươngthíchkhảhợp.-𝑅𝐴=,𝐴B,…,𝐴%và𝑆𝐵=,𝐵B,…,𝐵%tươngthíchkhảhợpnếuthỏa2điềukiệnsau:•Sốbậccủa𝑅và𝑆bằngnhau(cùngsốlượng𝑛thuộctính)•MiềngiátrịthuộctínhphảitươngthíchDOM(𝐴:) = DOM(𝐵:), vớimọi𝑖=1,…,𝑛",
+    "chars": 315
+  },
+  {
+    "page": 46,
+    "text": "46\n7. Phép hội -Phép giao -Phép trừ-Phéphội:\nQ=𝑹∩𝑺=𝑡|𝑡∈𝑅∧𝑡∈𝑆=𝑅−(𝑅−𝑆)\n𝑹𝑺Q=𝑹∪𝑺=𝑡|𝑡∈𝑅∨𝑡∈𝑆\n𝑹𝑺\nQ=𝑹−𝑺=𝑡|𝑡∈𝑅∧𝑡∉𝑆=𝑅−(𝑅∩𝑆)\n-Phépgiao:\n-Phéptrừ: 𝑹𝑺\n",
+    "chars": 138
+  },
+  {
+    "page": 47,
+    "text": "47\n7. Phép hội -Phép giao -Phép trừVD12:ChobiếtnhữngMãnhânviênkhôngthamgiađềánnàoNHANVIENMaNVHoTenNgaySinhGTPhongNV01Nguyễn Tuyết An01/10/1978NữPB01NV02Trần Ngọc Minh25/01/1987NữPB01NV03Phạm Tiến Dũng12/12/1982NamPB02\nPHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120\n𝜋!\"#$(𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁)−𝜋!\"#$(𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺)Cách2:Hoặc:𝑅←𝜋D/.E𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑆←𝜋D/.E𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑅−S",
+    "chars": 348
+  },
+  {
+    "page": 48,
+    "text": "48\n7. Phép hội -Phép giao -Phép trừVD15:ChobiếtnhữngMãvàhọtênnhânviênkhôngthamgiađềánnào𝑅←𝜋D/.E,F$+5%𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑆←𝜋D/.E𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑅−S𝑅←𝜋D/.E,F$+5%𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑆←𝜋D/.E,F$+5%𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑹−𝐒 𝑀𝑎𝑁𝑉",
+    "chars": 185
+  },
+  {
+    "page": 49,
+    "text": "49\n7. Phép hội -Phép giao -Phép trừVD16:ChobiếtnhữngMãvàhọtênnhânviênthamgiavàoĐềáncómã‘DA01’hoặc‘DA02’\n𝑅←𝜋D/.E,F$+5%𝜎(D/G?,`G?)=`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁S←𝜋D/.E,F$+5%𝜎(D/G?,`G?)B`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑹∪𝐒\n𝜋D/.E,F$+5%𝜎(D/G?,`G?)=`∨D/G?,`G?)B`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑀𝑎𝑁𝑉Cách1:\nCách2: 𝑀𝑎𝑁𝑉𝑀𝑎𝑁𝑉",
+    "chars": 273
+  },
+  {
+    "page": 50,
+    "text": "50\n7. Phép hội -Phép giao -Phép trừVD17:ChobiếtnhữngMãvàhọtênnhânviênthamgiavàocả2Đềáncómã‘DA01’và‘DA02’\n𝑅←𝜋D/.E,F$+5%𝜎(D/G?,`G?)=`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑆←𝜋D/.E,F$+5%𝜎(D/G?,`G?)B`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑅∩S\n𝑀𝑎𝑁𝑉\n𝑀𝑎𝑁𝑉𝑀𝑎𝑁𝑉\n𝜋D/.E,F$+5%𝜎(D/G?,`G?)=`∧D/G?,`G?)B`)𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁",
+    "chars": 262
+  },
+  {
+    "page": 51,
+    "text": "51\n8. Phép chia (Division)-𝑉ới𝑅𝐴=,𝐴B,…,𝐴%và𝑆𝐵=,𝐵B,…,𝐵0,𝑛>𝑚vàcó𝑚thuộctínhchung(tứclà𝑆P⊊):\n-TậpthuộctínhcủaQ:𝑄P=𝑅P−𝑆P-Kếtquảlàcácbộtrong𝑅đềukhớpvớitấtcảcácbộtrong𝑆-Phépchiatươngđươngvới:\nQ=𝑹÷𝑺=𝑡|∀𝑢∈𝑆,(𝑡,𝑢)∈𝑅\n𝑻𝟏←𝝅𝑹&S𝑺&𝑹𝑻𝟐←𝝅𝑹&S𝑺&𝑺×𝑻𝟏−𝑹T←𝑻𝟏−𝑻𝟐",
+    "chars": 238
+  },
+  {
+    "page": 52,
+    "text": "52\n8. Phép chia (Division)VD18:ChobiếtnhữngMã,họtênnhânviênđượcphâncôngthamgiatấtcảcácđềánNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng\nPHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120\n𝑁𝑉_𝑇𝐺𝑖𝑎←𝜋D/.E,F$+5%,D/G?𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑇𝑎𝑡𝐶𝑎_𝐷𝑒𝐴𝑛←𝜋D/G?𝐷𝐸𝐴𝑁𝑁𝑉_𝑇𝐺𝑖𝑎÷𝑇𝑎𝑡𝐶𝑎_𝐷𝑒𝐴𝑛\nDEANMaDATenDADA01Hệ thống quản lý sinh viênDA02Hệ thống quản lý tín dụng ngân hàng\n𝑀𝑎𝑁𝑉",
+    "chars": 384
+  },
+  {
+    "page": 53,
+    "text": "53\n8. Phép chia (Division)VD18:ChobiếtnhữngMã,họtênnhânviênđượcphâncôngthamgiatấtcảcácđềán\nNV_TGiaMaNVHoTenMaDANV01Nguyễn Tuyết AnDA01NV01Nguyễn Tuyết AnDA02NV03Phạm Tiến DũngDA01\nNV_TGia÷TatCa_DeAnMaNVHoTenNV01Nguyễn Tuyết An\n𝑁𝑉_𝑇𝐺𝑖𝑎←𝜋D/.E,F$+5%,D/G?𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺𝑇𝑎𝑡𝐶𝑎_𝐷𝑒𝐴𝑛←𝜋D/G?𝐷𝐸𝐴𝑁𝑁𝑉_𝑇𝐺𝑖𝑎÷𝑇𝑎𝑡𝐶𝑎_𝐷𝑒𝐴𝑛TatCa_DeAnMaDADA01DA02\n𝑀𝑎𝑁𝑉",
+    "chars": 332
+  },
+  {
+    "page": 54,
+    "text": "54\n8. Phép chia (Division)VD18:ChobiếtnhữngMãnhânviênđượcphâncôngthamgiatấtcảcácđềán\n𝑻𝟏MaNVNV01NV02NV03\n𝝅𝑴𝒂𝑵𝑽,𝑴𝒂𝑫𝑨𝑷𝑯𝑨𝑵𝑪𝑶𝑵𝑮MaNVMaDANV01DA01NV01DA02NV03DA01\n𝝅𝑴𝒂𝑫𝑨𝑫𝑬𝑨𝑵MaDADA01DA02\n𝑻𝟏←𝝅𝑴𝒂𝑵𝑽𝑵𝑯𝑨𝑵𝑽𝑰𝑬𝑵𝑻𝟐←𝝅𝑴𝒂𝑵𝑽𝑻𝟏×𝝅𝑴𝒂𝑫𝑨𝑫𝑬𝑨𝑵−𝝅𝑴𝒂𝑵𝑽,𝑴𝒂𝑫𝑨𝑷𝑯𝑨𝑵𝑪𝑶𝑵𝑮𝐓←𝑻𝟏−𝑻𝟐𝑻𝟏×𝝅𝑴𝒂𝑫𝑨𝑫𝑬𝑨𝑵MaNVMaDANV01DA01NV01DA02NV02DA01NV02DA02NV03DA01NV03DA02\n𝑻𝟐MaNVNV02NV03\n𝐓←𝑻𝟏−𝑻𝟐MaNVNV01NV01DA01NV01DA02NV02DA01NV02DA02NV03DA01NV03DA02",
+    "chars": 386
+  },
+  {
+    "page": 55,
+    "text": "55\n9. Các hàm tính toán trên nhóm-Cáchàmtínhtoán:•Trungbình:AVG(Thuộctính)•Nhỏnhất:Min(Thuộctính)•Lớnnhất:Max(Thuộctính)•Tínhtổng:Sum(Thuộctính)•Đếm:Count(Thuộctính)",
+    "chars": 165
+  },
+  {
+    "page": 56,
+    "text": "56\n9. Các hàm tính toán trên nhóm-Phéptoángomnhóm:(Groupby)\n•𝐸:biểuthứcđạisốquanhệ•𝐺::thuộctínhgomnhóm(nếucó)•𝐹:𝐴::hàmtínhtoán𝐹:trênthuộctính𝐴:\n5;,5<,…,5=ℑ6;7;,6<7<,…,6>7>𝐸",
+    "chars": 172
+  },
+  {
+    "page": 57,
+    "text": "57\n9. Các hàm tính toán trên nhómVD19:Tìmlươngcaonhất,thấpnhất,trungbìnhcủacácnhânviêntrongcôngty\nKhôngcóthuộctínhgomnhómxemnhưtínhtoántrênmộtnhómℑ89:;<=>?,8@>;<=>?,7A?;<=>?𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁Max(Luong)Min(Luong)Avg(Luong)900045005781.4PhongLuongPB015000PB014500PB016200PB024500PB039000PB035500PB036400",
+    "chars": 291
+  },
+  {
+    "page": 58,
+    "text": "58\n9. Các hàm tính toán trên nhómVD20:Tìmlươngcaonhất,thấpnhất,trungbìnhcủacácnhânviênthuộcphòngPB01ℑABCDEFGH,AIGDEFGH,JKHDEFGH𝜎LMFGHN0LOPQ0𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁Max(Luong)Min(Luong)Avg(Luong)620045005233.3PhongLuongPB015000PB014500PB016200PB024500PB039000PB035500PB036400",
+    "chars": 258
+  },
+  {
+    "page": 59,
+    "text": "59\n9. Các hàm tính toán trên nhómVD21:Tìmmứclươngcaonhất,thấpnhất,trungbìnhcủamỗiphòngbantrongcôngtyBC=>?ℑ89:;<=>?,8@>;<=>?,7A?;<=>?𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁PhongLuongPB015000PB014500PB016200PB024500PB039000PB035500PB036400\nPhongMax(Luong)Min(Luong)Avg(Luong)PB01500045005233PB02450045004500PB03900055006966",
+    "chars": 290
+  },
+  {
+    "page": 60,
+    "text": "60\n9. Các hàm tính toán trên nhómVD22:Thốngkêsốlượngđềánmỗinhânviênđãthamgia.Thôngtinnhânviênhiểnthịmãnhânviên,họtên89DE,F=GH>ℑI=<>J(89K7)𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺MaNVHoTenCount(MaDA)NV01Nguyễn Tuyết An2NV03Phạm Tiến Dũng1\nNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng\nPHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120\n𝑀𝑎𝑁𝑉",
+    "chars": 346
+  },
+  {
+    "page": 61,
+    "text": "61\n9. Các hàm tính toán trên nhómVD22:Thốngkêsốlượngđềánmỗinhânviênđãthamgia.Thôngtinnhânviênhiểnthịmãnhânviên,họtên89DE,F=GH>ℑI=<>J(89K7)𝑁𝐻𝐴𝑁𝑉𝐼𝐸𝑁𝑃𝐻𝐴𝑁𝐶𝑂𝑁𝐺MaNVHoTenCount(MaDA)NV01Nguyễn Tuyết An2NV02Trần Ngọc Minh0NV03Phạm Tiến Dũng1\nNHANVIENMaNVHoTenNV01Nguyễn Tuyết AnNV02Trần Ngọc MinhNV03Phạm Tiến Dũng\nPHANCONGMaNVMaDAThoiGianNV01DA0120NV01DA0230NV03DA0120\n𝑀𝑎𝑁𝑉",
+    "chars": 365
+  },
+  {
+    "page": 62,
+    "text": "62\nTổng kết chương\nCáckháiniệm:-ĐSQH-CácphéptoánĐSQH-BiểuthứcĐSQH\nGiới thiệuCác phép toán ĐSQH\n1.Phépchọn2.Phépchiếu3.Phépgán4.Phépđổitên5.PhéptíchDecartes6.Phépkết7.Phéphội, Phépgiao, Phéptrừ8.Phépchia9.Cáchàmtínhtoántrênnhóm",
+    "chars": 226
+  },
+  {
+    "page": 63,
+    "text": "63\nTHANKS!Any questions?",
+    "chars": 24
+  }
+]

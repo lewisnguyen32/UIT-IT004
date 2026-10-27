@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "status": "PASS",
+  "source_pdfs_unchanged": 7,
+  "cached_pages": 296,
+  "exam_variants": 6,
+  "indexed_subtasks": 62,
+  "total_exam_points": 60,
+  "local_links_valid": 23,
+  "markdown_files": 7,
+  "cache_reuse": "all seven sources reused without PDF extraction",
+  "visual_exam_pages_checked": 12,
+  "theory_visual_pages_checked": [
+    "T1:52",
+    "T2:25",
+    "T3:37",
+    "T3:51",
+    "T3:56",
+    "T4:22",
+    "T4:35",
+    "T4:40",
+    "T4:41"
+  ],
+  "study_progress": "not started",
+  "memory_bytes": 1521,
+  "rules_bytes": 3881
+}

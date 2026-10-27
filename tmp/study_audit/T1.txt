@@ -1,0 +1,369 @@
+[PDF PAGE 1]
+TỔNG QUANThS. DươngPhi Long –Email: longdp@uit.edu.vn
+Chương1:
+TRƯỜNG ÐẠI HỌC CÔNG NGHỆ THÔNG TINKHOA HỆ THỐNG THÔNG TINTài liệu bài giảng:
+MÔN CƠ SỞ DỮ LIỆU
+
+[PDF PAGE 2]
+0102
+2
+NỘI DUNG BÀI HỌCCác khái niệm của một hệ CSDL
+Các mô hình dữ liệu
+
+[PDF PAGE 3]
+3
+Các khái niệm của một hệ CSDL1.Đặtvấnđề2.Dữliệu(Data)3.Hệthốngtậptin (File System)4.ĐịnhnghïamộtCSDL5.CácđốitượngsửdụngCSDL6.HệquảntrịCSDL7.CácmứccủamộtCSDL
+
+[PDF PAGE 4]
+4
+1. Đặt vấn đề
+
+
+[PDF PAGE 5]
+5
+1. Đặt vấn đề
+
+
+[PDF PAGE 6]
+6
+1. Đặt vấn đề
+Quảnlýdữliệunhưthếnào?
+Cơsởdữliệulàgì?
+Vấnđề01
+Vấnđề02
+
+[PDF PAGE 7]
+7
+2. Dữ liệu (Data)-Mộtmôtảhìnhthứcvềnhữngsựkiện,kháiniệm-Vídụ:•ThôngtincánhâncủaSV•BảngđiểmcủaSV•Hóađơnbánhàng•Báocáodoanhthubánhàng
+
+[PDF PAGE 8]
+8
+2. Hệ thống tập tin (File system)Làtậphợpcáctậptinriênglẻphụcvụchomụcđíchcủađơnvịsửdụng.
+Chươngtrìnhứngdụng1Chươngtrìnhứngdụng2Chươngtrìnhứngdụng3
+HỆ THỐNG QUẢN LÝ TẬP TIN
+Tập tin 1Tập tin 2
+Tập tin 3Dữ liệu
+
+[PDF PAGE 9]
+9
+2. Hệ thống tập tin (File system)-Ưuđiểm:•Triểnkhaiứngdụngnhanh•Khảnăngđápứngnhanhchóng,kịpthời(vìchỉphụcvụchomụcđíchhạnhẹp)-Nhượcđiểm:•Trùnglắpdữliệu®lãngphí,dữliệukhôngnhấtquán•Khókhăntrongviệctruyxuấtthôngtin•Chiphícao•Chiasẻdữliệuhạnchế
+
+[PDF PAGE 10]
+10
+3. Cơ sở dữ liệu (Database)-Làmộthệthốngcácthôngtincócấutrúc,đượclưutrữtrêncácthiếtbịlưutrữnhằmthỏamãnyêucầukhaithácthôngtinđồngthờicủanhiềungườisửdụnghaynhiềuchươngtrìnhứngdụngvớinhữngmụcđíchkhácnhau
+
+[PDF PAGE 11]
+11
+3. Cơ sở dữ liệu (Database)
+HệQuảnTrịCSDL 
+Chương trình ứng dụng 1Quản lý dữ liệu
+Chương trình ứng dụng 2Quản lý dữ liệu
+Chương trình ứng dụng 3Quản lý dữ liệu
+CSDL
+
+[PDF PAGE 12]
+12
+3. Cơ sở dữ liệu (Database)-Ưuđiểm:•Giảmtrùnglắpthôngtinxuốngmứcthấpnhất,đảmbảotínhnhấtquánvàtoànvẹndữliệu.•Đảmbảodữliệuđượctruyxuấttheonhiềucáchkhácnhau.•Khảnăngchiasẻthôngtinchonhiềungười,nhiềuứngdụngkhácnhau.
+
+[PDF PAGE 13]
+13
+3. Cơ sở dữ liệu (Database)-Mộtsốvấnđềcầngiảiquyết:•Dữliệuphảiđượccậpnhậtthườngxuyên•Tínhbảomậtvàquyềnkhaithácthôngtincủangườisửdụng•Tranhchấpdữliệu(xửlýđồngthời)•Đảmbảodữliệukhicósựcố(saolưu,phụchồi)
+
+[PDF PAGE 14]
+14
+4. Các đối tượng sử dụng CSDL-Ngườidùngcuối(Enduser):•KhôngchuyênvềlĩnhvựctinhọcvàCSDL•CầncôngcụđểkhaithácCSDL(ytế,trườnghọc,kinhdoanh,…)-Chuyênviêntinhọc:Xâydựngcácứngdụngđểphụcvụchocácmụcđíchquảnlý.
+
+[PDF PAGE 15]
+15
+4. Các đối tượng sử dụng CSDL-Quảntrịviên(DatabaseAdministrator):•TổchứcCSDL•Xửlýbảomật,cấpquyềnCSDL•Saolưu,phụchồidữliệu•Giảiquyếtcáctranhchấpdữliệu
+
+[PDF PAGE 16]
+16
+5. Hệ quản trị CSDL-HệquảntrịCSDL(DBMS–DatabaseManagementSystem):•LàtậphợpcácchươngtrìnhchophépngườisửdụngtạoravàduytrìCSDL.•Làphầnmềmchophépđịnhnghĩa,xâydựngvàxửlýdữliệu:§Địnhnghĩa–khaibáobộkhungdữliệu,môtảchitiếtvềdữliệu§Xâydựng–lưutrữdữliệu§Xửlý–Truyvấn,cậpnhậtdữliệuvàtruyxuấtbáocáo•Làhệthốngcácphầnmềmhỗtrợtíchcựcchocácnhàphântích,thiếtkếvàkhaithácCSDL.
+
+[PDF PAGE 17]
+17
+5. Hệ quản trị CSDL-MộtsốDBMSthôngdụng:•MicrosoftSQLServer•MySQL•Oracle•VisualFoxPro•MicrosoftAccess•DB2→NhiềuDBMShiệnnaydựatrênmôhìnhdữliệuquanhệ.
+
+
+[PDF PAGE 18]
+18
+5. Hệ quản trị CSDL-MộtsốDBMSkhác:•NoSQL(Redis,Cassandra,MongoDB,Neo4j,…)•NewSQL(ApacheTrafodion,CockroachDB,VoltDB,NuoDB…)
+
+
+[PDF PAGE 19]
+19
+5. Hệ quản trị CSDL-MộtDBMSphảicó:•NgônngữgiaotiếpgiữangườisửdụngvàCSDL•Từđiểndữliệu(DataDictionary)•Cóbiệnphápbảomậtkhicóyêucầu•Cơchếgiảiquyếttranhchấpdữliệu•Cócơchếsaolưu(backup),phụchồi(restore)•Đảmbảotínhđộclậpgiữadữliệuvàchươngtrình→MỗiDBMSkhácnhaucócơchếkhácnhauđểgiảiquyếtcácvấnđề
+
+[PDF PAGE 20]
+20
+5. Hệ quản trị CSDL-Ngônngữgiaotiếp:đượcchiathành04loại•Ngônngữmôtảdữliệu(DDL–DataDefinitionLanguage):chophépkhaibáo§CấutrúcCSDL§Cácmốiliênhệcủadữliệu§Cácquyđịnh,ràngbuộcdữliệu.•Ngônngữthaotácdữliệu(DML–DataManipulationLanguage)chophépthựchiệncácthaotácThêm,Xóa,Sửadữliệu
+
+[PDF PAGE 21]
+21
+5. Hệ quản trị CSDL-Ngônngữgiaotiếp:đượcchiathành04loại•Ngônngữtruyvấndữliệu(SQL–StructuredQueryLanguage):chophépngườikhaithácsửdụngđểtruyvấnthôngtincầnthiết.•Ngônngữquảnlýdữliệu(DCL–DataControlLanguage):chophépquảnlýbảomật,phânquyềnchongườisửdụng.
+
+[PDF PAGE 22]
+22
+6. Các mức biểu diễn một CSDL
+Người dùngLượcđồngoài1Lượcđồngoàin…
+Lượcđồquanniệm
+Lượcđồtrong
+Người dùngMứcngoài
+Mứcquanniệm
+Mứctrong
+
+[PDF PAGE 23]
+23
+6. Các mức biểu diễn một CSDL-Mứctrong:(mứcvậtlý–Physical)làmứclưutrữCSDL•Cầngiảiquyếtvấnđềgì?•Dữliệugì?•Lưutrữnhưthếnào?ởđâu?•Cầncácchỉmụcgì?•Truyxuấttuầntựhayngẫunhiên.•DànhchongườiquảntrịCSDL.
+
+[PDF PAGE 24]
+24
+6. Các mức biểu diễn một CSDL-Mứcquanniệm:(mứcConceptionhaymứcLogical)•Cầnphảilưutrữbaonhiêuloạidữliệu?•Làdữliệugì?mốiquanhệgiữachúng?-Mứcngoài:củangườisửdụngvàcácchươngtrìnhứngdụng
+
+[PDF PAGE 25]
+25
+Các mô hình dữ liệu1.Giớithiệu2.Môhìnhdữliệumạng3.Môhìnhdữliệuphâncấp4.Môhìnhthựcthểmốikếthợp5.Môhìnhdữliệuquanhệ6.Môhìnhdữliệuhướngđốitượng
+
+[PDF PAGE 26]
+26
+1. Giới thiệu-Môhìnhdữliệulàsựtrừutượnghóacủamôitrườngthực,biểudiễndữliệuởmứcquanniệm.-Mộtsốmôhình:•Môhìnhdữliệumạng•Môhìnhdữliệuphâncấp•Môhìnhdữliệuthựcthểmốikếthợp•Môhìnhdữliệuquanhệ•Môhìnhdữliệuhướngđốitượng
+
+[PDF PAGE 27]
+27
+2. Mô hình dữ liệu mạng-ĐượcxâydựngbởiHoneywellvàonăm1964-1965-Môhìnhdữliệumạng(NetworkDataModel)còngọitắtlàmôhìnhmạng(NetworkModel)làmôhìnhđượcbiểudiễnbởimộtđồthịcóhướng,vớicácthànhphần:•Mẫutin(record)•Loạimẫutin•Loạiliênhệ(settype)•Bảnsố
+
+[PDF PAGE 28]
+28
+2. Mô hình dữ liệu mạng-Mẫutin(record):•Môtả1đốitượngtrongthếgiớithực•VD:(’NV001’,’NguyenLam’,’Nam’,’10/10/1970’,’DongNai’)-Loạimẫutin:•Là1tậpcácmẫutincócùngtínhchất•VD:nhânviên(NHANVIEN)•Kýhiệu:NHANVIENCONGVIEC
+
+[PDF PAGE 29]
+29
+2. Mô hình dữ liệu mạng-Loạiliênhệ:•Môtảsựliênkếtgiữa1loạimẫutinchủvà1loạimẫutinthànhviên•VD:thamgia(ThamGia)•Kýhiệu:
+•Loạiliênhệđệquy(Recursive):mộtloạimẫutinchủcũngcóthểđồngthờilàloạimẫutinthànhviênvớichínhnó.
+Thamgia
+
+[PDF PAGE 30]
+30
+2. Mô hình dữ liệu mạng-Bảnsố:Chỉrasốlượngcácmẫutinthamgiatrongmốiliênhệ•(1:1)(one-to-one):mỗimẫutincủaloạimẫutinchủkếthợpvớiđúng1mẫutincủaloạimẫutinthànhviên.•(1:n)(one-to-many):mỗimẫutincủaloạimẫutinchủkếthợpvới1haynhiềumẫutinthànhviên.•(n:1)(many-to-one):nhiềumẫutincủaloạimẫutinchủkếthợpvớiđúng1mẫutincủaloạimẫutinthànhviên.
+
+[PDF PAGE 31]
+31
+2. Mô hình dữ liệu mạngPHONG
+CONGVIEC
+NHANVIEN
+LYLICHgồmcó
+quản lýtrực tiếpcùng làmn:1
+1:11:n
+1:n
+
+[PDF PAGE 32]
+32
+2. Mô hình dữ liệu mạng-Nhậnxét•Tươngđốiđơngiản•Dễsửdụng•KhôngthíchhợpbiểudiễnCSDLcóquymôlớn•Khảnăngdiễnđạtngữnghĩakém
+
+[PDF PAGE 33]
+33
+3. Mô hình dữ liệu phân cấp-ĐượcxâydựngbởiIBMvàNorthAmericanRockwellvàokhoảngnăm1965.-Môhìnhdữliệuphâncấp(HierachicalDataModel)còngọitắtlàmôhìnhphâncấp(HierachicalModel)dạngcâyphâncấp.Trongđó:•Mỗinútcủacâybiểudiễnmộtthựcthể•Giữanútconvớinútchađượcliênhệvớinhautheomộtmốiquanhệxácđịnh.
+
+[PDF PAGE 34]
+34
+3. Mô hình dữ liệu phân cấp-Mộtsốkháiniệm:•Loạimẫutin:giốngmôhìnhdữliệumạng•Loạimốiliênhệ:phâncấp-Giữahailoạimẫutinchỉtồntạimộtmốiquanhệduynhất.Nhưvậy:•Mốiliênhệtừmẫutinchủtớicácmẫutinthànhviênlà1÷n•Mốiliênhệtừmẫutinthànhviênvớimẫutinchủlà1÷1
+
+[PDF PAGE 35]
+35
+3. Mô hình dữ liệu phân cấpTOÀN QUỐCHÀ NỘITPHCMĐÀ NẴNGTỈNH …Loạimẫutin TỉnhThànhQUẬN 1QUẬN 2QUẬN 3HUYỆN …Loạimẫutin QuậnHuyệnP. ĐA KAOP. TÂN ĐỊNHP. BẾN NGHÉP...Loạimẫutin PhườngXãĐỊA BÀN 1ĐỊA BÀN 2ĐỊA BÀN 3ĐỊA BÀN …Loạimẫutin ĐịabànHỘ 1HỘ 2HỘ 3HỘ …Loạimẫutin HộGia đìnhNK1NK2NK3NK …Loạimẫutin Nhânkhẩu
+
+[PDF PAGE 36]
+36
+3. Mô hình dữ liệu phân cấp-Nhậnxét•Đơngiản,tìmkiếmnhanh•Khảnăngdiễnđạtngữnghĩakém(cácmốiquanhện-n)•KhôngthíchhợpbiểudiễnCSDLcóquymôlớn
+
+[PDF PAGE 37]
+37
+4. Mô hình thực thể mối kết hợp-Môhìnhthựcthểmốikếthợp(ER–Entity-RelationshipModel)đượcPeterPinShanCHENgiớithiệunăm1976.-Nhìnthếgiớithựcnhưlàmộttậpcácđốitượngcănbảnđượcgọilàcáctậpthựcthể,vàcácmốiquanhệgiữacácđốitượngnày.-MôhìnhERđượcsửdụngnhiềutrongthiếtkếdữliệuởmứcquanniệm.
+
+[PDF PAGE 38]
+38
+4.1. Loại thực thể-Loạithựcthể(EntityType)lànhữngloạiđốitượnghaysựvậtcủathếgiớithựctồntạicụthểcầnđượcquảnlý.-VD:NHANVIEN,PHONGBAN,LOPSH,MONHOC,SINHVIEN,…-Kýhiệu:SINHVIENLOPSH
+
+[PDF PAGE 39]
+39
+4.2. Thực thể-Thựcthể(Entity)làmộtthểhiệnhoặcmộtđốitượngcủamộtloạithựcthể.-VD:LoạithựcthểlàSINHVIENcócácthựcthể:•(‘SV001’, ‘NguyễnMinh’, ’Nam’, ‘1/2/1987’,’Tp. HồChíMinh’)•(‘SV002’, ‘TrầnNăm’, ‘Nam’, ‘13/2/1987’, ‘ĐồngNai’)
+
+[PDF PAGE 40]
+40
+4.3. Thuộc tính của loại thực thể-Thuộctínhcủaloạithựcthể(EntityAttribute)lànhữngtínhchấtđặctrưngcủaloạithựcthể.-VD:LoạithựcthểSINHVIENcócácthuộctính:
+-Kýhiệu:
+SINHVIENGioiTinhMaSV
+NgSinh
+NoiSinh
+HoTenSINHVIENHoTenGioiTinhMaSV
+NgSinhNoiSinh
+Mã sinhviên, họtên, giớitính, ngàysinh, nơisinh
+
+[PDF PAGE 41]
+41
+Các loại thuộc tính-Đơntrị(Simple):•Chỉcómộtgiátrị, khôngthểchia nhỏ.•VD:MaSV, TenMonHoc, SoTC,…-Đahợp(Composite):•Thuộctínhcóthểđượctạothànhtừnhiềuthànhphần.•VD:DiaChi(SoNha, Duong, Phuong, Quan, Tp_Tinh)HoTen(Ho, TenLot, Ten).
+
+[PDF PAGE 42]
+42
+Các loại thuộc tính-Đatrị(Multi-valued)•Thuộctínhcóthểcónhiềugiátrịđốivớimộtthựcthể.•VD:BANGCAPkýhiệu{BANGCAP}
+Lưuý:Cácthuộctínhđahợpvàđatrịcóthểlồngnhau.VD:BangCapcủaSINHVIENcóthểđahợpvàđatrịKýhiệu:{BangCap(NoiCap,NamCap,KetQua,ChuyenNganh)}
+
+[PDF PAGE 43]
+43
+4.4. Khóa của loại thực thể-Khóacủaloạithựcthểlàthuộctínhnhậndiệnthựcthể.-Căncứvàogiátrịcủakhóacóthểxácđịnhduynhấtmộtthựcthể.-VD:MỗisinhviêncómộtmãsốduynhấtàKhoácủaloạithựcthểSINHVIENlàMaSV-Kýhiệu: SINHVIENGioiTinhMaSV
+NgSinh
+NoiSinh
+HoTenHoTenGioiTinhMaSV
+NgSinhNoiSinh
+SINHVIEN
+
+[PDF PAGE 44]
+44
+4.4. Khóa của loại thực thể-Lưuý:•Mỗiloạithựcthểcóítnhất01khóa.•Mộtkhóacóthểcó01hoặcnhiềuthuộctính.•Trongmộtloạithựcthểcóthểcónhiềukhóa,chọnra01khóađểlàmkhóachính. HoTenGioiTinhMaSV
+NgSinhNoiSinh
+SINHVIEN
+CMND
+
+[PDF PAGE 45]
+45
+4.5. Loại mối kết hợp-Loạimốikếthợp(Relationshiptype)làsựliênkếtgiữahaihaynhiềuloạithựcthể-Kýhiệu:bằngmộthìnhthoihoặchìnhoval-VD:GiữaSINHVIENvàLOPcóloạimốikếthợpTHUOC
+Thuộc
+NoiSinhMaSVHoTen
+SINHVIEN
+GioiTinhNgSinh
+SiSoKhoaTenLopMaLop
+LOPSH
+
+[PDF PAGE 46]
+46
+4.5. Loại mối kết hợp-Giữahailoạithựcthểcóthểtồntạinhiềuhơnmộtloạimốikếthợp.
+SINHVIENLOPSH
+Thuộc
+Làlớptrưởng
+
+[PDF PAGE 47]
+47
+4.5.1. Số ngôi của loại mối kết hợp-Sốngôicủaloạimốikếthợp(Relationshipdegree)làsốloạithựcthểthamgiavàoloạimốikếthợpđó-VD: ThuộcSINHVIENLOPSH→SốngôicủaloạimốikếthợpThuộc: 2
+
+[PDF PAGE 48]
+48
+4.5.1. Số ngôi của loại mối kết hợp-VD:
+→SốngôicủaloạimốikếthợpDạy: 3
+GIANGVIEN
+LOPSH
+Dạy
+MONHOC
+
+[PDF PAGE 49]
+49
+4.5.2. Thuộc tính của loại mối kết hợp-Thuộctínhcủaloạimốikếthợp(Relationshiptypeattribute):•Môtảtínhchấtcủamốikếthợpđó.•Baogồmcácthuộctínhkhóacủacácloạithựcthểthamgiavàoloạimốikếthợpđó,vàcòncóthểcóthêmnhữngthuộctínhbổsungkhác.•Khôngthểgắnvớicácthựcthểthamgiavàomốikếthợpđó
+
+[PDF PAGE 50]
+50
+4.5.2. Thuộc tính của loại mối kết hợp-VD:
+HOADON SANPHAMChiTiet
+SoLuong
+SoHDNgayLapMaSPTenSP
+DVTDonGia
+
+[PDF PAGE 51]
+51
+4.5.2. Thuộc tính của loại mối kết hợp-VD:GIANGVIEN
+LOPSH
+Dạy
+MONHOCHocKy
+NamHoc
+
+[PDF PAGE 52]
+52
+4.6. Bản số-Bảnsố(relationshipcardinality):thểhiệnsốlượngtốithiểuvàsốlượngtốiđacácthựcthểthamgiavàoloạimốikếthợp.-Kýhiệu:(sốlượngtốithiểu,sốlượngtốiđa)
+-VD:
+SINHVIENLOPSH
+Thuộc
+Làlớptrưởng
+(1,1) (1,n)
+(0,1) (1,1)
+1 -n
+1 -1
+
+[PDF PAGE 53]
+53
+4.6. Bản số-VD:
+HOADON SANPHAMChiTiet
+SoLuong
+SoHDNgayLapMaSPTenSP
+DVTDonGia
+(1,n) (0,n)n -n
+
+[PDF PAGE 54]
+54
+4.7. Mô hình ER mở rộng-Chuyênbiệthoá,tổngquáthóa-Mốikếthợpđệquy-Loạithựcthểyếu-Mốikếthợpmởrộng
+
+[PDF PAGE 55]
+55
+4.7.1. Chuyên biệt hóa, tổng quát hóa
+NHANVIEN
+HotenGioiTinhMaNV
+QUANLYCONGNHANChucVuBac
+Is a SANPHAM
+TENSPGIAMaSP
+DIENTHOAILAPTOPTHESIMOCUNG
+Is a
+MANHINHRAMCPU
+BONHOVGA
+
+[PDF PAGE 56]
+56
+4.7.2. Mối kết hợp đệ quy-Làloạimốikếthợpđượctạothànhtừcùngmộtloạithựcthể(haymộtloạithựcthểcóloạimốikếthợpvớichínhnó)-VD:Mỗinhânviêncómộtngườiquảnlýtrựctiếpvàngườiquảnlýđócũnglàmộtnhânviên.
+NHANVIEN(0,n)
+(0,1)
+Quản lý
+
+[PDF PAGE 57]
+57
+4.7.3. Loại thực thể yếu-Loạithựcthểyếu:•Làloạithựcthểkhôngcókhóa.•Phảithamgiatrongmộtloạimốikếthợpxácđịnhtrongđócómộtloạithựcthểchủ.-Kýhiệu: TênLoạithựcthểyếu
+
+[PDF PAGE 58]
+58
+4.7.3. Loại thực thể yếu-VD:
+Có
+NoiSinhMaNVHoTen
+NHANVIEN
+GioiTinhNgSinh
+QuanHeGioiTinhNgSinhTenTN
+THANNHAN(1,n)(1,1)
+
+[PDF PAGE 59]
+59
+4.7.4. Mối kết hợp mở rộngLOPSHMONHOC
+GIANGVIEN
+(1,n) (1,n)
+(1,n)
+(1,1)
+Giảng dạy
+Học
+
+[PDF PAGE 60]
+60
+4. Mô hình thực thể mối kết hợp-Cácbướcthiếtkế:•Xácđịnhloạithựcthể•Xácđịnhloạimốikếthợp•XácđịnhThuộctínhcủaloạithựcthể,loạimốikếthợp•Xácđịnhbảnsố(1-1,1-n,n-n)
+
+[PDF PAGE 61]
+61
+5. Mô hình dữ liệu quan hệVD:-NHANVIEN(MaNV, HoTen, NgaySinh, DiaChi)-KHACHHANG(MaKH, HoTen, NgaySinh, DiaChi, DoanhSo)-SANPHAM(MaSP, TenSP, NuocSX, DonGia)-HOADON(SoHD, NgayHD, MaKH, TriGia, MaNV)-CTHD(SoHD, MaSP, SL)
+
+
+[PDF PAGE 62]
+62
+6. Mô hình dữ liệu hướng đối tượng-Môhìnhdữliệuhướngđốitượng(ObjectOrientedDataModel)rađờivàocuốinhữngnăm80vàđầunhữngnăm90-Dựatrêncáchtiếpcậnhướngđốitượng.-Cáckháiniệm:Lớp(class),Thuộctính(Attribute),Phươngthức(Operator),…-Đặctrưng•Tínhkếthừa(inheritance)•Tínhđónggói(encapsulation)•Tínhđahình(polymorphism)•Tínhtáisửdụng(reusability)
+
+[PDF PAGE 63]
+63
+Tổng kết chương
+1.Dữliệu(Data)2.Hệthốngtậptin (File System)3.ĐịnhnghĩamộtCSDL4.CácđốitượngsửdụngCSDL5.HệquảntrịCSDL6.CácmứccủamộtCSDL
+Các khái niệm của một hệ CSDL Các mô hình dữ liệu
+1.Môhìnhdữliệu2.Môhìnhdữliệumạng3.Môhìnhdữliệuphâncấp4.Môhìnhthựcthểmốikếthợp5.Môhìnhdữliệuquanhệ6.Môhìnhdữliệuhướngđốitượng
+
+[PDF PAGE 64]
+64
+THANKS!Any questions?

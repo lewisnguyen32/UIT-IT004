@@ -1,0 +1,297 @@
+[
+  {
+    "page": 1,
+    "text": "MÔ HÌNH DỮ LIỆU QUAN HỆThS. DươngPhi Long –Email: longdp@uit.edu.vn\nChương2:\nTRƯỜNG ÐẠI HỌC CÔNG NGHỆ THÔNG TINKHOA HỆ THỐNG THÔNG TINTài liệu bài giảng:\nMÔN CƠ SỞ DỮ LIỆU",
+    "chars": 171
+  },
+  {
+    "page": 2,
+    "text": "010203\n2\nNỘI DUNG BÀI HỌCGiới thiệu\nCác khái niệm\nChuyển mô hình ER thành mô hình Quan hệ",
+    "chars": 89
+  },
+  {
+    "page": 3,
+    "text": "3\nGiới thiệuMô hình dữ liệu quan hệ",
+    "chars": 35
+  },
+  {
+    "page": 4,
+    "text": "4\nGiới thiệuTS.EdgarFrankCoddcôngbốquabàibáo“ARelationalModelofDataforLargeSharedDataBanks“,CommunicationoftheACM,vol.13,no.6,1970.\n",
+    "chars": 132
+  },
+  {
+    "page": 5,
+    "text": "5\nGiới thiệu-MôhìnhDữliệuQuan hệ(Relational Data Model) dựatrênkháiniệmquanhệ.-Dựatrênnềntảnghìnhthứcvềlýthuyếttậphợp-Kháiniệmlýthuyếttậphợptrêncácquanhệ, tứclàtậpcủacácbộgiátrị(value tuples)-LàcơsởchocácDBMS thươngmạinhưMS SQL Server, MySQL, Oracle, DB2, ….",
+    "chars": 258
+  },
+  {
+    "page": 6,
+    "text": "6\nCác khái niệm trong Mô hình dữ liệu quan hệ\n1.Thuộctính2.Quan hệ3.Bộgiátrị4.Thểhiệncủaquanhệ5.Tântừ6.Phépchiếu7.Khóa8.Lượcđồquanhệ9.LượcđồCSDL",
+    "chars": 144
+  },
+  {
+    "page": 7,
+    "text": "7\n1. Thuộc tính (Attribute)-Môtảđặctrưng,tínhchấtriêngbiệtcủađốitượngcầnđượclưutrữtrongCSDLđểphụcvụchoviệckhaithácdữliệuvềđốitượng•Têngọi:dãykýtự(gợinhớ)•Kiểudữliệu:Số,Chuỗi,Ngàytháng,Luậnlý,…Lưuý:Khôngcócáckiểudữliệuphứctạpnhưtậphợp(set),danhsách(list),mảng(array),bảnghi(record).•Miềngiátrị:tậpgiátrịmàthuộctínhcóthểnhận.KýhiệumiềngiátrịcủathuộctínhAlàDom(TenThuocTinh).",
+    "chars": 372
+  },
+  {
+    "page": 8,
+    "text": "8\n1. Thuộc tính (Attribute)-VD1:GioiTinh•Kiểudữliệu:Chuỗi•Miềngiátrị:Dom(GioiTinh)=(‘Nam’,‘Nữ’)-Tạimộtthờiđiểm, mộtthuộctínhkhôngcógiátrịhoặcchưaxácđịnhđượcgiátrị=> giátrịNULLMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữNULLCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020",
+    "chars": 306
+  },
+  {
+    "page": 9,
+    "text": "9\n2. Quan hệ (Relation)-Quanhệlàmộttậphữuhạncácthuộctính.-Quanhệ𝑅cónngôiđượcđịnhnghĩatrêntậpthuộctính𝑅𝐴!,𝐴\",…,𝐴#vàkèmtheomộttântừđểxácđịnhmốiquanhệgiữacácthuộctính𝐴$.-Kýhiệu:𝑅𝐴!,𝐴\",…,𝐴#•𝑅:Tênquanhệ•𝑅%=𝐴!,𝐴\",…,𝐴#:Tậpthuộctínhcủa𝑅",
+    "chars": 228
+  },
+  {
+    "page": 10,
+    "text": "10\n2. Quan hệ (Relation)-VD2:•SINHVIEN(MaSV,HoTen,GioiTinh,NgaySinh,NoiSinh,MaLop)•LOP(MaLop,TenLop,SiSo,LopTruong,Khoa)",
+    "chars": 120
+  },
+  {
+    "page": 11,
+    "text": "11\n3. Bộ giá trị (Tuple)-Làcácthôngtincủamộtđốitượngthuộcquanhệ.-Cònđượcgọilàmẫutin(record),dòng(row).-Mộtbộcủaquanhệ𝑅𝐴!,𝐴\",…,𝐴#làr=𝑎!,𝑎\",…,𝑎#với∀𝑎$∈𝐷𝑂𝑀(𝐴$)\n=>Quanhệlàmộtbảng(table),cáccộtlàcácthuộctính,mỗidòngđượcgọilàbộ.",
+    "chars": 222
+  },
+  {
+    "page": 12,
+    "text": "12\n3. Bộ giá trị (Tuple)VD3:QuanhệSINHVIENMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữNULLCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020Bộr=(SV03,PhạmTiếnDũng,Nam,CầnThơ,KHMT2020)",
+    "chars": 216
+  },
+  {
+    "page": 13,
+    "text": "13\n4. Thể hiện của quan hệ-Làtậphợpcácbộgiátrịcủaquanhệtạimộtthờiđiểm.-Kýhiệu:𝑇&-VD4:𝑇'()*+(,)làthểhiệncủaquanhệSINHVIÊNtạithờiđiểmhiệntạigồmcócácbộ:MaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữNULLCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020",
+    "chars": 280
+  },
+  {
+    "page": 14,
+    "text": "14\n5. Tân từ-Làmộtquytắcdùngđểmôtảmộtquanhệ.-Làmrõngữnghĩa,sựliênhệgiữacácthuộctínhtrongquanhệ-Kýhiệu:𝑅",
+    "chars": 103
+  },
+  {
+    "page": 15,
+    "text": "15\n5. Tân từ-VD5:SINHVIEN(MaSV,HoTen,GioiTinh,NoiSinh,MaLop)Cótântừ𝐒𝐈𝐍𝐇𝐕𝐈𝐄𝐍:Mỗisinhviêncómãsinhviênduynhất(MaSV)đểphânbiệtvớicácsinhviênkhác,cóhọtên(HoTen),giớitính(GioiTinh),nơisinh(NoiSinh)vàthuộcvềmộtlớp(MaLop).-VD6:THI(MaSV,MaMH,LanThi,Diem)Cótântừ𝐓𝐇𝐈:Mỗisinhviênđượcphépthimộtmônhọcnhiềulần,mỗilầnthilưutrữthôngtinsinhviênnào(MaSV)thimôngì(MaMH),lầnthithứmấy(LanThi),vàđiểmđạtđược(Diem).",
+    "chars": 392
+  },
+  {
+    "page": 16,
+    "text": "16\n6. Phép chiếu-Chiếucủamộtquanhệlêntậpthuộctính:•Dùngđểtríchgiátrịcủamộtsốthuộctínhtrongdanhsáchcácthuộctínhcủaquanhệ.•Kýhiệu:𝑅𝑋hoặc𝑅.𝑋–PhépchiếucủaquanhệRlêntậpthuộctínhX",
+    "chars": 173
+  },
+  {
+    "page": 17,
+    "text": "17\n6. Phép chiếuVD7:SINHVIEN[NoiSinh]MaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020\nSINHVIEN[NoiSinh] = {‘TpHCM’, ‘Lâm Đồng’, ‘Cần Thơ’}\nNoiSinhTp.HCMLâm ĐồngCần Thơ",
+    "chars": 254
+  },
+  {
+    "page": 18,
+    "text": "18\n6. Phép chiếuVD8:SINHVIEN[HoTen,NoiSinh]MaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020SINHVIEN[HoTen, NoiSinh] =   {(‘Nguyễn Văn An’, ‘TpHCM’),(‘Trần Ngọc Minh’, ‘Lâm Đồng’), (‘Phạm Tiến Dũng’,‘Cần Thơ’)}\nHoTenNguyễn Văn AnTrần Ngọc MinhPhạm Tiến Dũng\nNoiSinhTp.HCMLâm ĐồngCần Thơ",
+    "chars": 372
+  },
+  {
+    "page": 19,
+    "text": "19\n6. Phép chiếu-Chiếucủamộtbộlêntậpthuộctính:•Tríchchọncácgiátrịcụthểcủamộtbộtheocácthuộctínhđượcchỉratrongdanhsáchthuộctínhcủamộtquanhệ.•Kýhiệu:𝑡&[𝑋]hoặc𝑡𝑋–chiếucủamộtbộgiátrị𝑡lêntậpthuộctính𝑋củaquanhệ𝑅.Nếu𝑋có1thuộctính𝑡&.𝑋",
+    "chars": 225
+  },
+  {
+    "page": 20,
+    "text": "20\n6. Phép chiếuVD9:SINHVIENcó3bộ𝑠𝑣!,𝑠𝑣\",𝑠𝑣-\n𝑠𝑣![HoTen] = (‘Nguyễn Văn An’)\nMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020\n𝑠𝑣!=𝑠𝑣\"=𝑠𝑣#=\nNguyễn Văn An\n𝑠𝑣![HoTen] = ?",
+    "chars": 253
+  },
+  {
+    "page": 21,
+    "text": "21\n6. Phép chiếuVD10:SINHVIENcó3bộ𝑠𝑣!,𝑠𝑣\",𝑠𝑣-\n𝑠𝑣\"[HoTen, GioiTinh] = (‘Trần Ngọc Minh’, ‘Nữ’)\nMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020\n𝑠𝑣!=𝑠𝑣\"=𝑠𝑣#=Trần Ngọc MinhNữ\n𝑠𝑣\"[HoTen, GioiTinh] = ?",
+    "chars": 283
+  },
+  {
+    "page": 22,
+    "text": "22\n7. Khóa-CáckháiniệmvềKhóa:•Siêukhóa(superkey)•Khóa(key)•Khóachính(primarykey)•Khóatươngđương•Khóangoại(foreignkey)",
+    "chars": 117
+  },
+  {
+    "page": 23,
+    "text": "23\n7.1. Siêu khóa (Super key)-SiêukhóaS𝐾làmộttậpconcácthuộctínhcủa𝑅%màgiátrịcủachúngcóthểphânbiệt2bộkhácnhautrongcùngmộtthểhiện𝑇&bấtkỳ.-Nghĩalà:\"𝑡!,𝑡\"∈𝑇&,𝑡!𝑆𝐾≠𝑡\"𝑆𝐾⟺𝑆𝐾làsiêukhóacủa𝑅.-Mộtquanhệluôncóítnhấtmộtsiêukhóa(𝑅%)vàcóthểcónhiềusiêukhóa.",
+    "chars": 241
+  },
+  {
+    "page": 24,
+    "text": "24\n7.1. Siêu khóa (Super key)VD11:QuanhệSINHVIEN\n{MaSV}{MaSV, HoTen}{MaSV, HoTen, NoiSinh}{MaSV, HoTen, MaLop}{CMND}….\nCácsiêukhóa:\nMaSVHoTenGioiTinhNoiSinhMaLopCMNDSV01Nguyễn Văn AnNamTp.HCMHTTT2020023344556SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020341214987SV03Phạm Tiến DũngNamCần ThơKHMT2020456328381",
+    "chars": 298
+  },
+  {
+    "page": 25,
+    "text": "25\n7.2. Khóa (Key)-𝐾làkhóacủaquanhệ𝑅khithỏamãn2điềukiện:•𝐾làmộtsiêukhóa•𝐾làsiêukhóa“nhỏnhất”(chứaítthuộctínhnhấtvàkhácrỗng)nghĩalà:¬∃𝐾!⊂𝐾,𝐾!≠∅saocho𝐾!làsiêukhóa.-Thuộctínhthamgiavàomộtkhóagọilàthuộctínhkhóa,ngượclạilàthuộctínhkhôngkhóa.",
+    "chars": 236
+  },
+  {
+    "page": 26,
+    "text": "26\n7.2. Khóa (Key)VD12:QuanhệSINHVIENMaSVHoTenGioiTinhNoiSinhMaLopCMNDSV01Nguyễn Văn AnNamTp.HCMHTTT2020023344556SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020341214987SV03Phạm Tiến DũngNamCần ThơKHMT2020456328381{MaSV}{MaSV, HoTen}{MaSV, HoTen, NoiSinh}{MaSV, HoTen, MaLop}{CMND}….\nCácsiêukhóa: Khóa:{MaSV}{CMND}",
+    "chars": 303
+  },
+  {
+    "page": 27,
+    "text": "27\n7.2. Khóa (Key)VD13:QuanhệLOP(MaLop,TenLop,MaKhoa,KhoaHoc,SiSo)\nVD14:QuanhệTHI(MaSV,MaMH,LanThi,Diem)KhóacủaLOP:{MaLop}\nKhóacủaTHI:{MaSV, MaMH, LanThi}",
+    "chars": 154
+  },
+  {
+    "page": 28,
+    "text": "28\n7.3. Khóa chính (Primary Key)-KhithiếtkếCSDL,nếuquanhệcónhiềuhơnmộtkhóa,tachỉđượcchọnmộtvàgọilàkhóachính.-Cácthuộctínhkhóachínhphảicógiátrịkhácnull.-Kýhiệucácthuộctínhtạothànhkhóachínhkhiliệtkêtrongquanhệphảiđượcgạchdưới-VD15:•SINHVIEN(MaSV,HoTen,GioiTinh,NoiSinh,MaLop,CMND)•LOP(MaLop,TenLop,MaKhoa,KhoaHoc,SiSo)•THI(MaSV,MaMH,LanThi,Diem)",
+    "chars": 343
+  },
+  {
+    "page": 29,
+    "text": "29\n7.4. Khóa tương đương-Cáckhóacònlại(cáckhóakhôngđượcchọnlàmkhóachính)gọilàkhóatươngđương-VD16:SINHVIENcó02khóa{MaSV}và{CMND}•Khóachính:{MaSV}•Khóatươngđương:{CMND}",
+    "chars": 166
+  },
+  {
+    "page": 30,
+    "text": "30\n7.5. Khóa ngoại (Foreign key)-Cho2quanhệ𝑅(𝑈),𝑆(𝑉)với𝐾!⊆𝑈vàlàkhóachínhcủa𝑅,𝐾\"⊆𝑉-Khiđó𝐾\"làkhóangoạicủa𝑆thamchiếuđếnkhóachính𝐾!của𝑅nếuthỏacácđiềukiệnsau:•𝐾!và𝐾\"cócùngsốlượngthuộctínhvàngữnghĩacủacácthuộctínhtrong𝐾!và𝐾\"cũnggiốngnhau.•Giữa𝑅và𝑆tồntạimốiquanhệ1-ntrên𝐾!và𝐾\",•\"𝑠∈𝑆,!∃𝑟∈𝑅∶𝑟.𝐾!=𝑠.𝐾\"",
+    "chars": 291
+  },
+  {
+    "page": 31,
+    "text": "31\n7.5. Khóa ngoại (Foreign key)VD17:•SINHVIEN(MaSV,HoTen,GioiTinh,NoiSinh,MaLop)\n•LOP(MaLop,TenLop,MaKhoa,KhoaHoc,SiSo)MaLoptrongLOP:khóachínhcủaLOPMaLoptrongSINHVIEN:khóangoạivàthamchiếuđếnMaLopcủaLOPLớpđượcthamchiếuphảitồntạitrước\nMaLop",
+    "chars": 239
+  },
+  {
+    "page": 32,
+    "text": "32\n7.5. Khóa ngoại (Foreign key)VD17: SINHVIENMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020\nLOPMaLopTenLopMaKhoaKhoaHocSiSoHTTT2020HTTT2020HTTT202083CNPM2020CNPM2020CNPM202087KHMT2020KHMT2020KHMT202075KTMT2020KTMT2020KTMT202068",
+    "chars": 317
+  },
+  {
+    "page": 33,
+    "text": "33\n8. Lược đồ quan hệ-Lượcđồquanhệmôtảcấutrúccủamộtquanhệvàcácmốiliênhệgiữacácthuộctínhtrongquanhệđó.-Cấutrúccủamộtquanhệlàtậpthuộctínhcủaquanhệđó.-Mộtlượcđồquanhệbaogồm:•Mộttậpthuộctínhcủaquanhệ•Mộtmôtảđểxácđịnhýnghĩavàmốiliênhệgiữacácthuộctính.",
+    "chars": 246
+  },
+  {
+    "page": 34,
+    "text": "34\n8. Lược đồ quan hệ-Lược đồquanhệđượcđặctrưngbởi•Mộttênphânbiệt•Mộttậphợphữuhạncácthuộctính𝐴!,𝐴\",…,𝐴#•Môtảđểxácđịnhýnghĩa,mốiliênhệgiữacácthuộctính-Kýhiệu: 𝑅𝐴!,𝐴\",…,𝐴#–lược đồquanhệ𝑅gồm𝑛thuộctính𝐴!,𝐴\",…,𝐴#",
+    "chars": 207
+  },
+  {
+    "page": 35,
+    "text": "35\n8. Lược đồ quan hệVD18:SINHVIEN(MaSV,HoTen,GioiTinh,NoiSinh,MaLop)Tântừ:Mỗisinhviêncómãsinhviênduynhất(MaSV)đểphânbiệtvớicácsinhviênkhác,cóhọtên(HoTen),giớitính(GioiTinh),nơisinh(NoiSinh)vàthuộcvềmộtlớp(MaLop).SINHVIENMaSVHoTenGioiTinhNoiSinhMaLopSV01Nguyễn Văn AnNamTp.HCMHTTT2020SV02Trần Ngọc MinhNữLâm ĐồngCNPM2020SV03Phạm Tiến DũngNamCần ThơKHMT2020",
+    "chars": 356
+  },
+  {
+    "page": 36,
+    "text": "36\n9. Lược đồ CSDL-Làtậphợpgồmcáclượcđồquanhệvàcácmốiliênhệgiữachúngtrongcùngmộthệthốngquảnlý.Các CSDL\nHệ Quản Trị CSDL\nCác quan hệ",
+    "chars": 131
+  },
+  {
+    "page": 37,
+    "text": "37\n9. Lược đồ CSDLVD19:LượcđồCSDLQuảnlýđiểmthicủaSinhviênSINHVIEN(MASV,HO,TEN,NGSINH,GIOITINH,NOISINH,MALOP)TântừMỗisinhviêncómãsinhviên(MaHV)duynhấtđểphânbiệtvớicácsinhviênkhác,lưutrữhọtên(Ho,Ten),ngàysinh(NgaySinh),giớitính(GioiTinh),nơisinh(NoiSinh)vàthuộcvềmộtlớp(MaLop).LOP(MALOP,TENLOP,TRGLOP,SISO,MAGVCN)Tântừ:Mỗilớpcómãlớp(MaLop)duynhấtđểphânbiệtvớicáclớphọckhác,cótênlớp(TenLop),sinhviênlàmlớptrưởngcủalớp(TrgLop),sĩsốlớp(SiSo)vàgiáoviênchủnhiệm(MaGVCN).KHOA(MAKHOA,TENKHOA,NGTLAP,TRGKHOA)Tântừ:Mỗikhoacómãkhoa(MaKHoa)duynhấtđểphânbiệtvớicáckhoakhác,cótênkhoa(TenKhoa),ngàythànhlậpkhoa(NgTLap)vàtrưởngkhoa(TrgKhoa).Lưuýrằngtrưởngkhoacũnglàmộtgiảngviênthuộckhoa.",
+    "chars": 670
+  },
+  {
+    "page": 38,
+    "text": "38\n9. Lược đồ CSDLVD19:LượcđồCSDLQuảnlýđiểmthicủaSinhviên(tt)MONHOC(MAMH,TENMH,TCLT,TCTH,MAKHOA)Tântừ:Mỗimônhọccómãmônhọc(MaMH)duynhấtđểphânbiệtvớicácmônhọckhác,cótênmônhọc(TenMH),sốtínchỉlýthuyết(TCLT),sốtínchỉthựchành(TCTH)vàdomộtkhoaphụtráchvềmặtnộidung(MaKhoa)DIEUKIEN(MAMH,MAMH_TRUOC)Tântừ:Cónhữngmônhọc(MaMH)sinhviênphảicókiếnthứctừmộtsốmônhọctrước(MaMH_Truoc).",
+    "chars": 367
+  },
+  {
+    "page": 39,
+    "text": "39\n9. Lược đồ CSDLVD19:LượcđồCSDLQuảnlýđiểmthicủaSinhviên(tt)GIANGVIEN(MAGV,HOGV,TENGV,HOCVI,HOCHAM,GIOITINH,NGSINH,NGVL,HESO,MUCLUONG,MAKHOA)Tântừ:Mỗigiảngviêncómãgiảngviên(MaGV)đểphânbiệtvớicácgiảngviênkhác,cóhọtên(HOGV,TENGV),họcvị(HocVi),họchàm(HocHam),giớitính(GioiTinh),ngàysinh(NgaSinh),ngàyvàolàm(NgVL),hệsốlương(HeSo),mứclương(MucLuong)vàthuộcmộtkhoa(MaKhoa).GIANGDAY(MALOP,MAMH,MAGV,HOCKY,NAM,TUNGAY,DENNGAY)Tântừ:Mỗimộtlớphọc(MaLop)sẽđượchọcmônhọc(MaMH)dogiảngviênphụtrách(MaGV)trongmộthọckỳ(HocKy)củanămhọc(Nam),ngoàiracònlưuthôngtintổchứclớptronghọckỳtừngày(TuNgay)đếnngày(DenNgay)",
+    "chars": 594
+  },
+  {
+    "page": 40,
+    "text": "40\n9. Lược đồ CSDLVD19:LượcđồCSDLQuảnlýđiểmthicủaSinhviên(tt)KETQUATHI(MASV, MAMH, LANTHI, NGTHI, DIEM, KQUA)Tântừ:Lưutrữkếtquảthicủasinhviên:sinhviên(MaSV)thimônhọc(MaMH)tronglầnthithứmấy(LanThi),vàongàythi(NgThi),vớiđiểmthi(Diem)vàkếtquả(KQua)làđạthaykhông.",
+    "chars": 259
+  },
+  {
+    "page": 41,
+    "text": "41\nChuyển mô hình ER thành mô hình Quan hệ",
+    "chars": 42
+  },
+  {
+    "page": 42,
+    "text": "42\nCác bước thực hiện-Bước1:Chuyểncácloạithựcthểchuyênbiệthóa,tổngquáthóa(nếucó)vềdạngthường-Bước2:Chuyểntấtcảloạithựcthểthànhquanhệ-Bước3:Chuyểncácmốikếthợp:•Mốikếthợp1–n•Mốikếthợpn–n•Mốikếthợp1–1-Bước4:Chuẩnhóacácquanhệ",
+    "chars": 221
+  },
+  {
+    "page": 43,
+    "text": "43\nBước 1 –Chuyển các loại thực thể chuyên biệt hóa, tổng quát hóa -Trườnghợp1:Mứcchuyênbiệthóakhôngcóthuộctínhriêng→GomlênmứctổngquáthóavàbổsungthêmthuộctínhLoaivàcácRàngbuộctoànvẹn\nRBTV:MGT(LoaiNV)={“Quảnlý”,“CôngNhân”}QUANLYCONGNHANIs aNHANVIENHotenDChiMaNV NHANVIEN(MaNV,HoTen,DiaChi,LoaiNV)",
+    "chars": 295
+  },
+  {
+    "page": 44,
+    "text": "44\nBước 1 –Chuyển các loại thực thể chuyên biệt hóa, tổng quát hóa -Trườnghợp2:Mứcchuyênbiệthóacóítthuộctínhriêng→Gomlênmứctổngquát,bổsungthêmthuộctínhLoaivàcácràngbuộctoànvẹn\nThêmcácRàngbuộctoànvẹnchocácthuộctínhbổsung\nHotenDChiMaNV\nQUANLYCONGNHANIs aNHANVIEN\nChucVuBac\nNHANVIEN(MaNV,HoTen,DiaChi,LoaiNV,ChucVu,Bac)",
+    "chars": 316
+  },
+  {
+    "page": 45,
+    "text": "45\nBước 1 –Chuyển các loại thực thể chuyên biệt hóa, tổng quát hóa -Trườnghợp3:Mứcchuyênbiệthóacónhiềuthuộctínhriêng→TáchthànhnhiềuthựcthểriêngHotenDChiMaNV\nQUANLYCONGNHANIs aNHANVIEN\nChucVuBacHocHamHocVi\nCONGNHAN(MaNV,HoTen,DiaChi,Bac)QUANLY(MaNV,HoTen,DiaChi,HocHam,HocVi,ChucVu)",
+    "chars": 281
+  },
+  {
+    "page": 46,
+    "text": "46\nBước 2 –Chuyển loại thực thể-Tấtcảcácloạithựcthểthànhquanhệ\nThuộcNHANVIENPHONGBAN\nDChiMaNVHoTen TenPhongMaPhong\n(1,1)(1,n)\nNHANVIEN(MaNV,HoTen,DiaChi)PHONGBAN(MaPhong,TenPhong)",
+    "chars": 179
+  },
+  {
+    "page": 47,
+    "text": "47\nBước 2 –Chuyển loại thực thể-Loạithựcthểyếuthànhquanhệ\nNHANVIEN(MaNV,HoTen,GioiTinh,NgSinh,NoiSinh)THANNHAN(MaNV,TenTN,NgSinh,GioiTinh,QuanHe)\nCó\nNoiSinhMaNVHoTen\nNHANVIEN\nGioiTinhNgSinh\nQuanHeGioiTinhNgSinhTenTN\nTHANNHAN(1,n)(1,1)",
+    "chars": 234
+  },
+  {
+    "page": 48,
+    "text": "48\nBước 2 –Chuyển loại thực thể-Thuộctínhđatrị\nNHANVIEN(MaNV,HoTen,GioiTinh,NgSinh,NoiSinh)NV_BANGCAP(MaNV,BangCap)\nNoiSinhMaNVHoTen\nNHANVIEN\nGioiTinhNgSinh\nBangCap",
+    "chars": 164
+  },
+  {
+    "page": 49,
+    "text": "49\nBước 3 –Chuyển các mối kết hợp\nThuộcNHANVIENPHONGBAN\nDChiMaNVHoTen TenPhongMaPhong\n(1,1)(1,n)\nNHANVIEN(MaNV,HoTen,DiaChi,MaPhong)PHONGBAN(MaPhong,TenPhong)\n-Trườnghợp1:Mốikếthợp1–n→Lấykhóachínhcủabênn làmthuộctínhkhóangoạicủabên1",
+    "chars": 232
+  },
+  {
+    "page": 50,
+    "text": "50\nBước 3 –Chuyển các mối kết hợp\nNHANVIENDUAN\nDChiMaNVHoTen TenDAMaDA\nThamgia(1,n)(1,n)\nTHAMGIA(MaNV,MaDA,ThoiGian)\n-Trườnghợp2:Mốikếthợpn–n→Tạoquanhệmới(Tênquanhệ?, Thuộctính?, Khóachính?)\nThoiGian",
+    "chars": 199
+  },
+  {
+    "page": 51,
+    "text": "51\nBước 3 –Chuyển các mối kết hợp\nLàTrưởngphòngNHANVIENPHONGBAN\nDChiMaNVHoTen TenPhongMaPhong\n(0,1) (1,1)\nNHANVIEN(MaNV,HoTen,DiaChi,MaPhong)PHONGBAN(MaPhong,TenPhong,TruongPhong)\n-Trườnghợp3:Mốikếthợp1–1→Thêmkhóangoạivào1 trong2 quanhệhoặccả2 quanhệ",
+    "chars": 250
+  },
+  {
+    "page": 52,
+    "text": "52\nBước 3 –Chuyển các mối kết hợp\nGIANGVIEN(MaGV,HoTen,…)MONHOC(MaMon,TenMon,…)LOPSH(MaLop,TenLop,…)GIANGDAY(MaGV,MaLop,MaMon,HocKy,NamHoc)\n-Trườnghợp4:Mốikếthợp3ngôiGIANGVIENMONHOCGiảngDạy\nLOPSH\n(0,n)(0,n)HocKyNamHoc(0,n)",
+    "chars": 222
+  },
+  {
+    "page": 53,
+    "text": "53\nBước 4 –Chuẩn hóa các quan hệ-NHANVIEN(MaNV,HoTen,DChi,LoaiNV,MaPhong)\n-PHONGBAN(MaPhong,TenPhong)\n-DUAN(MaDA,TenDA)\n-THAMGIA(MaNV,MaDA,ThoiGian)",
+    "chars": 148
+  },
+  {
+    "page": 54,
+    "text": "54\nBước 4 –Chuẩn hóa các quan hệ\nNHANVIENMaNVHoTenDchiLoaiNVMaPhong\nPHONGBANMaPhongTenPhong\nDUANMaDATenDA\nTHAMGIAMaNVMaDAThoiGian",
+    "chars": 129
+  },
+  {
+    "page": 55,
+    "text": "55\nTổng kết chương\nMôhìnhquanhệlàgì?\nGiới thiệu1.Thuộctính2.Quan hệ3.Bộgiátrị4.Thểhiệncủaquanhệ5.Tântừ6.Phépchiếu7.Khóa8.Lượcđồquanhệ9.LượcđồCSDL\nChuyển từ ERD thành MHQHCác bước thực hiện1.Các loại thực thể chuyên biệt hóa, tổng quát hóa2.Các loại thực thể thành quan hệ3.Các mối kết hợp4.Chuẩn hóa\nCác khái niệm",
+    "chars": 313
+  },
+  {
+    "page": 56,
+    "text": "56\nTóm tắt các ký hiệuNội dungKý hiệuLược đồ quan hệ bậc n (n thuộc tính)𝑅𝐴!,𝐴\",…,𝐴#Tập thuộc tính của quan hệ R𝑅$=𝐴!,𝐴\",…,𝐴#Tên quan hệ𝑅,𝑆,𝑃,𝑄,…Thể hiện của quan hệ𝑇%,𝑇&,𝑇',𝑇(,…Bộ (dòng, mẫu tin)t𝑎!,𝑎\",…,𝑎#Miền giá trị của thuộc tính A𝐷𝑂𝑀𝐴𝑀𝐺𝑇(𝐴)Giá trị của thuộc tính A tại bộ thứ t𝑡.𝐴𝑡[𝐴]",
+    "chars": 290
+  },
+  {
+    "page": 57,
+    "text": "57\nCác đặc trưng của Quan hệ-Mỗi quan hệ có một tên duy nhất-Mỗi thuộc tính của một quan hệ đều có tên khác nhau-Mỗi bộ là duy nhất, không trùng nhau-Mỗi giá trị trong một bộ: là một giá trị nguyên tố hoặc rỗng (null)",
+    "chars": 217
+  },
+  {
+    "page": 58,
+    "text": "58\nCác đặc trưng của Quan hệ-Thứ tự của các bộ không quan trọng.-Thứ tự của thuộc tính không thực sự quan trọng. Tên của các thuộc tính đại diện cho một miền giá trị và có thể được sắp xếp lại-Thứ tự giữa các giá trị trong một bộ là quan trọng.VD: Bộ (‘SV01’, ‘Trần Ngọc Minh’, ‘Nữ’, ‘Lâm Đồng’, ‘CNPM2020’)KhácBộ (‘SV01’, ‘Trần Ngọc Minh’, ‘Nữ’, ‘CNPM2020’, ‘Lâm Đồng’,)",
+    "chars": 371
+  },
+  {
+    "page": 59,
+    "text": "59\nTHANKS!Any questions?",
+    "chars": 24
+  }
+]

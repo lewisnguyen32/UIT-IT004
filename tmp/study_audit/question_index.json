@@ -1,0 +1,1306 @@
+{
+  "created": "2026-10-27",
+  "description": "Chỉ mục yêu cầu nhỏ và dạng bài, không chứa đáp án/kết quả học. Khoảng pages trong theory gồm hai đầu mút, đánh số PDF từ 1.",
+  "source_files": 3,
+  "exam_variants": 6,
+  "task_count": 62,
+  "total_points": 60,
+  "items": [
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C1.1",
+      "question": "C1.1",
+      "pdf_page": 1,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C1.2",
+      "question": "C1.2",
+      "pdf_page": 1,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 2,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "CHECK miền DAGIAO",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 2,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "UPDATE tổng tiền giảm 2% theo ngày bán",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu, điều kiện giá",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết đơn hàng/giao hàng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, nhà vườn nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Giao: mua cả hai sản phẩm",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Gom nhóm đếm đơn theo ngày",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 1,
+      "exam_id": "E23-D1",
+      "id": "E23-D1-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: tất cả sản phẩm theo giá",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C1.1",
+      "question": "C1.1",
+      "pdf_page": 3,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C1.2",
+      "question": "C1.2",
+      "pdf_page": 3,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 4,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "CHECK miền THELOAI",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 4,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "UPDATE phí ship tăng 5% theo ngày giao",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu, điều kiện giá",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết đơn hàng/giao hàng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, đơn và giao hàng nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Trừ: mua này không mua kia",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Gom nhóm tổng số lượng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E23",
+      "variant": 2,
+      "exam_id": "E23-D2",
+      "id": "E23-D2-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: tất cả sản phẩm theo thể loại",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C1.1",
+      "question": "C1.1",
+      "pdf_page": 1,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C1.2",
+      "question": "C1.2",
+      "pdf_page": 1,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 2,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "CHECK miền BacTho",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 2,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "UPDATE tình trạng theo phân xưởng/ngày sản xuất",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu tiêu chuẩn",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết sản phẩm/loại/phân xưởng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, công nhân và sản phẩm nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Trừ/loại vi phạm dưới ngưỡng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: Tốt trên mọi tiêu chuẩn yêu cầu",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 1,
+      "exam_id": "E24-D1",
+      "id": "E24-D1-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Đếm sản phẩm đạt sau lần kiểm định đầu theo loại",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C1.1",
+      "question": "C1.1",
+      "pdf_page": 3,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C1.2",
+      "question": "C1.2",
+      "pdf_page": 3,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 4,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "CHECK miền TrangThai loại sản phẩm",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 4,
+      "points": 0.75,
+      "kind": "SQL",
+      "topic": "UPDATE KQMongDoi tăng 15% theo loại/đơn vị đo",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu kiểm định",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết sản phẩm/kiểm định/công nhân",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, sản phẩm và tiêu chuẩn nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Giao: Tốt trên cả hai tiêu chuẩn",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: mọi tiêu chuẩn yêu cầu trong năm",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E24",
+      "variant": 2,
+      "exam_id": "E24-D2",
+      "id": "E24-D2-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Đếm sản phẩm đạt sau lần kiểm định đầu theo phân xưởng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C1.1",
+      "question": "C1.1",
+      "pdf_page": 1,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C1.2",
+      "question": "C1.2",
+      "pdf_page": 1,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 2,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "CHECK miền TrangThai yêu cầu",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 2,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "FOREIGN KEY khách đại diện hợp đồng",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.1c",
+      "question": "C2.1c",
+      "pdf_page": 2,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "UPDATE giảm 10% hai cột tiền",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu lịch sử đóng tiền",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết và vai trò khách hàng đại diện",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, khách thụ hưởng và yêu cầu nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Trừ: không có yêu cầu hủy trong năm",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: mọi loại bảo hiểm theo kỳ",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 1,
+      "exam_id": "E25-D1",
+      "id": "E25-D1-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 2,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Gom nhóm, tỷ lệ yêu cầu chi trả ít nhất 80%",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C1.1",
+      "question": "C1.1",
+      "pdf_page": 3,
+      "points": 1.5,
+      "kind": "ER",
+      "topic": "Vẽ mô hình thực thể mối kết hợp",
+      "theory": [
+        {
+          "source": "T1",
+          "pages": [
+            37,
+            60
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C1.2",
+      "question": "C1.2",
+      "pdf_page": 3,
+      "points": 1.0,
+      "kind": "ER_TO_RELATION",
+      "topic": "Chuyển ER sang mô hình quan hệ",
+      "theory": [
+        {
+          "source": "T2",
+          "pages": [
+            41,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.1a",
+      "question": "C2.1a",
+      "pdf_page": 4,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "CHECK thứ tự ngày hợp đồng",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.1b",
+      "question": "C2.1b",
+      "pdf_page": 4,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "FOREIGN KEY khách thụ hưởng chi tiết hợp đồng",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "source": "T4",
+          "pages": [
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.1c",
+      "question": "C2.1c",
+      "pdf_page": 4,
+      "points": 0.5,
+      "kind": "SQL",
+      "topic": "UPDATE tăng 15% hai cột tiền",
+      "theory": [
+        {
+          "source": "T4",
+          "pages": [
+            35,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2a",
+      "question": "C2.2a",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chọn/chiếu yêu cầu bảo hiểm",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2b",
+      "question": "C2.2b",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết và vai trò khách hàng thụ hưởng",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            13,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2c",
+      "question": "C2.2c",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Kết ngoài, khách thụ hưởng và giao dịch nếu có",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            36,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2d",
+      "question": "C2.2d",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Giao: mua cả hai bảo hiểm",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            45,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2e",
+      "question": "C2.2e",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Chia: mọi loại bảo hiểm theo kỳ",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            51,
+            54
+          ]
+        }
+      ]
+    },
+    {
+      "source": "E25",
+      "variant": 2,
+      "exam_id": "E25-D2",
+      "id": "E25-D2-C2.2f",
+      "question": "C2.2f",
+      "pdf_page": 4,
+      "points": 1.0,
+      "kind": "RELATIONAL_ALGEBRA",
+      "topic": "Gom nhóm, tỷ lệ chuyển khoản ít nhất 80%",
+      "theory": [
+        {
+          "source": "T3",
+          "pages": [
+            55,
+            61
+          ]
+        }
+      ]
+    }
+  ]
+}

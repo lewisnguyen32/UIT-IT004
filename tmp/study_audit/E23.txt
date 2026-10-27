@@ -1,0 +1,148 @@
+[PDF PAGE 1]
+Câu 1 : (2.5 điểm) [G1, G2]
+Để đảm bảo công tác phòng cháy chữa cháy, ban quản lý khu chung cư cần tổ chức cơ sở dữ liệu
+để quản lý các thiết bị và vật dụng chữa cháy, cụ thể như sau:
+ Khu chung cư có nhiều tòa nhà, mỗi tòa nhà có mã số để phân biệt giữa các tòa nhà, có tên tòa
+nhà, số tầng. Mỗi tòa nhà có nhiều tầng, một tầng chỉ thuộc một tòa nhà. Mỗi tầng có tên tầng,
+số lượng căn hộ của tầng đó và có một mã số duy nhất để phân biệt với các tầng của các tòa
+nhà khác.
+ Các loại dụng cụ và thiết bị chữa cháy (sau đây gọi tắt là loại dụng cụ) cần được lưu trữ các
+thông tin như tên loại dụng cụ, mô tả loại dụng cụ và một mã loại dụng cụ duy nhất để phân
+biệt với các loại dụng cụ khác. Mỗi loại dụng cụ sẽ do một nhà sản xuất cung cấp, mỗi nhà
+sản xuất có thể cung cấp nhiều loại dụng cụ. Thông tin nhà sản xuất cần lưu trữ là mã nhà sản
+xuất, tên nhà sản xuất và địa chỉ.
+ Mỗi loại dụng cụ này có thể được bố trí tại nhiều tầng trong tòa nhà với số lượng khác nhau.
+Một tầng có thể bố trí nhiều loại dụng cụ.
+Dựa trên mô tả ngữ cảnh trên, sinh viên thực hiện các yêu cầu sau:
+1. Xây dựng mô hình thực thể mối kết hợp. (1.5 điểm)
+2. Chuyển đổi mô hình thực thể mối kết hợp ở trên thành mô hình quan hệ. (1 điểm)
+Câu 2: Cho lược đồ cơ sở dữ liệu quản lý bán hàng của một cửa hàng hoa như sau: [G1, G2]
+NHAVUON (MANV, NGDAIDIEN, SDT, DIACHI)
+Tân từ: Lưu trữ thông tin nhà vườn cung cấp các sản phẩm mà cửa hàng bán ra. Các thông tin
+gồm: mã nhà vườn, họ tên người đại diện, số điện thoại và địa chỉ liên hệ.
+SANPHAM (MASP, TENSP, DVT, THELOAI, GIANHAP, GIABAN, MANV)
+Tân từ: Lưu trữ thông tin tất cả các sản phẩm mà cửa hàng bán ra. Các thuộc tính gồm có: mã
+sản phẩm, tên sản phẩm, đơn vị tính, thuộc một thể loại (thể loại gồm có: chậu hoa cắm sẵn, hoa
+bó sẵn, hoa chậu, hoa cắt cành, hoa nhập khẩu, lá trang trí), giá nhập, giá bán và do nhà vườn
+nào đã cung cấp. Trong đó, giá bán phải cao hơn giá nhập từ 10% đến 40%.
+DONHANG (MADH, NGAYBAN, TONGTIEN, DATHANHTOAN)
+Tân từ: Lưu trữ thông tin các đơn hàng của cửa hàng bán ra gồm: mã đơn hàng, ngày bán, tổng
+tiền của đơn hàng. Khách hàng đến mua mang về, hoặc có thể nhờ nhân viên giao hàng (đơn
+hàng nhờ giao phải thanh toán trước một khoản tiền (DATHANHTOAN) nhỏ hơn hoặc bằng tổng
+tiền của đơn hàng; tổng tiền của đơn hàng bao gồm tổng tiền của sản phẩm trong đơn hàng đó
+cộng với phí ship).
+CTDH (MADH, MASP, SOLUONG)
+Tân từ: Lưu trữ thông tin chi tiết mỗi đơn hàng gồm có những sản phẩm nào, số lượng bao nhiêu.
+TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN ĐỀ THI GIỮA KỲ: I (2023-2024)
+KHOA: Hệ Thống Thông Tin
+----------
+MÔN: CƠ SỞ DỮ LIỆU (CQ + CLC)
+Thời gian: 75 phút
+(Sinh viên không được phép sử dụng tài liệu - Đề thi gồm có 2 trang)
+ĐỀ 1: (Sinh viên phải ghi đúng mã đề vào bài làm)
+
+[PDF PAGE 2]
+GIAOHANG (MAGH, MADH, NGAYGIAO, NGGIAO, DT_NGGIAO, NGNHAN,
+DT_NGNHAN, DCHI_NGNHAN, PHISHIP, SOTIEN, DAGIAO)
+Tân từ: Lưu trữ thông tin cho những đơn hàng cần giao gồm có: mã giao hàng, mã đơn hàng,
+ngày giao, người giao, số điện thoại người giao, người nhận hàng, điện thoại và địa chỉ người
+nhận, phí ship, số tiền còn lại khách phải thanh toán (SOTIEN) và thuộc tính DAGIAO ghi nhận
+trạng thái đơn hàng: DAGIAO có giá trị là 1 nếu đơn hàng đã giao thành công, 0 nếu đơn hàng
+chưa giao.
+Lưu ý: thuộc tính gạch chân là khóa chính.
+1. Viết câu lệnh SQL: (1.5 điểm)
+a. Tạo ràng buộc miền giá trị cho thuộc tính DAGIAO ghi nhận trạng thái đơn hàng. (0.75 điểm)
+b. Cập nhật tổng tiền giảm 2% nếu đơn hàng được bán từ ngày 1/11/2023 về sau. (0.75 điểm)
+2. Viết các biểu thức đại số quan hệ biểu diễn các câu truy vấn sau: (6 điểm)
+a. Cho biết sản phẩm (MASP, TENSP) thuộc thể loại ‘hoa chậu’ và giá bán cao hơn giá nhập
+10%. (1 điểm)
+b. Liệt kê người giao (NGGIAO), số điện thoại người giao (DT_NGGIAO) đã giao hàng thành
+công vào ngày 20/10/2023 của các đơn hàng đã bán trong ngày 19/10/2023. (1 điểm)
+c. Cho biết những sản phẩm (MASP, TENSP) thuộc thể loại 'Hoa nhập khẩu' và nhà vườn
+(MANV) cung cấp sản phẩm đó (nếu có). (1 điểm)
+d. Liệt kê đơn hàng (MADH) được lập trong năm 2023 đã mua cùng lúc 2 sản phẩm có tên sản
+phẩm (TENSP) là ‘Hoa Hồng’ và ‘Hoa Cúc’. (1 điểm)
+e. Với mỗi ngày bán trong tháng 10 năm 2023, cho biết số đơn hàng đã giao thành công của sản
+phẩm ‘HOABO01’ (MASP). Thông tin hiển thị: Ngày bán, Số đơn hàng đã giao. (1 điểm)
+f. Tìm thông tin người giao hàng (NGGIAO, DT_NGGIAO) đã giao thành công tất cả các sản
+phẩm có giá bán từ 1 triệu trở lên. (1 điểm)
+--------------------------------------------------------------------------------------------------------------------
+Ghi chú: [G1, G2] là chuẩn đầu ra môn học, xem chi tiết trong đề cương chi tiết môn CSDL
+---------------------------------------------------------Hết-------------------------------------------------------
+Duyệt đề Khoa/Bộ Môn
+TM. Giảng viên ra đề
+
+[PDF PAGE 3]
+Câu 1 : (2.5 điểm) [G1, G2]
+Để đảm bảo công tác phòng cháy chữa cháy, ban quản lý khu chung cư cần tổ chức cơ sở dữ liệu
+để quản lý việc kiểm tra tình trạng hoạt động của các thiết bị báo cháy, cụ thể như sau :
+ Khu chung cư có nhiều tòa nhà, mỗi tòa nhà có mã số để phân biệt giữa các tòa nhà, có tên tòa
+nhà, số tầng. Mỗi tòa nhà có nhiều tầng, một tầng chỉ thuộc một tòa nhà. Mỗi tầng có tên tầng,
+số lượng căn hộ của tầng đó và có một mã số duy nhất để phân biệt với các tầng của các tòa
+nhà khác.
+ Các thiết bị báo cháy (sau đây gọi tắt là thiết bị) cần được lưu trữ các thông tin như mô tả thiết
+bị, loại thiết bị và một mã thiết bị duy nhất để phân biệt với các thiết bị khác. Mỗi thiết bị sẽ
+được lắp đặt cố định tại một tầng của tòa nhà, một tầng có thể lắp đặt nhiều thiết bị.
+ Ban quản lý sẽ tiến hành các đợt kiểm tra những thiết bị này, mỗi đợt được ghi nhận bằng một
+phiếu kiểm tra bao gồm thông tin mã phiếu kiểm tra, ngày kiểm tra, loại kiểm tra (định kỳ/ đột
+xuất). Mỗi đợt có thể kiểm tra nhiều thiết bị và ghi nhận lại tình trạng của từng thiết bị. Mỗi
+thiết bị có thể được kiểm tra trong nhiều đợt khác nhau.
+Dựa trên mô tả ngữ cảnh trên, sinh viên thực hiện các yêu cầu sau:
+1. Xây dựng mô hình thực thể mối kết hợp. (1.5 điểm)
+2. Chuyển đổi mô hình thực thể mối kết hợp ở trên thành mô hình quan hệ. (1 điểm)
+Câu 2: Cho lược đồ cơ sở dữ liệu quản lý bán hàng của một cửa hàng hoa như sau: [G1, G2]
+NHAVUON (MANV, NGDAIDIEN, SDT, DIACHI)
+Tân từ: Lưu trữ thông tin nhà vườn cung cấp các sản phẩm mà cửa hàng bán ra. Các thông tin
+gồm: mã nhà vườn, họ tên người đại diện, số điện thoại và địa chỉ liên hệ.
+SANPHAM (MASP, TENSP, DVT, THELOAI, GIANHAP, GIABAN, MANV)
+Tân từ: Lưu trữ thông tin tất cả các sản phẩm mà cửa hàng bán ra. Các thuộc tính gồm có: mã
+sản phẩm, tên sản phẩm, đơn vị tính, thuộc một thể loại (thể loại gồm có: chậu hoa cắm sẵn, hoa
+bó sẵn, hoa chậu, hoa cắt cành, hoa nhập khẩu, lá trang trí), giá nhập, giá bán và do nhà vườn
+nào đã cung cấp. Trong đó, giá bán phải cao hơn giá nhập từ 10% đến 40%.
+DONHANG (MADH, NGAYBAN, TONGTIEN, DATHANHTOAN)
+Tân từ: Lưu trữ thông tin các đơn hàng của cửa hàng bán ra gồm: mã đơn hàng, ngày bán, tổng
+tiền của đơn hàng. Khách hàng đến mua mang về, hoặc có thể nhờ nhân viên giao hàng (đơn
+hàng nhờ giao phải thanh toán trước một khoản tiền (DATHANHTOAN) nhỏ hơn hoặc bằng tổng
+tiền của đơn hàng; tổng tiền của đơn hàng bao gồm tổng tiền của sản phẩm trong đơn hàng đó
+cộng với phí ship).
+CTDH (MADH, MASP, SOLUONG)
+Tân từ: Lưu trữ thông tin chi tiết mỗi đơn hàng gồm có những sản phẩm nào, số lượng bao nhiêu.
+TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN ĐỀ THI GIỮA KỲ: I (2023-2024)
+KHOA: Hệ Thống Thông Tin
+-------------
+MÔN: CƠ SỞ DỮ LIỆU (CQ + CLC)
+Thời gian: 75 phút
+(Sinh viên không được phép sử dụng tài liệu - Đề thi gồm có 2 trang)
+ĐỀ 2: (Sinh viên phải ghi mã đề vào bài làm)
+
+[PDF PAGE 4]
+GIAOHANG (MAGH, MADH, NGAYGIAO, NGGIAO, DT_NGGIAO, NGNHAN,
+DT_NGNHAN, DCHI_NGNHAN, PHISHIP, SOTIEN, DAGIAO)
+Tân từ: Lưu trữ thông tin cho những đơn hàng cần giao gồm có: mã giao hàng, mã đơn hàng,
+ngày giao, người giao, số điện thoại người giao, người nhận hàng, điện thoại và địa chỉ người
+nhận, phí ship, số tiền còn lại khách phải thanh toán (SOTIEN) và thuộc tính DAGIAO ghi nhận
+trạng thái đơn hàng: DAGIAO có giá trị là 1 nếu đơn hàng đã giao thành công, 0 nếu đơn hàng
+chưa giao.
+Lưu ý: thuộc tính gạch chân là khóa chính.
+1. Viết câu lệnh SQL: (1.5 điểm)
+a. Tạo ràng buộc miền giá trị cho thuộc tính THELOAI của sản phẩm hoa. (0.75 điểm)
+b. Cập nhật phí ship tăng 5% cho ngày giao hàng là 20/11/2023. (0.75 điểm)
+2. Viết các biểu thức đại số quan hệ biểu diễn các câu truy vấn sau: (6 điểm)
+a. Cho biết mã sản phẩm (MASP, TENSP) có đơn vị tính là ‘bó’ và giá bán cao hơn giá nhập
+40%. (1 điểm)
+b. Liệt kê người nhận (NGNHAN), số điện thoại người nhận (DT_NGNHAN) của các đơn
+hàng đã bán trong ngày 20/10/2023 và đã được giao hàng thành công vào ngày 21/10/2023. (1
+điểm)
+c. Cho biết đơn hàng (MADH, TONGTIEN) được bán trong ngày 20/10/2023 và mã giao hàng
+(MAGH) của đơn hàng đó (nếu có). (1 điểm)
+d. Liệt kê đơn hàng (MADH) được lập trong năm 2023 đã mua sản phẩm có tên (TENSP)
+‘Hoa Hồng’ nhưng không mua sản phẩm có tên ‘Hoa Cúc’. (1 điểm)
+e. Với mỗi sản phẩm của nhà vườn ‘NV01’ (MANV), cho biết tổng số lượng sản phẩm đã bán
+trong tháng 10 năm 2023. Thông tin hiển thị: Mã sản phẩm, tổng số lượng bán. (1 điểm)
+f. Tìm thông tin người giao hàng (NGGIAO, DT_NGGIAO) đã giao thành công tất cả các sản
+phẩm thuộc loại ‘hoa nhập khẩu’. (1 điểm)
+--------------------------------------------------------------------------------------------------------------------
+Ghi chú: [G1, G2] là chuẩn đầu ra môn học, xem chi tiết trong đề cương chi tiết môn CSDL
+---------------------------------------------------------Hết-------------------------------------------------------
+Duyệt đề Khoa/Bộ Môn
+TM. Giảng viên ra đề
