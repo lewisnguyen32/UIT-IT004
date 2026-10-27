@@ -45,16 +45,18 @@ E23/E24 chia 0,75 điểm cho mỗi yêu cầu SQL; E25 chia 0,5 điểm cho m�
 
 ## 4. Thứ tự luyện từng dạng
 
+Ưu tiên đề mới nhất: chọn câu cùng dạng theo E25 (2025–2026) → E24 → E23. Dùng E25-Đề1 để luyện trước và giữ E25-Đề2 cho lượt tổng hợp nếu chưa làm trước đó; đề cũ bổ sung dạng và chỗ cần củng cố. Theo thông tin người dùng cung cấp ngày 27/10/2026, thầy cho biết khả năng rất lớn đề sắp thi vẫn giữ format các năm trước.
+
 | Dạng | Câu để bắt đầu | Bước ôn cần có |
 |---|---|---|
-| Đọc lược đồ, chọn/chiếu | E23-Đề1 C2.2a, rồi E24-Đề1 C2.2a | R1, R4 |
-| Kết và lọc nhiều quan hệ | C2.2b của E23, E24, sau đó E25 | R1, R4 |
-| “Nếu có”, kết ngoài | C2.2c của từng mã | R5 |
-| “Cả hai”, “không có” | E23 C2.2d, rồi E24/E25 C2.2d | R5 |
-| “Tất cả”, phép chia | E23 C2.2f; E24/E25 C2.2e | R6 |
-| Gom nhóm, đếm/tổng | E23 C2.2e; E24 C2.2f | R7 |
+| Đọc lược đồ, chọn/chiếu | E25-Đề1 C2.2a; E24/E23 C2.2a để bổ sung | R1, R4 |
+| Kết và lọc nhiều quan hệ | E25-Đề1 C2.2b, rồi E24/E23 C2.2b khi cần | R1, R4 |
+| “Nếu có”, kết ngoài | E25-Đề1 C2.2c, rồi E24/E23 C2.2c khi cần | R5 |
+| “Cả hai”, “không có” | E25-Đề1 C2.2d (“không có”); E24-Đề2 C2.2d (“cả hai”); E23 để bổ sung | R5 |
+| “Tất cả”, phép chia | E25-Đề1 C2.2e; E24 C2.2e và E23 C2.2f để bổ sung | R6 |
+| Gom nhóm, đếm/tổng | E24 C2.2f (đếm SP); E23 C2.2e (đếm đơn/tổng lượng); tỷ lệ theo E25 ở dòng dưới | R7 |
 | Tỷ lệ và kiểm soát đơn vị đếm | E25-Đề1 C2.2f; giữ Đề2 cho lượt tổng hợp | R7 |
-| SQL ràng buộc và UPDATE | E23/E24 C2.1 rồi E25-Đề1 C2.1 | R8 |
-| ER và chuyển quan hệ | E23-Đề1 C1 rồi các ngữ cảnh khác | R2–R3 |
+| SQL ràng buộc và UPDATE | E25-Đề1 C2.1, rồi E24/E23 C2.1 khi cần | R8 |
+| ER và chuyển quan hệ | E25-Đề1 C1, rồi E24/E23 C1 khi cần | R2–R3 |
 
 Luyện theo dạng sau lượt ôn tổng quát. Giữ E25-Đề2 để làm 75 phút ở cuối nếu người dùng chưa chọn làm trước. Chưa có mã nào được đánh dấu đã làm.

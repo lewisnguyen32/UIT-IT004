@@ -11,6 +11,7 @@ Người dùng đã có kiến thức sơ bộ. Ưu tiên ôn tổng quát rồi
 ## Nguồn và giới hạn
 
 - **Kiến thức lấy chính từ bốn PDF lý thuyết người dùng gửi**, T1/T2/T3/T4. **Đề chuẩn để luyện và xếp trọng tâm chỉ lấy từ ba PDF đã gửi**, E23/E24/E25. Tên và đường dẫn chính xác ở tài liệu phạm vi và manifest; không tự thêm đề mạng, đề mẫu, ngân hàng hay đáp án ngoài vào căn cứ.
+- **Ưu tiên đề mới nhất:** khi chọn câu cùng dạng và xếp trọng tâm, ưu tiên E25 (2025–2026) → E24 → E23; dùng đề cũ để bổ sung dạng và chữa chỗ hổng. Theo người dùng ngày 27/10/2026, thầy cho biết khả năng rất lớn đề sắp thi vẫn giữ format các năm trước; lấy format đã đối chiếu làm định hướng ôn.
 - Chỉ dùng phần câu hỏi. Không đưa trước lời giải khi người dùng đang làm đề. Câu tự soạn chỉ là tự kiểm, phải phân biệt với đề gốc; không tính thành bằng chứng tần suất.
 - Ch4 mặc định đến hết trang PDF 40/98: DDL/ràng buộc và DML. Trọng tâm theo sáu mã đề là `CHECK`, `FOREIGN KEY` và `UPDATE`. Phần truy vấn SQL từ trang 41 trở đi chưa thuộc lộ trình chính; không tự thêm. T4 trang 32–33 có ví dụ chép dữ liệu dùng SELECT, chỉ nhận diện trong DML.
 - **Đại số quan hệ Ch3 vẫn phải ôn đủ dạng đề**: chọn/chiếu/kết, kết ngoài, giao/trừ, phép chia, gom nhóm/đếm/tính tỷ lệ. Không loại các dạng này vì đang giới hạn truy vấn SQL Ch4.

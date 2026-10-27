@@ -55,6 +55,8 @@ Cả sáu mã đề đều có thời gian 75 phút và phân bố điểm dư�
 
 Đây là tỷ trọng điểm của sáu mã đề trong ba PDF, không phải xác suất ra đề sắp tới. Các mã đề cùng năm dùng chung lược đồ và nhiều dạng, không coi là sáu quan sát hoàn toàn độc lập.
 
+**Cập nhật từ người dùng ngày 27/10/2026:** thầy cho biết khả năng rất lớn đề thi vẫn giữ format các năm trước. Vì vậy dùng cấu trúc đã đối chiếu ở trên làm định hướng ôn, ưu tiên đề mới nhất E25 (2025–2026), rồi E24 và E23 khi chọn câu cùng dạng. Thông tin này nói về format; giới hạn nội dung Ch4 vẫn theo mục 2 cho đến khi có thông báo cụ thể hơn.
+
 ## 4. Lượt A — Ôn tổng quát R1–R8
 
 Thời lượng dưới đây chỉ là gợi ý linh hoạt, không phải lịch đã thống nhất. Đi theo thứ tự phụ thuộc kiến thức; phần đã làm được chỉ cần nhắc ngắn rồi sang bước tiếp.
@@ -74,10 +76,10 @@ Khối R1–R8 là ôn lại nền trước luyện đề, không phải tám ch
 
 ## 5. Lượt B — Luyện theo dạng và chữa lỗi
 
-1. Dùng E23-Đề1 để nối lại ER/chuyển quan hệ và các dạng nền; chọn từng câu phù hợp sau khi ôn tổng quát, chưa cần bấm giờ cả đề.
-2. Với ĐSQH, luyện lần lượt chọn/chiếu/kết → kết ngoài → giao/trừ → chia → gom nhóm. E23-Đề2 dùng để kiểm tra biến thể cùng lược đồ, không coi việc nhớ đáp án đề1 là đã làm được đề2.
-3. Dùng E24 để luyện trường hợp kiểm định nhiều lần và đếm sản phẩm; chỉ đánh giá dựa trên cách người dùng lập biểu thức thực tế.
-4. Dùng E25-Đề1 để luyện ràng buộc tham chiếu, cập nhật nhiều cột, nhiều vai trò khách hàng và tỷ lệ; chưa đưa lời giải trước.
+1. Ưu tiên E25-Đề1 để luyện ER/chuyển quan hệ, SQL và ĐSQH sau khi ôn tổng quát; chọn từng câu phù hợp, chưa cần bấm giờ cả đề. Giữ E25-Đề2 cho lượt tổng hợp nếu chưa làm trước đó.
+2. Với ĐSQH, luyện lần lượt chọn/chiếu/kết → kết ngoài → giao/trừ → chia → gom nhóm và tỷ lệ. Khi chọn câu cùng dạng, ưu tiên E25 → E24 → E23; chưa đưa lời giải trước.
+3. Dùng E24 để bổ sung trường hợp kiểm định nhiều lần và đếm sản phẩm; chỉ đánh giá dựa trên cách người dùng lập biểu thức thực tế.
+4. Dùng E23 để bổ sung đếm đơn, tổng số lượng và các biến thể cần củng cố. Không coi việc nhớ đáp án một mã đề là đã làm được mã khác cùng lược đồ.
 5. Sau mỗi lượt, ghi mã câu, điểm đúng/thiếu, lý do lỗi và một điểm cần củng cố trong nhật ký. Không yêu cầu làm đúng tất cả câu cơ bản mới được chuyển dạng nếu người dùng muốn tiếp.
 
 Chi tiết vị trí câu và dạng xem [bản đồ đề](BAN_DO_DE_THI_CSDL.md).
