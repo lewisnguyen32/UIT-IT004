@@ -112,7 +112,7 @@ Với khuôn này, A có đúng lược đồ (X,Y), U là tập ứng viên c�
 
 T3 tr.56 đặt thuộc tính nhóm bên trái ký hiệu gom nhóm ℑ và hàm tính bên phải. Ví dụ khuôn tự soạn, R có đúng một bộ cho mỗi sự kiện MaSK của một đối tượng MaX:
 
-$$G(MaX,SoLan)\leftarrow {}_{MaX}\mathfrak{I}_{\operatorname{COUNT}(MaSK)}(R)$$
+$$G(MaX,SoLan)\leftarrow {}_{MaX}\mathfrak{I}_{\mathrm{COUNT}(MaSK)}(R)$$
 $$Dat\leftarrow\sigma_{SoLan\ge k}(G)$$
 
 Tên các cột của G được đặt theo vị trí kết quả: mã nhóm, rồi giá trị đếm.
