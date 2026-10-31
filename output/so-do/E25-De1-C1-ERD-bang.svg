@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1090" viewBox="0 0 1480 1090" role="img" aria-label="E25 – Đề 1 · Câu 1 | ERD dạng bảng">
+<style>text{font-family:'Segoe UI',Arial,sans-serif;fill:#162d49} .muted{fill:#54677f} .card{fill:#fff;stroke:#9cb3c9;stroke-width:1.5} .link{fill:none;stroke:#59738d;stroke-width:2.5;stroke-linejoin:round} .pk{text-decoration:underline} </style>
+<rect width="100%" height="100%" fill="#f5f8fc"/>
+<text x="52" y="48" font-size="28" text-anchor="start" font-weight="700">E25 – Đề 1 · Câu 1 | ERD dạng bảng</text>
+<text x="52" y="80" font-size="16" text-anchor="start" class="muted">Giữ tên bảng và thuộc tính của bài làm · Không gán thêm kiểu dữ liệu</text>
+<path d="M390,260H560" class="link"/>
+<path d="M920,260H1090" class="link"/>
+<path d="M740,420V650" class="link"/>
+<path d="M920,778H1090" class="link"/>
+<rect x="60" y="140" width="330" height="192" rx="12" fill="#fff" stroke="#9cb3c9" stroke-width="1.5"/>
+<path d="M72,140H378Q390,140 390,152V188H60V152Q60,140 72,140" fill="#174b78"/>
+<text x="78" y="171" font-size="21" text-anchor="start" style="fill:#fff;font-weight:700">NGTOGIAC</text>
+<rect x="61" y="188" width="328" height="36" fill="#f4f7fb"/>
+<text x="77" y="212" font-size="18" text-anchor="start" font-weight="600">MaSo</text>
+<text x="375" y="212" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK</text>
+<text x="77" y="248" font-size="18" text-anchor="start" >HoTen</text>
+<rect x="61" y="260" width="328" height="36" fill="#f4f7fb"/>
+<text x="77" y="284" font-size="18" text-anchor="start" >SoDienThoai</text>
+<text x="77" y="320" font-size="18" text-anchor="start" >Email</text>
+<rect x="560" y="120" width="360" height="300" rx="12" fill="#fff" stroke="#9cb3c9" stroke-width="1.5"/>
+<path d="M572,120H908Q920,120 920,132V168H560V132Q560,120 572,120" fill="#174b78"/>
+<text x="578" y="151" font-size="21" text-anchor="start" style="fill:#fff;font-weight:700">VUVIEC</text>
+<rect x="561" y="168" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="192" font-size="18" text-anchor="start" font-weight="600">MaSo</text>
+<text x="905" y="192" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK</text>
+<text x="577" y="228" font-size="18" text-anchor="start" >TomTat</text>
+<rect x="561" y="240" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="264" font-size="18" text-anchor="start" >ThoiGianPhatHien</text>
+<text x="577" y="300" font-size="18" text-anchor="start" >NenTangLienQuan</text>
+<rect x="561" y="312" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="336" font-size="18" text-anchor="start" >TinhTrang</text>
+<text x="577" y="372" font-size="18" text-anchor="start" >NgToGiac</text>
+<text x="905" y="372" font-size="13" text-anchor="end" style="fill:#17624e;font-weight:700">FK</text>
+<rect x="561" y="384" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="408" font-size="18" text-anchor="start" >NanNhan</text>
+<text x="905" y="408" font-size="13" text-anchor="end" style="fill:#17624e;font-weight:700">FK</text>
+<rect x="1090" y="140" width="330" height="228" rx="12" fill="#fff" stroke="#9cb3c9" stroke-width="1.5"/>
+<path d="M1102,140H1408Q1420,140 1420,152V188H1090V152Q1090,140 1102,140" fill="#174b78"/>
+<text x="1108" y="171" font-size="21" text-anchor="start" style="fill:#fff;font-weight:700">NANNHAN</text>
+<rect x="1091" y="188" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="212" font-size="18" text-anchor="start" font-weight="600">MaDD</text>
+<text x="1405" y="212" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK</text>
+<text x="1107" y="248" font-size="18" text-anchor="start" >HoTen</text>
+<rect x="1091" y="260" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="284" font-size="18" text-anchor="start" >Tuoi</text>
+<text x="1107" y="320" font-size="18" text-anchor="start" >NoiCT</text>
+<rect x="1091" y="332" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="356" font-size="18" text-anchor="start" >TTHT</text>
+<rect x="560" y="650" width="360" height="264" rx="12" fill="#fff" stroke="#9cb3c9" stroke-width="1.5"/>
+<path d="M572,650H908Q920,650 920,662V698H560V662Q560,650 572,650" fill="#174b78"/>
+<text x="578" y="681" font-size="21" text-anchor="start" style="fill:#fff;font-weight:700">THAMGIAXULY</text>
+<rect x="561" y="698" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="722" font-size="18" text-anchor="start" font-weight="600">MaSoVV</text>
+<text x="905" y="722" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK, FK</text>
+<text x="577" y="758" font-size="18" text-anchor="start" font-weight="600">MaSoDTV</text>
+<text x="905" y="758" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK, FK</text>
+<rect x="561" y="770" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="794" font-size="18" text-anchor="start" >NgayPhanCong</text>
+<text x="577" y="830" font-size="18" text-anchor="start" >NgayXuLy</text>
+<rect x="561" y="842" width="358" height="36" fill="#f4f7fb"/>
+<text x="577" y="866" font-size="18" text-anchor="start" >VaiTro</text>
+<text x="577" y="902" font-size="18" text-anchor="start" >KQSB</text>
+<rect x="1090" y="650" width="330" height="228" rx="12" fill="#fff" stroke="#9cb3c9" stroke-width="1.5"/>
+<path d="M1102,650H1408Q1420,650 1420,662V698H1090V662Q1090,650 1102,650" fill="#174b78"/>
+<text x="1108" y="681" font-size="21" text-anchor="start" style="fill:#fff;font-weight:700">DIEUTRAVIEN</text>
+<rect x="1091" y="698" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="722" font-size="18" text-anchor="start" font-weight="600">MaSo</text>
+<text x="1405" y="722" font-size="13" text-anchor="end" style="fill:#905a0e;font-weight:700">PK</text>
+<text x="1107" y="758" font-size="18" text-anchor="start" >HoTen</text>
+<rect x="1091" y="770" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="794" font-size="18" text-anchor="start" >DVCT</text>
+<text x="1107" y="830" font-size="18" text-anchor="start" >CM</text>
+<rect x="1091" y="842" width="328" height="36" fill="#f4f7fb"/>
+<text x="1107" y="866" font-size="18" text-anchor="start" >TTPC</text>
+<rect x="400" y="225" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="432" y="245" font-size="19" text-anchor="middle" font-weight="700">(0,n)</text>
+<rect x="488" y="225" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="520" y="245" font-size="19" text-anchor="middle" font-weight="700">(1,1)</text>
+<text x="475" y="286" font-size="14" text-anchor="middle" >Tố giác</text>
+<rect x="928" y="225" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="960" y="245" font-size="19" text-anchor="middle" font-weight="700">(1,1)</text>
+<rect x="1016" y="225" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="1048" y="245" font-size="19" text-anchor="middle" font-weight="700">(0,n)</text>
+<text x="1005" y="286" font-size="14" text-anchor="middle" >Nạn nhân chính</text>
+<rect x="756" y="438" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="788" y="458" font-size="19" text-anchor="middle" font-weight="700">(0,n)</text>
+<rect x="756" y="610" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="788" y="630" font-size="19" text-anchor="middle" font-weight="700">(1,1)</text>
+<text x="760" y="535" font-size="16" text-anchor="start" >Có lượt xử lý</text>
+<rect x="928" y="743" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="960" y="763" font-size="19" text-anchor="middle" font-weight="700">(1,1)</text>
+<rect x="1016" y="743" width="64" height="29" rx="6" fill="#f5f8fc" stroke="#f5f8fc" stroke-width="1.5"/>
+<text x="1048" y="763" font-size="19" text-anchor="middle" font-weight="700">(0,n)</text>
+<text x="1005" y="804" font-size="14" text-anchor="middle" >Tham gia</text>
+<text x="740" y="944" font-size="17" text-anchor="middle" font-weight="600">PK ghép: (MaSoVV, MaSoDTV)</text>
+<rect x="52" y="970" width="1376" height="111" rx="10" fill="#edf3fa" stroke="#d5e1ee" stroke-width="1.5"/>
+<text x="70" y="1000" font-size="16" text-anchor="start" >Cặp (min,max) cạnh bảng X: một dòng X tham gia ít nhất min, nhiều nhất max lần vào liên kết đó.</text>
+<text x="70" y="1029" font-size="16" text-anchor="start" >Giả thiết: các phía “có thể” lấy min = 0; mỗi cặp vụ việc–điều tra viên chỉ có tối đa một lượt xử lý.</text>
+<text x="70" y="1058" font-size="16" text-anchor="start" >Mỗi vụ việc có đúng một người tố giác và một nạn nhân chính. PK: khóa chính · FK: khóa ngoại.</text>
+</svg>
