@@ -1,10 +1,11 @@
-# Mốc ôn CSDL — 31/10/2026
+# Mốc ôn CSDL — 01/11/2026
 
 **Đang ôn từ khóa và cách làm tổng quát ĐSQH trước khi tiếp 6 câu E25-Đề1 C2.2a–f.** SQL vẫn tạm để sau.
 
 - **Tài liệu vừa soạn:** [bảng từ khóa, các khuôn giải và quy trình tổng quát](output/DSQH_BANG_TU_KHOA_VA_CACH_LAM_TONG_QUAT.md); chưa có bài tự làm mới hoặc đánh giá thành thạo.
+- **Vừa giải thích theo yêu cầu:** phép chia qua E25-Đề1 C2.2e và cách gom nhóm/đếm/tính tỷ lệ ở câu f theo ảnh người dùng gửi; cả hai đã có biểu thức lời giải. Chưa xác định ảnh là bài tự làm, chưa đánh giá thành thạo. Chi tiết ở nhật ký ngày 01/11.
 
-- **Bước hiện tại:** giao đúng E25-Đề1 C2.2a–f, đề tr.PDF 2; lược đồ tr.1–2. [Từ khóa và hướng phân tích sáu câu](output/E25_DE1_DSQH_TU_KHOA_VA_HUONG_DAN.md), chưa cung cấp sáu biểu thức đáp án hoàn chỉnh.
+- **Bước hiện tại:** đang ôn E25-Đề1 C2.2a–f, đề tr.PDF 2; lược đồ tr.1–2. [Từ khóa và hướng phân tích sáu câu](output/E25_DE1_DSQH_TU_KHOA_VA_HUONG_DAN.md); câu e/f đã được giải mẫu theo yêu cầu, a–d chưa cung cấp biểu thức đáp án hoàn chỉnh.
 - **Câu đang chờ:** E25-Đề1 C2.2a–f, bắt đầu a; chưa có bài làm hoặc điểm. Cho phép viết từng bước gán. DDL-TK1 câu 1–3 vẫn để lại, không ép trước khi luyện ĐSQH.
 - **Bài đề để sau phần học:** E25-Đề1 C2.1a (0,5 điểm, đề tr.2) đã được giao nhưng người dùng chọn học trước; chưa trả lời, chưa đánh giá SQL hoặc đưa lời giải câu gốc. Hiện không yêu cầu làm ngay.
 - **Câu vừa hỏi đáp án:** E25-Đề1 C2.1b (khách hàng đại diện ký hợp đồng là một khách hàng); đã cung cấp lời giải FOREIGN KEY theo yêu cầu, chưa có bài tự làm hoặc đánh giá thành thạo.

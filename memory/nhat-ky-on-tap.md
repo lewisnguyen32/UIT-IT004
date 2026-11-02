@@ -159,3 +159,19 @@ Mốc hiện tại xem [memory.md](../memory.md). Tệp này chỉ lưu kết qu
 - Đối chiếu cache đúng các phần T3 về chọn/chiếu, gán/đổi tên/kết, kết ngoài, hội/giao/trừ/chia và gom nhóm; xem lại ảnh đã cache T3 tr.PDF 56 để viết ký hiệu gom nhóm theo bố cục slide. Dùng bản đồ sáu mã đề để giữ đủ dạng; không thêm đề ngoài hoặc mở phạm vi truy vấn SQL.
 - Tài liệu dùng khuôn trừu tượng tự soạn, phân biệt với đáp án đề gốc; nhấn mạnh cùng bộ/nhiều bộ, ứng viên trừ vi phạm, đơn vị bảo toàn khi kết ngoài, tập bắt buộc của phép chia, đơn vị đếm và phạm vi tử/mẫu. Không cung cấp sáu biểu thức đáp án E25 đang chờ.
 - Đây là hướng dẫn đã cung cấp, chưa có bài tự làm hoặc đánh giá kết quả mới. Vẫn chờ E25-Đề1 C2.2a–f, bắt đầu a, khi người dùng chọn tiếp luyện.
+
+## 01/11/2026
+
+### Phép chia — Giải mẫu E25-Đề1 C2.2e theo yêu cầu
+
+- Người dùng yêu cầu giải thích phép chia và lấy câu 2e đề 2025–2026 làm ví dụ. Dùng Đề1 theo mốc hiện tại; đối chiếu E25 tr.PDF 1–2 và T3 tr.51–54 từ cache.
+- Giải thích R(X,Y) ÷ S(Y) giữ X có đủ mọi Y trong S; dựng S(MaLBH) từ toàn LOAIBAOHIEM với KyThanhToan='Hàng năm', dựng R(SoHD,MaLBH) từ LSDONGTIEN lọc năm 2025/Chuyển khoản rồi kết CHITIETHD qua MaCTHD. Cung cấp lời giải từng bước KQ ← R ÷ S theo yêu cầu trực tiếp.
+- Dữ liệu ví dụ là tự soạn để minh họa: thiếu một loại thì không đạt, có thêm loại ngoài S vẫn đạt; nhiều giao dịch cùng loại không thay việc phủ đủ loại. Nhắc lấy tập bắt buộc từ toàn LOAIBAOHIEM và chỉ chiếu cặp SoHD/MaLBH trước chia.
+- Đây là bài trợ lý giải mẫu, chưa có câu trả lời của người dùng hoặc đánh giá thành thạo. Các câu khác trong E25-Đề1 C2.2a–f vẫn chưa có bài tự làm.
+
+### Gom nhóm và tỷ lệ — Hướng dẫn E25-Đề1 C2.2f theo ảnh
+
+- Người dùng gửi ảnh biểu thức R1–R5 và yêu cầu giải thích câu f, hướng dẫn. Ảnh chưa được xác định là bài người dùng tự làm; không ghi kết quả tự làm hoặc điểm.
+- Đối chiếu câu gốc trong hướng dẫn đã kiểm nguồn và ảnh cache T3 tr.PDF 56 về ký hiệu gom nhóm. Giải thích từng bước: R1 là yêu cầu năm 2025 nối CHITIETHD; R2 gom SoHD đếm mọi MaYC; R3 lọc Đã chi trả từ R1; R4 gom SoHD đếm MaYC đã chi trả; nối R2/R4 theo SoHD và lọc SLYCDCT/SLYC ≥ 0,8.
+- Nhắc tử/mẫu cùng phạm vi NgYeuCau năm 2025, đếm yêu cầu chứ không cộng tiền; giữ MaYC cho đến khi đếm, không nối LSDONGTIEN làm nhân bản. Chiếu mở rộng ở R5 dùng tính tỷ lệ; có thể lọc trực tiếp trên hai số đếm rồi chiếu SoHD. Đúng 80% vẫn đạt; hợp đồng không có yêu cầu không có tỷ lệ, không có yêu cầu đã chi trả thì không đạt nên kết thường đủ cho ngưỡng này.
+- Minh họa số đếm tự soạn, không phải dữ liệu đề. Đây là nội dung đã hướng dẫn theo yêu cầu, chưa đánh giá thành thạo.
