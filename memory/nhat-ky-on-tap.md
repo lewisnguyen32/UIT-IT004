@@ -175,3 +175,130 @@ Mốc hiện tại xem [memory.md](../memory.md). Tệp này chỉ lưu kết qu
 - Đối chiếu câu gốc trong hướng dẫn đã kiểm nguồn và ảnh cache T3 tr.PDF 56 về ký hiệu gom nhóm. Giải thích từng bước: R1 là yêu cầu năm 2025 nối CHITIETHD; R2 gom SoHD đếm mọi MaYC; R3 lọc Đã chi trả từ R1; R4 gom SoHD đếm MaYC đã chi trả; nối R2/R4 theo SoHD và lọc SLYCDCT/SLYC ≥ 0,8.
 - Nhắc tử/mẫu cùng phạm vi NgYeuCau năm 2025, đếm yêu cầu chứ không cộng tiền; giữ MaYC cho đến khi đếm, không nối LSDONGTIEN làm nhân bản. Chiếu mở rộng ở R5 dùng tính tỷ lệ; có thể lọc trực tiếp trên hai số đếm rồi chiếu SoHD. Đúng 80% vẫn đạt; hợp đồng không có yêu cầu không có tỷ lệ, không có yêu cầu đã chi trả thì không đạt nên kết thường đủ cho ngưỡng này.
 - Minh họa số đếm tự soạn, không phải dữ liệu đề. Đây là nội dung đã hướng dẫn theo yêu cầu, chưa đánh giá thành thạo.
+
+## 03/11/2026
+
+### SQL — Cú pháp UPDATE và ngoặc ở WHERE
+
+- Người dùng hỏi cấu trúc UPDATE đầy đủ và có thể đặt điều kiện WHERE trong ngoặc hay không. Đối chiếu T4 tr.PDF 35–37 trong cache.
+- Nhắc cú pháp UPDATE tên_bảng SET cột = giá_trị, phân cách nhiều phép gán bằng dấu phẩy; WHERE lọc dòng, bỏ WHERE cập nhật mọi dòng. Sau UPDATE ghi tên bảng trực tiếp, không có từ khóa TABLE.
+- Giải thích WHERE (điều_kiện) hợp lệ; ngoặc bao điều kiện, không bao cả từ khóa WHERE. Minh họa bằng VD18 của T4 tr.36, thêm ngoặc quanh điều kiện NuocSX = 'TrungQuoc'.
+- Đây là hỏi đáp lý thuyết theo yêu cầu, chưa có bài tự làm hoặc đánh giá thành thạo SQL; giữ câu ĐSQH đang chờ.
+
+### E24-Đề2 C2.2d — Hướng làm “Tốt” trên cả hai tiêu chuẩn
+
+- Người dùng gửi ảnh câu d và nêu hướng xác định KIEMDINH(MaKD), KETQUACT(MaKD,MaTC), TIEUCHUANKD(MaTC,TenTC), lọc hai tên tiêu chuẩn thành TC1/TC2 rồi hỏi bước tiếp. Đây là phân tích ban đầu, chưa phải bài làm biểu thức hoàn chỉnh.
+- Đối chiếu E24-Đề2 tr.PDF 3–4 và T3 tr.45–50. Hai tên đúng là “Mức tiêu thụ điện” và “Độ sáng”; mức DanhGia yêu cầu chính xác “Tốt”. Bảng kiểm định tên gốc KIEMDINHSP; câu này có thể lấy MaKD trực tiếp từ KETQUACT, không cần nối KIEMDINHSP.
+- Xác nhận việc tách TC1/TC2 hợp lý; cần giữ thêm DanhGia trong KETQUACT để lọc trước khi chiếu. Hướng dẫn lọc chi tiết “Tốt”, nối với từng TC qua MaTC, chiếu riêng MaKD thành hai tập rồi giao. Không giao ngay hai tập MaTC hoặc đòi hai tên trên cùng một dòng.
+- Chỉ hướng dẫn các bước và ý nghĩa tập hợp, chưa viết trọn bộ biểu thức đáp án thay người dùng. Ví dụ tập mã minh họa tự soạn; chưa đánh giá thành thạo. Chờ người dùng viết hai nhánh từ TC1/TC2 nếu tiếp câu này.
+
+### E24-Đề2 C2.2e — Chữa bài làm phép chia
+
+- Người dùng tự đề xuất A = chiếu MaKD từ kiểm định lọc năm 2024; B = chiếu MaKD,MaTC từ A kết KETQUACT theo MaKD; C = chiếu MaTC từ KETQUACT lọc MaLSP; KQ = B ÷ C.
+- Đối chiếu E24 tr.PDF 3–4 và T3 tr.51–54. A/B đúng về ý tưởng và chọn phép chia đúng; chuẩn hóa tên bảng KIEMDINHSP, thuộc tính ngày ThoiDiemKD theo đề gốc.
+- Lỗi C: KETQUACT không có MaLSP. Tập bắt buộc phải lấy toàn bộ MaTC trong TIEUCHUANKD với MaLSP='LSP001', không lấy riêng các tiêu chuẩn đã xuất hiện trong kết quả kiểm định vì có thể bỏ sót tiêu chuẩn chưa được kiểm định. Sau khi sửa C, KQ=B÷C đúng.
+- Nhắc câu e chỉ yêu cầu đã kiểm định, sự có mặt cặp MaKD/MaTC là điều kiện cần dùng; không thêm điều kiện DanhGia của câu d. Đã chữa sau bài làm, chưa có bài sửa độc lập hoặc đánh giá thành thạo phép chia.
+
+### E24-Đề2 C2.2f — Chữa tập sản phẩm và đếm sau kết trái
+
+- Người dùng tự đề xuất PXSP(MaPX,TenPX,MaSP) từ SANPHAM kết PHANXUONG; DAT/KHONGDAT là tập MaSP từng có kiểm định đạt/không đạt; CON=DAT giao KHONGDAT; cuối cùng gom MaPX,TenPX đếm COUNT(*) trên PXSP kết trái CON theo MaSP.
+- Đối chiếu E24 tr.PDF 4 và T3 tr.55–61. Chấp nhận DAT giao KHONGDAT theo cách hiểu tân từ đề: kiểm định lại sau lần trước không đạt; khi đã có cả không đạt và đạt thì đạt sau lần đầu. Nếu cho phép kiểm định lại cả sau khi đã đạt, cách này chưa đủ và phải kiểm tra ThoiDiemKD. Không tự thêm giả thiết về dữ liệu ngoài đề.
+- DAT/KHONGDAT đã chiếu MaSP nên CON không đếm lặp một sản phẩm qua nhiều lần kiểm định. Tên thuộc tính đúng là KQKiemDinh, không phải KQKD nếu viết theo lược đồ gốc.
+- Lỗi chính: PXSP kết trái CON vẫn giữ mọi sản phẩm, nên COUNT(*) đếm cả sản phẩm không thuộc CON; COUNT(PXSP.MaSP) cũng chưa sửa được lỗi. Ngoài ra PXSP xây bằng kết trong không giữ phân xưởng chưa có sản phẩm nếu yêu cầu hiện từng phân xưởng.
+- Chữa phần cuối: SPDAT=chiếu MaPX,MaSP(SANPHAM kết CON theo MaSP); lấy PHANXUONG kết trái SPDAT theo MaPX, gom MaPX,TenPX và COUNT(MaSP) phía SPDAT. Mã sản phẩm bên phải không khớp là NULL nên không được đếm; phân xưởng không có sản phẩm thỏa điều kiện có số lượng 0.
+- Đây là bài làm đã được chữa, chưa có bài sửa sau phản hồi hoặc đánh giá thành thạo; không tự chấm điểm.
+
+### Ôn lý thuyết theo từng câu trong cấu trúc đề
+
+- Người dùng yêu cầu ôn CSDL, lý thuyết trước, gắn với mỗi câu trong đề thi. Chuyển hoạt động hiện tại sang ôn lý thuyết; giữ các bài đang để lại, chưa giao đề mới.
+- Đối chiếu phạm vi/bản đồ đề và các trang cache liên quan: T1 tr.37–53; T2 tr.22–32,46–52; T3 tr.13–19,25–32,36–38,45–53,55–57; T4 tr.12–13,22–24,35–37. Nhắc lý thuyết ER, chuyển quan hệ/khóa, CHECK/FOREIGN KEY/UPDATE, chọn/chiếu/kết, kết ngoài, giao/trừ, chia, gom nhóm/đếm/tỷ lệ. Dùng khuôn trừu tượng, chưa cung cấp lời giải mới cho câu đề đang để lại.
+- Đây là nội dung nhắc lại theo yêu cầu, chưa có bài trả lời mới hoặc đánh giá thành thạo; chưa đánh dấu hoàn tất R1–R8.
+
+### TK-C2-01 — Soạn Câu 2 tự luyện gồm 9 ý
+
+- Người dùng yêu cầu từ hai đề 2025–2026 và 2024–2025 tạo một Câu 2 gồm 8–9 ý, có phần 1 và 2. Chọn 9 ý theo bố cục 3 ý SQL và 6 ý ĐSQH; không tự mở rộng sang truy vấn SQL.
+- Đọc E25-Đề1 tr.PDF 1–2 và E24-Đề2 tr.PDF 3–4 từ cache đã đối chiếu; dùng riêng phần câu hỏi. Không mở hoặc cung cấp trước câu hỏi/lời giải E25-Đề2 đang để dành.
+- Lưu [bài TK-C2-01](../output/TU_LUYEN_CAU_2_TONG_HOP_01.md). Bài tự soạn dùng lược đồ kiểm định sản phẩm rút gọn, khóa và nghiệp vụ được quy định rõ cho bài này; thay các mã/điều kiện có nhãn tự soạn, không gán là nguyên văn đề gốc.
+- SQL gồm miền giá trị, tham chiếu công nhân và tăng phần trăm hai cột. ĐSQH gồm lọc/kết, bảo toàn sản phẩm khi không có kiểm định phù hợp, cả hai tiêu chuẩn, không có kiểm định không đạt, bao phủ toàn bộ tiêu chuẩn và đếm sản phẩm/tính tỷ lệ. Ý f kết hợp đạt sau lần đầu với tỷ lệ; phạm vi toàn bộ lịch sử, mẫu số dương, đơn vị đếm là sản phẩm được nêu trong câu hỏi.
+- Chỉ cung cấp câu hỏi, không kèm đáp án hoặc hướng dẫn chọn phép toán cho từng ý. Chưa có bài làm hoặc đánh giá mới; không tính bài tự soạn vào bằng chứng tần suất của đề gốc.
+
+### E23-Đề1 C2.2c — Chữa kết trái sản phẩm và nhà vườn
+
+- Người dùng viết A=chọn THELOAI='Hoa nhập khẩu'(SANPHAM), B=A kết NHAVUON theo MANV, KQ=chiếu A.MASP,A.TENSP,B.MANV(A kết trái B theo MANV). Đối chiếu E23 tr.PDF 1–2; SANPHAM có MANV, NHAVUON có MANV.
+- Chấp nhận biểu thức theo ngữ nghĩa tập hợp và điều kiện kết chỉ theo MANV: A ở trái giữ đủ sản phẩm, B có mã nhà vườn khớp; dù nhiều sản phẩm cùng nhà vườn tạo nhiều dòng trung gian, phép chiếu ba cột loại trùng nên kết quả đúng. B là bước dư; hướng rút gọn là chiếu A.MASP,A.TENSP,NHAVUON.MANV từ A kết trái NHAVUON theo MANV. Mã phía phải là NULL khi không khớp.
+- Đã chữa bài người dùng tự đề xuất; chưa có bài sửa độc lập, chưa đánh giá thành thạo hoặc chấm điểm. Giữ các câu đang để lại.
+
+### E23-Đề1 C2.2d — Chữa giao hai tập đơn hàng
+
+- Người dùng đề xuất A=chọn YEAR(NgayBan)=2025 từ DONHANG kết CTHD theo MADH; B/C là chiếu MADH sau khi nối SANPHAM theo MASP và lọc TENSP='HH'/'HC'; KQ=B giao C.
+- Đối chiếu câu d tại E23 tr.PDF 2: yêu cầu năm 2023 và hai tên 'Hoa Hồng', 'Hoa Cúc'. Cách nối, chiếu riêng MADH và giao hai tập đúng về cấu trúc, bảo đảm cùng một đơn có cả hai sản phẩm; sửa hằng năm và dùng nguyên tên sản phẩm khi viết bài chính thức. Nếu HH/HC chỉ là viết tắt trong trao đổi thì vẫn hiểu ý, nhưng không thay chuỗi gốc trong biểu thức nộp.
+- Đã chữa sau bài làm; chưa có bài sửa độc lập hoặc đánh giá thành thạo, không chấm điểm. Các bài đang để lại vẫn giữ nguyên.
+
+### E23-Đề1 C2.2e — Chữa gom nhóm đếm đơn theo ngày bán
+
+- Người dùng đề xuất A lọc DONHANG theo ngày bán tháng 10/2023; B nối CTDH theo MADH và lọc MASP; C nối GIAOHANG theo MADH và lọc DAGIAO=1; gom C theo NGAYBAN, COUNT(MADH).
+- Đối chiếu E23 tr.PDF 1–2: mã sản phẩm gốc là 'HOABO01'. Xác nhận chuỗi lọc/kết và thuộc tính nhóm đúng, điều kiện tháng đặt trên NGAYBAN chứ không phải NGAYGIAO; đếm đơn chứ không SUM(SOLUONG).
+- Đề nghị D=chiếu NGAYBAN,MADH(C) rồi gom D để mỗi đơn chỉ được đếm một lần nếu có nhiều bản ghi giao hàng khớp; không khẳng định đề cho phép hoặc cấm nhiều bản ghi GIAOHANG trên một MADH khi chưa có ràng buộc rõ. Nếu mỗi đơn chỉ khớp một bản ghi giao hàng thì gom trực tiếp C là đúng.
+- Nêu giới hạn: gom C/D chỉ có ngày có đơn thỏa điều kiện. Nếu hiểu 'mỗi ngày bán' gồm ngày không có đơn thỏa thì lấy tập NGAYBAN từ A và bảo toàn bằng kết trái với D, đếm MADH phía D. Đây là chỗ cần nêu cách hiểu phạm vi ngày, không tự thêm ngày không bán hàng.
+- Đã chữa bài tự đề xuất; chưa có bài sửa độc lập hoặc đánh giá thành thạo, không chấm điểm.
+
+### E23-Đề1 C1 — Giải mẫu ER và chuyển mô hình quan hệ
+
+- Người dùng gửi ảnh Câu 1 về dụng cụ chữa cháy, tô vàng câu mỗi tòa nhà có nhiều tầng; sau khi được hỏi phạm vi hỗ trợ, yêu cầu giải đầy đủ cả hai ý. Đối chiếu ảnh với E23 tr.PDF 1, T1 tr.51–53 và T2 tr.49–50 từ cache.
+- Xác định bốn thực thể TOANHA, TANG, LOAIDUNGCU, NHASANXUAT; giữ các thuộc tính đề yêu cầu. MaTang duy nhất giữa các tòa nên là khóa riêng của TANG, không ghép MaTN vào khóa.
+- Mối kết hợp CÓ: phía TOANHA (1,n), phía TANG (1,1); CUNG CẤP: phía NHASANXUAT (0,n), phía LOAIDUNGCU (1,1); BỐ TRÍ: hai phía (0,n), có thuộc tính SoLuong. Min=0 ở các mô tả “có thể”, do không nêu bắt buộc tham gia.
+- Chuyển thành năm quan hệ: TOANHA(MaTN,TenTN,SoTang), TANG(MaTang,TenTang,SoLuongCanHo,MaTN), NHASANXUAT(MaNSX,TenNSX,DiaChi), LOAIDUNGCU(MaLDC,TenLDC,MoTa,MaNSX), BOTRI(MaTang,MaLDC,SoLuong). BOTRI có khóa ghép (MaTang,MaLDC); các mã tham chiếu là khóa ngoại tương ứng.
+- Đây là trợ lý giải mẫu theo yêu cầu trực tiếp, chưa có bài làm của người dùng, không chấm điểm hoặc đánh giá thành thạo; các câu đang để lại vẫn giữ nguyên.
+
+### E23-Đề1 C2.2f — Chữa tập bắt buộc và thông tin người giao trong phép chia
+
+- Người dùng tự viết A=(GIAOHANG kết CTDH theo MADH) kết SANPHAM theo MASP; DK=chiếu MASP từ A lọc GIABAN>=1000000; B=chiếu NGGIAO,MASP từ A lọc DAGIAO=1; C=B/DK. Đối chiếu câu gốc E23 tr.PDF 2 và ảnh người dùng.
+- Xác nhận A nối đúng và dùng phép chia đúng dạng 'tất cả'. Sửa DK lấy trực tiếp từ toàn SANPHAM, không lấy từ A vì A có thể bỏ sản phẩm đắt chưa xuất hiện trong giao hàng. Đó vẫn là sản phẩm bắt buộc theo đề; nếu chưa ai giao thành công thì không ai đáp ứng đủ.
+- Sửa B thành chiếu NGGIAO,DT_NGGIAO,MASP(chọn DAGIAO=1(A)), để kết quả B/DK có cả NGGIAO,DT_NGGIAO và tránh gom thành tích theo tên của nhiều người trùng tên. Không cần lọc giá trong B trước phép chia; các sản phẩm ngoài DK không ảnh hưởng yêu cầu phủ đủ DK.
+- Đã cung cấp biểu thức sửa sau bài làm, chưa có bài sửa độc lập, chưa chấm điểm hoặc đánh giá thành thạo. Giữ các câu đang để lại.
+
+### E23-Đề2 C2.2e — Chữa chiếu mất lượt bán trước SUM
+
+- Người dùng gửi hai ảnh bài làm: Q(MASP,SL) chiếu MASP,SOLUONG sau nối DONHANG/CTDH/SANPHAM và lọc tháng 10/2023; điều kiện MANV trong Q đã gạch bỏ. R chiếu MASP từ SANPHAM lọc MANV='NV01'; S(MASP,SL) chiếu hai cột từ R kết trái Q theo MASP; cuối cùng gom MASP tính SUM(SL). Đối chiếu E23 tr.PDF 4.
+- Xác nhận lọc tháng/năm trên NGAYBAN, tập R và hướng kết trái để giữ sản phẩm chưa bán, dùng SUM thay COUNT đều hợp lý. Lỗi chính theo ngữ nghĩa tập hợp: Q và S chỉ giữ MASP,SL nên hai đơn khác nhau cùng mua một sản phẩm cùng số lượng bị phép chiếu gộp lại, tổng bị thiếu. Minh họa tự soạn: hai đơn mỗi đơn mua 5 cùng sản phẩm phải cộng 10, nhưng chiếu hai cột chỉ còn một bộ (MASP,5).
+- Chữa giữ MADH ở cả Q(MADH,MASP,SL) và S(MASP,MADH,SL), đến bước gom mới bỏ MADH; dùng R.MASP sau kết trái, không dùng tên SANPHAM.MASP khi toán hạng chỉ là R và Q. Có thể bỏ nối SANPHAM trong Q vì R đã lọc nhà vườn; nếu giữ nối thì không phải lỗi. Tổng toàn giá trị NULL của sản phẩm chưa bán cần đổi/quy ước thành 0 nếu hiển thị số 0.
+- Đã chữa bài người dùng gửi, chưa có bài sửa độc lập hoặc đánh giá thành thạo, không chấm điểm; giữ các bài đang để lại.
+
+### E23-Đề2 C2.2f — Bài làm phép chia đúng
+
+- Người dùng tự viết A=chiếu NGGIAO,DT_NGGIAO,MASP(chọn DAGIAO=1(GIAOHANG kết CTDH theo MADH)); B=chiếu MASP(chọn THELOAI='Hoa nhập khẩu'(SANPHAM)); KQ=A/B. Đối chiếu E23 tr.PDF 4: yêu cầu giao thành công tất cả sản phẩm thuộc loại 'hoa nhập khẩu'.
+- Xác nhận đúng về cấu trúc và ngữ nghĩa: A có các cặp người giao/sản phẩm đã giao thành công, B lấy đủ sản phẩm bắt buộc từ SANPHAM, thương trả đúng NGGIAO,DT_NGGIAO. Không cần nối SANPHAM vào A hoặc lọc thêm thể loại trong A. Nhắc đóng đủ ngoặc và ghi chuỗi thể loại đúng đề.
+- Đây là bài người dùng tự làm đúng về nội dung sau các lần chữa phép chia trước đó, không chấm điểm hoặc suy ra thành thạo chung. Giữ các câu đang để lại.
+
+### E23-Đề1 C2.1a–b — Giải mẫu SQL theo yêu cầu
+
+- Người dùng yêu cầu giải Đề1 Câu2 phần1; theo mạch đang ôn xác định E23-Đề1. Đối chiếu E23 tr.PDF 2 và T4 tr.PDF 22–24,35–37 trong cache.
+- Câu a: ALTER TABLE GIAOHANG ADD CONSTRAINT CK_GIAOHANG_DAGIAO CHECK (DAGIAO IN (0,1)); theo miền DAGIAO đã giao thành công=1, chưa giao=0.
+- Câu b: UPDATE DONHANG SET TONGTIEN=TONGTIEN*0.98 WHERE NGAYBAN>='20231101'; giải thích còn 98% giá trị cũ và mốc ngày tính cả 01/11/2023, không tự giới hạn ngày cuối năm.
+- Đây là trợ lý giải mẫu theo yêu cầu, chưa có bài tự làm, không chấm điểm hoặc đánh giá thành thạo SQL. Giữ các bài đang để lại.
+
+## 04/11/2026
+
+### E25-Đề2 C2.2a–e — Chữa loạt bài người dùng tự gửi
+
+- Người dùng chọn Đề2 năm 2025–2026 và gửi năm bài ĐSQH a–e. Đối chiếu đúng E25 tr.PDF 3–4 từ cache đã kiểm; không đưa lời giải f chưa làm. Đây là lượt làm từng câu, không phải bài 75 phút.
+- a: Chọn năm 2025, trạng thái rồi chiếu MaYC,MaCTHD đúng cấu trúc. Chuỗi 'DXL' chưa đúng nguyên văn 'Đang xét duyệt'; nếu là viết tắt khi trao đổi thì hiểu ý, bài nộp phải ghi đủ.
+- b: Nối CHITIETHD với khách theo MaKHThuHuong=MaKH, lọc nghề nghiệp, nối HOPDONG theo SoHD rồi lọc NgHetHan<31/12/2025 và chiếu là đúng. Sửa cột SoCTHD thành MaCTHD; nghề nghiệp 'Giáo viên' thay 'GV' khi ghi chính thức. Dấu < đúng yêu cầu 'trước ngày'.
+- c: A=CHITIETHD nối khách thụ hưởng đúng; G lọc giao dịch tiền mặt sau nối theo MaCTHD; A kết trái G theo MaKH và chiếu A.MaKH,A.HoTen,G.MaGD. Lỗi thời gian MONTH(NgDongTien)=2025 làm tập G rỗng: cần MONTH=11 và YEAR=2025. Chuỗi đúng 'Tiền mặt'. Chấp nhận hướng kết trái theo MaKH với giả thiết bảo toàn từng khách đã có vai trò thụ hưởng trong CHITIETHD; khi không có giao dịch phù hợp ở bất kỳ chi tiết nào thì MaGD NULL, khi có thì liệt kê các giao dịch. Không kết luận phải đổi thành nối theo MaCTHD vì sẽ tạo NULL riêng cho từng chi tiết và đổi ngữ nghĩa bảo toàn.
+- d: A nối HOPDONG/CHITIETHD/LOAIBAOHIEM đúng; B/C lấy SoHD ký năm 2025 mua mỗi tên bảo hiểm, D=B giao C đúng 'cả hai'. E nối lại A/D rồi nối KHACHHANG theo MaKHDaiDien=MaKH, chiếu SoHD,MaKH,HoTen đúng. Chuỗi đầy đủ 'Bệnh hiểm nghèo' và 'Tử vong' thay 'BHN','TV' khi nộp; chiếu loại trùng do nhiều chi tiết không làm sai tập đầu ra.
+- e: Q lấy toàn bộ MaLBH của kỳ hàng tháng từ LOAIBAOHIEM; E lọc yêu cầu năm 2025 đã chi trả sau nối CHITIETHD; R chiếu SoHD,MaLBH; R/Q đúng, không cần thêm lọc loại vào R. Sửa tên thuộc tính KyThangToan thành KyThanhToan và chuỗi 'Hằng tháng' thành 'Hàng tháng' đúng đề.
+- Đã chữa theo bài tự làm, chưa có bài sửa độc lập, không gán điểm hoặc thành thạo chung; f chưa gửi. Đề2 không còn là đề hoàn toàn chưa xem để dành làm 75 phút; các bài khác vẫn để lại.
+
+### E25-Đề2 C2.2f — Hướng dẫn tỷ lệ số lần chuyển khoản
+
+- Người dùng hỏi cách làm f sau khi gửi bài a–e. Đối chiếu E25 tr.PDF 4: tỷ lệ số lần đóng tiền bằng 'Chuyển khoản' trong năm 2025 trên tổng số lần đóng tiền năm 2025 của từng hợp đồng, ngưỡng từ 80%.
+- Hướng dẫn A=chọn YEAR(NgDongTien)=2025(LSDONGTIEN kết CHITIETHD theo MaCTHD); B(SoHD,TongLan) gom A theo SoHD đếm MaGD; C(SoHD,LanCK) gom A lọc PhuongThuc='Chuyển khoản' theo SoHD đếm MaGD; nối B,C theo SoHD, lọc LanCK>=0.8*TongLan và chiếu SoHD.
+- Nhấn mạnh dùng COUNT(MaGD), không SUM(STDong); mẫu đếm mọi phương thức, tử đếm riêng chuyển khoản, cả hai cùng năm 2025. Giữ MaGD cho đến khi đếm, không chiếu mất lượt giao dịch. Đúng 80% vẫn đạt. Kết trong hai tập đếm đủ: không có chuyển khoản thì không đạt; không có giao dịch thì tỷ lệ không xác định, không đưa vào.
+- Đã cung cấp hướng dẫn kèm biểu thức theo yêu cầu, chưa có bài tự làm f hoặc đánh giá thành thạo. Các câu đang để lại giữ nguyên.
+
+### Đề1 giữa kỳ 2026–2027 — Giải đề mới và chữa C2.2f sau thi
+
+- Người dùng gửi hai ảnh đề vừa thi, yêu cầu giải toàn bộ; đã lưu [lời giải](../output/GIAI_DE1_GK_CSDL_2026_2027.md). Đây là đề mới do người dùng cung cấp, không phải đề tự soạn; chưa cập nhật thống kê tần suất hoặc thay thế bộ E23/E24/E25.
+- Sau đó người dùng thuật lại bài C2.2f: nối THIETBI–CTTHUE–SUCO, chiếu MaTB,MaSC, gom MaTB đếm MaSC và lọc SL>=2; nối lại CTTHUE, lọc YEAR(NgayNhan)=2026, chiếu MaKHNhan,MaCTT rồi gom khách đếm MaCTT, chọn SL=3 và lấy họ tên.
+- Phần xác định thiết bị có ít nhất hai sự cố trong toàn lịch sử đúng. Lỗi ở đơn vị đếm cuối: MaCTT đếm chi tiết thuê, không bảo đảm ba thiết bị khác nhau vì cùng MaTB có thể xuất hiện ở nhiều hợp đồng. Sửa B thành chiếu MaKHNhan,MaTB trước khi gom và COUNT(MaTB). Giữ YEAR(NgayNhan)=2026, không lọc năm hoặc trạng thái ở tập sự cố lịch sử.
+- Đã giải thích có cơ sở cho điểm thành phần ở phần làm đúng, nhưng chưa có barem nên không xác nhận tối thiểu 0,5/1 hay gán điểm thực tế. Cách đếm sau sửa là đếm thiết bị đạt điều kiện; nếu hiểu đúng ba thiết bị tổng cộng và cả ba đạt thì cần kiểm tra thêm tổng số thiết bị nhận trong năm, như ghi trong lời giải. Chưa có bài sửa độc lập, không đánh giá thành thạo.
